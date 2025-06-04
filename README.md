@@ -342,7 +342,27 @@ Reglas que sebe tener un archivo java
 	import java.nio.file.Paths.*; // NO GOOD - you cannot import methods                               // only class names
 
 
+    Conflicto de nombres:
+    Tiene relacion con que puede existir el mismo nombre de clase, pero utiizarlos en distintos packages. Si en un programa ocurre lo anterior
+    se debe diferencias por packetes,  por ejemplo la clase Date: Que import utilizamos aca.
+    public class Conflicts {    Date date;    // some more code }
 
+    Respuesta: java.util.*; or import java.util.Date;
+
+    Que ocurre cuando necesito todas las clases de SQL y ademas la clase Date de java.util?
+    import java.util.Date; import java.sql.*;
+
+
+    import java.util.Date; 
+    import java.sql.Date;
+    Java is smart enough to detect that this code is no good.
+
+    public class Conflicts {        
+        java.util.Date date;
+        java.sql.Date sqlDate;
+    }
+
+    *********creando packetes***********
 
 
 
