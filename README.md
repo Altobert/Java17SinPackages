@@ -366,6 +366,40 @@ Reglas que sebe tener un archivo java
     Todo lo que se ha escrito por el momento es en el "default package"
     rodo este codigo es para tirarlo a la basura. Procupre poner nombre a sus 
     packetes. 
+    Se crearon packetes en window o linux o mac lo anterior con el fin de paracitar la creacion 
+    de clases dentro de packetes.
+
+    Este comando compila y los .class los guarda en otro directorio, llamado classes.
+    Lo anterior se hace pasandole el comando -d a javac. Es case sensitive, por lo que no reconocera el parametro D
+    javac -d classes packagea/*.java packageb/*.java packagec/*.java
+
+    Para ejecutar el programa se realiza de la siguiente forma :
+    java -cp classes packageb.ClassB
+	java -classpath classes packageb.ClassB 
+	java --class-path classes packageb.ClassB
+
+Si UD utiliza un numero distinto de dashes, el programa no se ejecutara.
+
+Los desarrolladores realizan lo anterior, con un guion por que son flojos :)
+
+![alt text](image.png)
+
+*****Compiling with JAR Files  (A Java archive (JAR) file is like a ZIP file of mainly Java class files.)
+
+java -cp ".;C:\temp\someOtherLocation;c:\temp\myJar.jar" myPackage.MyClass
+
+Comandos para crear Jar
+
+ubicacion
+C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPackage\directoryWithJars
+
+comando: 
+java -cp ".;C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPackage\directoryWithJars;C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPackage\temp\myJar.jar" packageb.ClassB
+
+comando:
+java -cp "C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPackage\directoryWithJars\*" packageb.ClassB
+
+
 
 
 	
