@@ -363,7 +363,9 @@ Reglas que sebe tener un archivo java
     }
 
     *********creando packetes***********
-
+    Todo lo que se ha escrito por el momento es en el "default package"
+    rodo este codigo es para tirarlo a la basura. Procupre poner nombre a sus 
+    packetes. 
 
 
 	
