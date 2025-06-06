@@ -399,6 +399,25 @@ java -cp ".;C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPac
 comando:
 java -cp "C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPackage\directoryWithJars\*" packageb.ClassB
 
+*** Creacion de objetos **
+Nuestros programas no seran capaces de hacer nada si no tenemos la habilidad de crear objetos..
+ Recordar que on objeto es una instancia de una clase en tiempo de ejecucion.
+{
+	En las siguientes secciones veremos 
+	Construcctores, 
+	Atributos de objeto,
+	Inicializadores de instancia 
+	Orden en el cual los valores son inicializados.
+}
+
+un objeto es asi:
+	Park p = new Park();
+	p = almacena la referencia al objeto.
+	new Park() = Es la parte que crea el objeto.
+
+
+
+
 
 
 
