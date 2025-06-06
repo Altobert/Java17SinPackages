@@ -410,10 +410,19 @@ Nuestros programas no seran capaces de hacer nada si no tenemos la habilidad de 
 	Orden en el cual los valores son inicializados.
 }
 
-un objeto es asi:
+Un objeto luce de esta forma:
 	Park p = new Park();
 	p = almacena la referencia al objeto.
 	new Park() = Es la parte que crea el objeto.
+
+	Constructores:
+	Un constructor hace match con el nombre de la clase y no retornan un tipo. No puede tener un return.
+	EL construcctor inicializa atributos.
+
+	Muchas clase no tienen construcctores, pero por defecto el compilador crea un constructor por defecto
+	que no hace nada.
+
+	
 
 
 
