@@ -474,7 +474,11 @@ cuenta el orden de iniciailzacion.
 Algunas consideraciones:
 	atributos e inicializadores bloques, se ejecuta en el orden que se encuentran en el archivo.
 	EL constructor de ejecuta despues que todos los atributos e inicializadores de bloques se hayan ejecutado.
-	
+
+	no se puede utililzar un atributo antes antes de ser definida.
+	{ System.out.println(name); }  // DOES NOT COMPILE 
+	private String name = "Fluffy";
+
 
 
 
