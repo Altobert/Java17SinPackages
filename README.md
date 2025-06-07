@@ -466,6 +466,16 @@ public class Bird {
 SI no hay el mismo numero de pares de brazoz, el codigo no compilara.
 Esto es el "problema de balanceo de parenthesis" y se pregunta en las entrevistas
 
+Los inicializadores de instancia no existen dentro de un metodo, estan fuera, al nivel de la clase.
+
+**********Orden de inicializacion de brazos**********
+Cuando se encuentran los inicializadores en multiples lugares, se debe tener en 
+cuenta el orden de iniciailzacion.
+Algunas consideraciones:
+	atributos e inicializadores bloques, se ejecuta en el orden que se encuentran en el archivo.
+	EL constructor de ejecuta despues que todos los atributos e inicializadores de bloques se hayan ejecutado.
+	
+
 
 
 
