@@ -438,7 +438,12 @@ public class Chicken {   
 
 Reading and Writing Member Fields
 Es posible leer y escribir en variables de instancia de
-forma directa cuando son llamadas.
+forma directa de parte del "caller".
+Quien es el caller en el ejemplo, es el metodo main, que puede estar
+en la misma clase u en otra.
+PAra proteger los atributos se aprendera de la encapsulación en el cap5
+
+
 
 
 	
