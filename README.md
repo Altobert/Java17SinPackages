@@ -438,10 +438,38 @@ public class Chicken {   
 
 Reading and Writing Member Fields
 Es posible leer y escribir en variables de instancia de
-forma directa de parte del "caller".
+forma directa de parte del "caller". Es descir desde quien lo llama.
 Quien es el caller en el ejemplo, es el metodo main, que puede estar
 en la misma clase u en otra.
 PAra proteger los atributos se aprendera de la encapsulación en el cap5
+y no setear de forma negativa los atributos de instancia.
+
+Executing Instance Initializer Blocks (ejecutando bloques de inicializacion)
+
+	{} braces que inicializan y cierran un metodo
+	Dentro se escribe el codigo del metodo.
+	Estos se ejecutan cuando es llamado el metodo.
+	Otras veces, los brazos, aparecen fuera de los metodos.
+	Estos son los inicializadores de instancia. 
+	En el capitulo 6 aprenderemos de los inicializadores statics
+
+Cuantos inicializadores instancia se ven en el codigo? 
+public class Bird { 
+	2:    public static void main(String[] args) {
+			 // se ejecuta cuando se llama al metodo main
+	3:       { System.out.println("Feathers"); }
+	4:    }
+	//solo este es un incializador de instancia
+	{ System.out.println("Snowy"); }
+}
+
+SI no hay el mismo numero de pares de brazoz, el codigo no compilara.
+Esto es el "problema de balanceo de parenthesis" y se pregunta en las entrevistas
+
+
+
+
+
 
 
 
