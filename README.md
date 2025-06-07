@@ -422,6 +422,25 @@ Un objeto luce de esta forma:
 	Muchas clase no tienen construcctores, pero por defecto el compilador crea un constructor por defecto
 	que no hace nada.
 
+	Ojo con los metodos que tienen nombre y comienzan con letra capital, pero
+cuentan con retorno, esos no son un constructor, es posible que compile
+pero no se podra llamar con un new.
+
+La principal funcion de uns constructor es inicializar variables. Tambien
+se pueden inicializar variables cuando son declaradas.
+public class Chicken {    
+	int numEggs = 12;  // initialize on line
+	String name;    
+	public Chicken() {
+		name="Duke";
+	}
+}
+
+Reading and Writing Member Fields
+Es posible leer y escribir en variables de instancia de
+forma directa cuando son llamadas.
+
+
 	
 
 
