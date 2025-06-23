@@ -7,7 +7,7 @@ public class Chick {
     }
     public Chick() {
         name = "Tiny";  // constructor inicializador
-        System.out.println("Setting constructor");
+        System.out.println("setting constructor");
     }
     // Este es el punto de entrada de la aplicacion, el  metodo main.
     public static void main(String[] args) {
