@@ -455,6 +455,7 @@ Executing Instance Initializer Blocks (ejecutando bloques de inicializacion)
 	En el capitulo 6 aprenderemos de los inicializadores statics
 
 Cuantos inicializadores instancia se ven en el codigo? 
+Son cuatro pares de brazos.
 public class Bird { 
 	2:    public static void main(String[] args) {
 			 // se ejecuta cuando se llama al metodo main
