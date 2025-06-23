@@ -401,7 +401,7 @@ java -cp "C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPacka
 
 *** Creacion de objetos **
 Nuestros programas no seran capaces de hacer nada si no tenemos la habilidad de crear objetos..
- Recordar que on objeto es una instancia de una clase en tiempo de ejecucion.
+ Recordar que un objeto es una instancia de una clase en tiempo de ejecucion.
 {
 	En las siguientes secciones veremos 
 	Construcctores, 
@@ -416,13 +416,17 @@ Un objeto luce de esta forma:
 	new Park() = Es la parte que crea el objeto.
 
 	Constructores:
-	Un constructor hace match con el nombre de la clase y no retornan un tipo. No puede tener un return.
-	EL construcctor inicializa atributos.
+	Match con el nombre de la clase
+	No retornan un tipo. No puede tener un return.
+	El construcctor inicializa atributos.
 
-	Muchas clase no tienen construcctores, pero por defecto el compilador crea un constructor por defecto
+	Muchas clase no tienen construcctores, pero por defecto el compilador crea un constructor por defecto,
 	que no hace nada.
 
+	Existen escenarios donde requiero declarar un constructor. Eso se vera en el Capitulo 6.
 	
+
+
 
 
 
