@@ -423,7 +423,72 @@ Un objeto luce de esta forma:
 	Muchas clase no tienen construcctores, pero por defecto el compilador crea un constructor por defecto,
 	que no hace nada.
 
-	Existen escenarios donde requiero declarar un constructor. Eso se vera en el Capitulo 6.
+	Ojo con los metodos que tienen nombre y comienzan con letra capital, pero
+cuentan con retorno, esos no son un constructor, es posible que compile
+pero no se podra llamar con un new.
+
+La principal funcion de uns constructor es inicializar variables. Tambien
+se pueden inicializar variables cuando son declaradas.
+public class Chicken {    
+	int numEggs = 12;  // initialize on line
+	String name;    
+	public Chicken() {
+		name="Duke";
+	}
+}
+
+Reading and Writing Member Fields
+Es posible leer y escribir en variables de instancia de
+forma directa de parte del "caller". Es descir desde quien lo llama.
+Quien es el caller en el ejemplo, es el metodo main, que puede estar
+en la misma clase u en otra.
+PAra proteger los atributos se aprendera de la encapsulación en el cap5
+y no setear de forma negativa los atributos de instancia.
+
+Executing Instance Initializer Blocks (ejecutando bloques de inicializacion)
+
+	{} braces que inicializan y cierran un metodo
+	Dentro se escribe el codigo del metodo.
+	Estos se ejecutan cuando es llamado el metodo.
+	Otras veces, los brazos, aparecen fuera de los metodos.
+	Estos son los inicializadores de instancia. 
+	En el capitulo 6 aprenderemos de los inicializadores statics
+
+Cuantos inicializadores instancia se ven en el codigo? 
+public class Bird { 
+	2:    public static void main(String[] args) {
+			 // se ejecuta cuando se llama al metodo main
+	3:       { System.out.println("Feathers"); }
+	4:    }
+	//solo este es un incializador de instancia
+	{ System.out.println("Snowy"); }
+}
+
+SI no hay el mismo numero de pares de brazoz, el codigo no compilara.
+Esto es el "problema de balanceo de parenthesis" y se pregunta en las entrevistas
+
+Los inicializadores de instancia no existen dentro de un metodo, estan fuera, al nivel de la clase.
+
+**********Orden de inicializacion de brazos**********
+Cuando se encuentran los inicializadores en multiples lugares, se debe tener en 
+cuenta el orden de iniciailzacion.
+Algunas consideraciones:
+	atributos e inicializadores bloques, se ejecuta en el orden que se encuentran en el archivo.
+	EL constructor de ejecuta despues que todos los atributos e inicializadores de bloques se hayan ejecutado.
+
+	no se puede utililzar un atributo antes antes de ser definida.
+	{ System.out.println(name); }  // DOES NOT COMPILE 
+	private String name = "Fluffy";
+
+
+
+
+
+
+
+
+
+
 	
 
 

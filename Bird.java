@@ -1,6 +1,19 @@
+// bloque inicializador de clase
 public class Bird {
+
+    
+    // bloque declaracion  de metodo main
     public static void main(String[] args) {
-        {System.out.println("Feathers");}        
+
+        //inner bloque
+        {
+            System.out.println("Feathers");
+        }        
     }
-    {{System.out.println("Snowy");}}
+
+    // inicializador de instancia
+    {
+        System.out.println("Snowy");
+    }
+    
 }
