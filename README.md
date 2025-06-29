@@ -1,4 +1,4 @@
-"# Java17SinPackages" 
+"# Java17SinPackages"
 -------------------------
 Certificacion java 17
 -----------------------
@@ -18,7 +18,7 @@ Importante : una variable marcada con final, no se puede reasignar
 
 Rarezas: Pueden permitir obtener altos resultados en mi examen.
 		 Tener cuidado y en lo posible contestar bien.
-		 
+
 	preguntas con extra informacion
 		Ejemplo: XmlParseExeption. Si conoces o no XMl, pero la preguntando
 		trata acerca de exepciones.
@@ -28,12 +28,12 @@ Rarezas: Pueden permitir obtener altos resultados en mi examen.
 		Son respuestas no relacionadas, muchas veces.
 	Preguntas con Apis no familiares
 	Preguntas realizadas con conceptos errados.
-		Por ejemplo, que una interfaz herede de una clase, 
+		Por ejemplo, que una interfaz herede de una clase,
 		O que utilice la palabra reservada struct, es posible
-		que aparezca en un examen.	
+		que aparezca en un examen.
 	Preguntas que realmente estan fueras de contexto.
 		Debes hacer tu mejor esfuerzo por contestarlas.
-	
+
 ---------
 
 Para quien es este libro,
@@ -43,7 +43,7 @@ Para quien es este libro,
 ---------
 
 Organizacion del Libro.
-	
+
 	Son 15 capitulos y uno va construyendo el siguiente:
 	Tambien algunos capitulos cumplen mutipoes objetivos, para
 	recordar los anteriores.
@@ -52,7 +52,7 @@ Organizacion del Libro.
 
 Capitulos del libro (15)
 	*$$
-     
+
     *Cap 1
 		Construcciones basicas
 		Bloques, tipos de datos.
@@ -76,7 +76,7 @@ Capitulos del libro (15)
 		Collectiones y genericos
 	* Cap 10
 		Streams pipelines y Optional Class.
-		Lea el capito mas de una vez si quiere tener 
+		Lea el capito mas de una vez si quiere tener
 		los conocimientos.
 	* Cap 11
 		Exepciones y localizacion
@@ -88,7 +88,7 @@ Capitulos del libro (15)
 		IO administracion de archivos.		
 	* Cap 15
 		Simple. JDBC
-		
+
 -------------------------------------
 	Contestar los examenes al final de capitulo.
 		Si mi porcentaje de correctas es mejor al 80%, volver
@@ -96,9 +96,9 @@ Capitulos del libro (15)
 
 -------------------------------------
 	El ultimo objetivo del libro es hacerme
-		un programador de calidad, 
+		un programador de calidad,
 		por supuesto tambien aprobar mi examen.
-		
+
 -------------------------------------
 
 	Culquier duda o consulta, este sitio es utilicegit remote add origin https://github.com/Altobert/java-preparation-17-11.git
@@ -108,42 +108,42 @@ Capitulos del libro (15)
 
 	Antes de tomar el examen, recordad entrar a www.selikoff.net/ocp17
 		Lo anterior por si existen actualizaciones.
-		
+
 -----------
-	
+
 	www.wiley.com/go/Sybextestprep
 
 -----------
 
-	Como estudiar, 
+	Como estudiar,
 		Construir un plan de estudios ajustado a mis horarios.
-		Misntras mas consistente seas en tu estudio, 
+		Misntras mas consistente seas en tu estudio,
 		estaras mejor perpadado para dar el examen.
-		Aunque sea un poquito a la hora de almuerzo, pero 
+		Aunque sea un poquito a la hora de almuerzo, pero
 		todos los dias.
 
 -----------
 	Preguntarse por que lo estoy comprendiendo mal
-	Estudiar esas areas aun mas. 
-	
+	Estudiar esas areas aun mas.
+
 -----------
-	Si UD puede determinar que el codigo compila, 
-	y que linea puede estar causando que no compile, 
+	Si UD puede determinar que el codigo compila,
+	y que linea puede estar causando que no compile,
 	responder la pregunta se puede transformar en facil.
 
 	Si todas las respuestas a las preguntas son valores
-	impresos, y no es una opcion compilar, entonces esa pregunta 
-	es un regalo. Entonces que cada linea compila y UD. puede 
+	impresos, y no es una opcion compilar, entonces esa pregunta
+	es un regalo. Entonces que cada linea compila y UD. puede
 	utilizar la informacion de la pregunta para contestar.
 -----------
 	En muchos casos UD. tendra que ir eliminando respuestas
 	aun leyendo la pregunta.SI esto ocurre, considere un regalo y
-	no compile, si no que responda con la respuesta 
+	no compile, si no que responda con la respuesta
 	que quedo.
-	
+
 	---
 	Ir marcando las mas dificiles para responderlas despues.
-	
+
 	---
 
 capitulo 1:
@@ -154,7 +154,7 @@ Los objetivos OCP del examen cubiertos en este capitulo
            uso de parentesis, promocion de tipos y casting para evaluar
 	   aritmeticos y valores booleanos.
 * comprender el contexto de las variable, usar variables locales tipo inferencia,
-  aplicar encapsulacion y hacer objetos inmutables. 
+  aplicar encapsulacion y hacer objetos inmutables.
 
 Partiremos del comienzo solo para asegurarnos que tendras toda la temrinologia.
 Como se dice, debemos caminar antes de correr, entonces deberemos saber lo basico de java
@@ -174,7 +174,7 @@ java basico
  Otros tipos de estructuras son los records, enum e interfaces.
 
  Que es un objeto?
-  Es una instancia de una clase en tiempo de ejecucion. 
+  Es una instancia de una clase en tiempo de ejecucion.
   Esta instancia utiliza memoria.
 
 *Todos los diferentes objetos de las clases representan
@@ -194,7 +194,7 @@ Las clases son para crear objetos y en un sistema eso hace que funcione todo.
 una referencia es una variable que apunta a un objeto.
 
 metodos = comunmende llamados funciones
-campos = variables, 
+campos = variables,
 Todos ellos en conjunto forman parte de los miembros de una clase.
 
 
@@ -219,15 +219,15 @@ setName y espera que su parametro sea reemplazado por nueva información.
 comentarios simples dobles y los de documentacion, son materia sabida.
 
 ***Clases y Archivos Fuentes.***
-Todo se encuentra en una clase pero tambien existen clases embedidas, o clases dento de clases. Clases de alto nivel, una clases embebida, tambien es una 
+Todo se encuentra en una clase pero tambien existen clases embedidas, o clases dento de clases. Clases de alto nivel, una clases embebida, tambien es una
 clase de alto nivel.
 
 Una clase no requiere que teng la la palabra clave public. Se puede definir una clase "class Animal{}" y esta no tiene la palabra publica. Pero si cuenta con una clase embebida, una clase del archivo debe ser publica y tiene que tener el nombre del archivo.
 
-1: public class Animal { 
+1: public class Animal {
 2:    private String name;
-3: 
-} 
+3:
+}
 4: class Animal2 {}
 
 Observacion: pero la clase Animal2  no compilara en el archivo llamado
@@ -257,12 +257,12 @@ Reglas que sebe tener un archivo java
 	SI el main no tiene la firama correcta, la jvm no podra interpetar la clase,
 	lanzando un error al correrla.
 
-	***void*** representa el tipo de retorno vacio. Un metodo que no retorna nada, 
-	devuelve el control a quien lo ha llamado. 
+	***void*** representa el tipo de retorno vacio. Un metodo que no retorna nada,
+	devuelve el control a quien lo ha llamado.
 	Es buena practica utilizar un metodo void para cambiar el estado de los objetos.
 	El metodo main cambia el estado del programa desde el inicio hasta que finaliza
 
-	La lista de parametros del main es un array de java.lang.String objects. Existe una forama valida 
+	La lista de parametros del main es un array de java.lang.String objects. Existe una forama valida
 	String[] args
 	String options[]
 	String... friends
@@ -273,7 +273,7 @@ Reglas que sebe tener un archivo java
 	//con o sin final es valido el main
 	public final static void main(final String[] args) {}
 
-	args: es u nombre comunmente usado en un main, ya que es 
+	args: es u nombre comunmente usado en un main, ya que es
 	leido este arreglo de strin gpor la JVM al momento de ejecutar un programa en java
 
 	array: es una lista de tamanio ajustado con argumentos del mismo tipo.
@@ -283,7 +283,7 @@ Reglas que sebe tener un archivo java
 	------
 
 	Para revisar, laJDK tiene un compilador, Java corre sobre
-	una JVM y ambas corren en cualquier maquina con java bastante que solo la maquina y el SO ellos saben lo que 
+	una JVM y ambas corren en cualquier maquina con java bastante que solo la maquina y el SO ellos saben lo que
 	se ha compilado en ellos.
 
 	Understanding Package Declarations and Imports
@@ -305,7 +305,7 @@ Reglas que sebe tener un archivo java
 
 	Packages***
 	Clases java son agrupados en packetes y la sentencia
-	import le dice al compilador en cual packete ir a buscar 
+	import le dice al compilador en cual packete ir a buscar
 	una clase.
 	Esto es lo mismo al enviar un correo con una direccion.
 	si le decimos al cartero, 123 Main Street, Apartment 9.
@@ -331,12 +331,12 @@ Reglas que sebe tener un archivo java
 
 	Respuesta
 	import java.nio.file.*; Esta opcion considera ambas clases Path y Files
-	
-	//Realizar los import de forma independiente.
-	import java.nio.file.Files; 
-	import java.nio.file.Paths; 
 
-	Now let's consider some imports that don't work. 
+	//Realizar los import de forma independiente.
+	import java.nio.file.Files;
+	import java.nio.file.Paths;
+
+	Now let's consider some imports that don't work.
 	import java.nio.*;            // NO GOOD - a wildcard only matches     // class names, not "file.Files"
 	import java.nio.*.*;          // NO GOOD - you can only have one wildcard                               // and it must be at the end
 	import java.nio.file.Paths.*; // NO GOOD - you cannot import methods                               // only class names
@@ -353,20 +353,20 @@ Reglas que sebe tener un archivo java
     import java.util.Date; import java.sql.*;
 
 
-    import java.util.Date; 
+    import java.util.Date;
     import java.sql.Date;
     Java is smart enough to detect that this code is no good.
 
-    public class Conflicts {        
+    public class Conflicts {       
         java.util.Date date;
         java.sql.Date sqlDate;
     }
 
     *********creando packetes***********
     Todo lo que se ha escrito por el momento es en el "default package"
-    rodo este codigo es para tirarlo a la basura. Procupre poner nombre a sus 
-    packetes. 
-    Se crearon packetes en window o linux o mac lo anterior con el fin de paracitar la creacion 
+    rodo este codigo es para tirarlo a la basura. Procupre poner nombre a sus
+    packetes.
+    Se crearon packetes en window o linux o mac lo anterior con el fin de paracitar la creacion
     de clases dentro de packetes.
 
     Este comando compila y los .class los guarda en otro directorio, llamado classes.
@@ -375,7 +375,7 @@ Reglas que sebe tener un archivo java
 
     Para ejecutar el programa se realiza de la siguiente forma :
     java -cp classes packageb.ClassB
-	java -classpath classes packageb.ClassB 
+	java -classpath classes packageb.ClassB
 	java --class-path classes packageb.ClassB
 
 Si UD utiliza un numero distinto de dashes, el programa no se ejecutara.
@@ -393,7 +393,7 @@ Comandos para crear Jar
 ubicacion
 C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPackage\directoryWithJars
 
-comando: 
+comando:
 java -cp ".;C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPackage\directoryWithJars;C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPackage\temp\myJar.jar" packageb.ClassB
 
 comando:
@@ -403,10 +403,10 @@ java -cp "C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPacka
 Nuestros programas no seran capaces de hacer nada si no tenemos la habilidad de crear objetos..
  Recordar que un objeto es una instancia de una clase en tiempo de ejecucion.
 {
-	En las siguientes secciones veremos 
-	Construcctores, 
+	En las siguientes secciones veremos
+	Construcctores,
 	Atributos de objeto,
-	Inicializadores de instancia 
+	Inicializadores de instancia
 	Orden en el cual los valores son inicializados.
 }
 
@@ -429,9 +429,9 @@ pero no se podra llamar con un new.
 
 La principal funcion de uns constructor es inicializar variables. Tambien
 se pueden inicializar variables cuando son declaradas.
-public class Chicken {    
+public class Chicken {   
 	int numEggs = 12;  // initialize on line
-	String name;    
+	String name;   
 	public Chicken() {
 		name="Duke";
 	}
@@ -451,12 +451,12 @@ Executing Instance Initializer Blocks (ejecutando bloques de inicializacion)
 	Dentro se escribe el codigo del metodo.
 	Estos se ejecutan cuando es llamado el metodo.
 	Otras veces, los brazos, aparecen fuera de los metodos.
-	Estos son los inicializadores de instancia. 
+	Estos son los inicializadores de instancia.
 	En el capitulo 6 aprenderemos de los inicializadores statics
 
-Cuantos inicializadores instancia se ven en el codigo? 
+Cuantos inicializadores instancia se ven en el codigo?
 Son cuatro pares de brazos.
-public class Bird { 
+public class Bird {
 	2:    public static void main(String[] args) {
 			 // se ejecuta cuando se llama al metodo main
 	3:       { System.out.println("Feathers"); }
@@ -471,14 +471,14 @@ Esto es el "problema de balanceo de parenthesis" y se pregunta en las entrevista
 Los inicializadores de instancia no existen dentro de un metodo, estan fuera, al nivel de la clase.
 
 **********Orden de inicializacion de brazos**********
-Cuando se encuentran los inicializadores en multiples lugares, se debe tener en 
+Cuando se encuentran los inicializadores en multiples lugares, se debe tener en
 cuenta el orden de iniciailzacion.
 Algunas consideraciones:
 	atributos e inicializadores bloques, se ejecuta en el orden que se encuentran en el archivo.
 	EL constructor de ejecuta despues que todos los atributos e inicializadores de bloques se hayan ejecutado.
 
 	no se puede utililzar un atributo antes antes de ser definida.
-	{ System.out.println(name); }  // DOES NOT COMPILE 
+	{ System.out.println(name); }  // DOES NOT COMPILE
 	private String name = "Fluffy";
 
 	******
@@ -486,61 +486,65 @@ Algunas consideraciones:
 	******
 
 	Referencias:
-	Un tipo de dato primitivo se mantiene en memoria, con su valor. 
-	Una referencia, no mantiene el valor del objeto a cual refieren. En vez de eso, 
+	Un tipo de dato primitivo se mantiene en memoria, con su valor.
+	Una referencia, no mantiene el valor del objeto a cual refieren. En vez de eso,
 	una referencia apunta a un objeto para almacenar la direccion de memoria,
 	donde el objeto es ubicado. El concepto referenciato es un puntero.
 	A diferencia de otros lenguajes, java no permite que aprendas que memoria fisica
 	estas direccionando.
 	Tu solamente puedes usar la referencia para referir al objeto.
 
+	String greeting; // esta es una referencia apunta a un objeto String. El valor
+	es asignado a la referencia es una o dos formas
+		una referencia puede ser asignada a otro objeto del tipo compatible
+		una referencia puede ser asignada a un nuevo objeto usando el keyword
+		new.
+
+		En el siguiente ejemplo se asigna el nuevo objeto a la referencia
+		greeting = new String("How are You");
+
+		La referencia greeting apunta a un nuevo objeto String "How are you"
+	El objeto String no tiene un nombre y solo puede ser accesado por la
+	via de su correspondiente referencia.
+
+	Distinguiendo entre referencias y tipos primitivos.
+	 Existen unas pocas importantes diferencias entre primitivas y referencias.
+	 Los tipos primitivos tienen minusculas en sus nombres. Las clases Java
+	 comienzan todas con la primera letra Mayusculas. Uno debe seguir esta
+	 convencion.
+
+	 Segundo, las referencias son usadas para llamar metodos, asumiendo que la
+	 referencia no es null. Los primitivas no tienen metodos declarados. Ejemplo
+	 de la referencia que llama aun metodo
+
+	 String reference = "hello"
+	 int len = reference.length();
+	 int bad = len.length(); // esto no compila
+
+	 Un primitivo no tiene referencias, por lo cual no pueden llamar metodos.
+	 Recuerde que un String no es un primitivo, entonces puedes llamar metodos,
+	 como length(); que pretenece a la referencia String.
 
 
+	 Linea 6 es "algo que no tiene explicacion" len no tiene metodos por que len
+	 es un primitivo, los primitivos no tienen metodos, recuerde, String no es un
+	 primitivo, entonces UD. puede llamar al metodo len, para la referencia
+	 de String.
 
+	 Finalmente las referencias se les puede asignar null, que significa que
+	 no apunta o hace referencia aun objeto.
 
+	 Los primitivos dan error de compilacion si se les asigna un null.
+	 Ejemplo:
+	 int value = null// no compila
+	 String name = null;
 
+	 Pero si no sabes el valor valor de un int y quieres asignarle un null?,
+	 para ese caso deberias usar una clase wrapper, como Integer en vez de int.
 
+	 Clases wrapper
+	 Cada tipo de dato primitivo tiene su clase envoltorio, el cual es un tipo de objeto
+	 que le corresponde a su primitivo.
 
-
-
-
-	
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-
-	
-
-
-
-	
-	
-
+	 int primitive = Integer.parseInt("123");
+	 Integer wrapper = Integer.valueOf("123");
