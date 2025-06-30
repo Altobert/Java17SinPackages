@@ -15,6 +15,14 @@ public class TestString {
                     by Scott and Jeane
                 """;
         System.out.println(blockTest);
+		
+		String piramid="""
+		  *
+		 * *
+		* * *
+		""";
+		
+		System.out.println(piramid);
 
 
     }
