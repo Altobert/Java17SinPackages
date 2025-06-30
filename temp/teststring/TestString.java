@@ -25,5 +25,12 @@ public class TestString {
 		System.out.println(piramid);
 
 
+        String blooString="""
+                doe\
+                deer
+                """;
+        System.out.println(blooString);
+
+
     }
 }
