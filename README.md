@@ -548,3 +548,8 @@ Algunas consideraciones:
 
 	 int primitive = Integer.parseInt("123");
 	 Integer wrapper = Integer.valueOf("123");
+
+	 30-06-2025
+	 Cuando no sepas como partir, parte como sea, con la idea que sea! CSMC
+	 30-06-2025
+
