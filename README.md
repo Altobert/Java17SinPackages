@@ -553,3 +553,24 @@ Algunas consideraciones:
 	 Cuando no sepas como partir, parte como sea, con la idea que sea! CSMC
 	 30-06-2025
 
+	 algunas clasese wrapper contienen metodos helper para trabajar con numeros. No los debes memorizar
+
+	 **definiendo bloques de texto**
+	 Vimos al comienzo una definicion simple de string, pero que pasa si necesitamos algo mas complicado?
+	 Imaginemos que tenemos que crear un string con la siguiente forma:
+
+	 (identacion incluida) 
+	 "Java Study Guide"    
+	 	by Scott & Jeanne
+
+	Para construir el string anterior, requiere dos cosas que no hemos aprendido aun.
+	sintaxis \"podemos poner lo que queramos"
+			 \n para una nueva linea
+	
+	lo anterior es llamado caracteres de escape. El backslash provee un especial sentido.
+
+	
+
+
+	
+
