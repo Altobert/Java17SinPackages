@@ -374,7 +374,7 @@ Reglas que sebe tener un archivo java
     javac -d classes packagea/*.java packageb/*.java packagec/*.java
 
     Para ejecutar el programa se realiza de la siguiente forma :
-    java -cp classes packageb.ClassB
+    	java -cp classes packageb.ClassB
 	java -classpath classes packageb.ClassB
 	java --class-path classes packageb.ClassB
 
@@ -568,6 +568,16 @@ Algunas consideraciones:
 			 \n para una nueva linea
 	
 	lo anterior es llamado caracteres de escape. El backslash provee un especial sentido.
+	
+	void sandFence() {    
+		String s1, s2;    // variables solamente declaradas
+		String s3 = "yes", s4 = "no"; // variables declaradas e inicializadas.
+	}
+	
+	// declarado y ambos inicializados en cero.
+	void paintFence() {    
+		int i1, i2, i3 = 0; 
+	}
 
 	
 
