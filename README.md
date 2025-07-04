@@ -587,7 +587,75 @@ Algunas consideraciones:
 		default para local: (dentro de un metodo)
 		instancia (atributos de un objeto)
 		Variables de clase: (static)
+
+	Variables locales: son creadas dentro de un constructor, metodo o bloque de inicializacion.
+
+	Variables locales final:
+	final es una palabra clave aplicada a una constante en otros lenguajes.
+	Ej:
+	final int y = 10;
+	int x = 20;
+	y = x + 10; //no compila. // y no puede ser modificado por ser final // constante.
+
+	La palabra clave final tambien puede ser aplicada a variables locales de referencia.
+
+	final int [] favoriteNumbers = new int[10];
+	favoriteNumbers[0] = 10;
+	favoriteNumbers[2] = 20;
+	favoriteNumbers = null // no compila.
+
+	El error ocurre cuando trato de "CAMBIAR" el valor de la referencia favoriteNumbers
+
+	**Variables locales no inicializadas**
+	Las variables locales no tienen un valor por defecto y deben ser inicializadas antes
+	de ser usadas. El compilador reportara un error si tu intentas leer una variable sin inicializar.
+
+	public int notValid(){
+		int y = 10;
+		int x; // no ha sido inicializado
+		int reply = x+y; // no compila.
+		return reply;
+	}
+
+	Y fue inicializado en 10 pero y por contraste no lo ha sido.
+
+	El COMPILADOR es lo suficientemente lito como para reconocer variables que han sido inicializadas
+	despues de su declaracion pero antes son usadas.
+
+	public int valid(){
+		int y = 10;
+		int x;// x es declarado aqui
+		x = 3;
+		int z;//declarada la z pero no inicializada.
+		int reply = x+y;
+		return reply;
+	}
+
+	Al compilador java le interesa lo que yo uso sin ser inizializado, es decir, solamente le concierne 
+	si yo intento usar no inicializadas variables locales, no le importa lo que nunca voy a usar.
+
+	public void findAnswer(boolean check){
+		int answer;
+		int otherAnswer;
+		int onlyOneBranch;
+		if(check){
+			onlyOneBranch = 1;
+			answer=1;
+		}else{
+			answer =2
+		}
+		System.out.println(answer);
+		System.out.println(onlyOneBranch); // error de compilacion
+	}
+
+	// el compilador es lo suficientemente inteligente para darse cuenta que onlyOneBranch
+	   puede ser no inicializado al pasar a false de la rama (else)
+
 	***
+
+	inicialización de bloques, el orden en que se ejecuta la ejecución y compilación.
+
+	//*** LA certificacion es aprender a reconocer y entender al compilador JAVA, de acuerdo a su. */
 
 	
 
