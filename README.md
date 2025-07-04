@@ -579,6 +579,16 @@ Algunas consideraciones:
 		int i1, i2, i3 = 0; 
 	}
 
+	***04/07 - 
+	Inicializacion de variables, 
+	Antes que UD pueda usar una variable, necesita un valor. Algunos tipos de variable 
+	traen un valor por defecto, se forma automatica y otras requiere que el programador las especifique. 
+	Veremos las diferencias entre:
+		default para local: (dentro de un metodo)
+		instancia (atributos de un objeto)
+		Variables de clase: (static)
+	***
+
 	
 
 
