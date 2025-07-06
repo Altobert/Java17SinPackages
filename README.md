@@ -686,7 +686,7 @@ Algunas consideraciones:
 	"Variables que no son locales entonces son variables de instancia o variables de clase." Una variable de instancia tambien definido campo, 
 	es un valor definido dentro de una instancia especifica de un objeto. Digamos lo siguiente:
 	Tenemos una clase Persona con una variable de instancia nombre, se tipo String, Cada instancia de esta clase, tendra su propio valor de name
-	tal como Elyshia o Sarah. Dos instancias pueden tener el mismo valor para nombre , pero cambiando el valor de uno no midificara el otro.=
+	tal como Elyshia o Sarah. Dos instancias pueden tener el mismo valor para nombre , pero cambiando el valor de uno no midificara el otro.
 
 
 
