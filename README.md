@@ -640,23 +640,59 @@ Algunas consideraciones:
 		int onlyOneBranch;
 		if(check){
 			onlyOneBranch = 1;
-			answer=1;
+			answer=1;  // sea true, aca se inicializa antes de ser usada.
 		}else{
-			answer =2
+			answer =2 // sea false aca se inicializa antes de ser usada.
 		}
-		System.out.println(answer);
+		System.out.println(answer); // aca se usa la variable
 		System.out.println(onlyOneBranch); // error de compilacion
 	}
 
 	// el compilador es lo suficientemente inteligente para darse cuenta que onlyOneBranch
-	   puede ser no inicializado al pasar a false de la rama (else)
+	   puede ser NO inicializado al pasar a false de la rama (else).
+	   SIn embargo, la variable answer  pase por la rama que sea, siempre se inicializara y eso 
+	   el compilador lo detecta.
+
+	   la variable otherAnswer, no se inicializa, pero no se usa, asi que el compilador
+	   continua feliz.
+
+	   IMPORTANTE, Al compilador siempre le importa si yo intento utilizar variables no inicializadas,
+	   no le importa las variables que no inicializo y nunca uso.
 
 	***
 
-	inicialización de bloques, el orden en que se ejecuta la ejecución y compilación.
+	inicialización de bloques, 
+		el orden en que se ejecuta la ejecución y compilación.
+		Inicializacion de variables locales e instancias.
 
-	//*** LA certificacion es aprender a reconocer y entender al compilador JAVA, de acuerdo a su. */
+	//*** LA certificacion es aprender a reconocer y entender al compilador JAVA, de acuerdo a su version. */
 
+	/** Asegurese de la inicializacion antes de usar em el examen */
+
+	Passing Constructor and Method Parameters (Pasando parametros a contructores o metodos).
+
+		Las variables pasadas a un constructor o metodos se llaman variables de constructor o metodo respectivamente. 
+		estos parametros son como variables que han sido preinicializadas. Las reglas de inicializacion de variables de 
+		constructor o metodo, son las mismas. Vemoa primero las variables de metodos.
+
+		// aca se asume que la variable se encuentra inicializada antes de usarla en el metodo.
+		public void findAnswer(boolean check) {}
+
+		public void checkAnswer() {    
+			boolean value;    
+			findAnswer(value);  // DOES NOT COMPILE 
+		}
+
+		Aca ocurre un error por que no se inicializa antes de usar la variable.
+
+	
+	Definiendo instancias y variables de clase.
+
+	Variables que no son definidas de forma local (dentro de metodos o constructores de se denominan variavles de instancia
+	o clase. 
+	Una variable de instancia, tambien definido como "campo", es un valor definido dentro de una especifica instancia de objeto.
+	Digamos que tenemos una clase Persona con una variable de instancia del tipo String. Cada instancia de la clase, tendra su 
+	propio valor para "name" 
 	
 
 
