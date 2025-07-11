@@ -726,6 +726,18 @@ Algunas consideraciones:
 
 	  }
 
+	  public class VarKeyword{
+		var tricky="Hello" // No compila
+	  }
+
+	  "Lo anterior no compila por que solo se utiliza como variable local, dentro de un metodo, y no como variable de instancia."
+
+	  ****Tipo de Inferencia de var****
+
+	  Ahora entiendes otra parte de una variable local, ahora debes aprender el sentido de que es "tipo inferencia".
+	  Cuando yo escribo var, le estoy diciendo al compilador que determine el tipo por mi. EL compilador mira la declaracion
+	  e infiere el tipo.
+
 
 
 
