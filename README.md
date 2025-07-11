@@ -688,19 +688,28 @@ Algunas consideraciones:
    		findAnswer(value);  // DOES NOT COMPILE
    	}
 
-	En este punto ocurrira lo mismo, esto no compilara por que la variable es usada antes de ser inicializada.
+	Al llamar al metodo findAnswer, este no compila por que intenta usar una variable no inicializada en el metodo checkAnswer
+	En este punto ocurrira lo mismo, esto no compilara por que la variable es usada antes de ser inicializada. Mientras que quien llama
+	el metodo checkAnswer() necesita ser responsable acerca de si la variable esta siendo inicializada, una vez en el metodo findAnswer()
+	nosotros asumimos que la variable local ha sido inicializada con algun valor.
 
 	
 	***Definiendo instancia y Variables de Clase***
 
-	"Variables que no son locales entonces son variables de instancia o variables de clase." Una variable de instancia tambien definido campo, 
+	"Variables que no son locales entonces son variables de instancia (variables de un objeto) o variables de clase (static)." Una variable de instancia tambien definido campo, 
 	es un valor definido dentro de una instancia especifica de un objeto. Digamos lo siguiente:
-	Tenemos una clase Persona con una variable de instancia nombre, se tipo String, Cada instancia de esta clase, tendra su propio valor de name
-	tal como Elyshia o Sarah. Dos instancias pueden tener el mismo valor para nombre , pero cambiando el valor de uno no midificara el otro.
+	Tenemos una clase Persona con una variable de instancia nombre, de tipo String, Cada instancia de esta clase, tendra su propio valor de name
+	tal como "Elyshia" o "Sarah". Dos instancias pueden tener el mismo valor para nombre , pero cambiando el valor de uno no midificara el otro.
+
+	Lo que por el momento vamos a aprender es que una variable de clase puede ser accedira por cualquier clase, sin necesitar un objeto. SOlo debe tener antes del
+	nombre de la variable el atributo static.
 
 ----
 11-07-2025
 ----
+	Pasando Parametros a constructores o metodos.
+	 Variables pasadas a un constructor o a un metodo se llaman method parameters o constructor parameters respectivamente.
+
 
 
 
