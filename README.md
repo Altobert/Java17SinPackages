@@ -698,7 +698,9 @@ Algunas consideraciones:
 	Tenemos una clase Persona con una variable de instancia nombre, se tipo String, Cada instancia de esta clase, tendra su propio valor de name
 	tal como Elyshia o Sarah. Dos instancias pueden tener el mismo valor para nombre , pero cambiando el valor de uno no midificara el otro.
 
-
+----
+11-07-2025
+----
 
 
 
