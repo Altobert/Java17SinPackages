@@ -693,7 +693,11 @@ Algunas consideraciones:
 	el metodo checkAnswer() necesita ser responsable acerca de si la variable esta siendo inicializada, una vez en el metodo findAnswer()
 	nosotros asumimos que la variable local ha sido inicializada con algun valor.
 
-	
+
+----
+11-07-2025
+----
+
 	***Definiendo instancia y Variables de Clase***
 
 	"Variables que no son locales entonces son variables de instancia (variables de un objeto) o variables de clase (static)." Una variable de instancia tambien definido campo, 
@@ -702,14 +706,25 @@ Algunas consideraciones:
 	tal como "Elyshia" o "Sarah". Dos instancias pueden tener el mismo valor para nombre , pero cambiando el valor de uno no midificara el otro.
 
 	Lo que por el momento vamos a aprender es que una variable de clase puede ser accedira por cualquier clase, sin necesitar un objeto. SOlo debe tener antes del
-	nombre de la variable el atributo static.
+	nombre de la variable el atributo static. EN el ejemplo anterior un atributo de clase podria representar una lista de personas en el zoologico hoy. Por lo tanto, 
+	Podemos decir que una variable es declarada como "de clase" cuando cuenta con el atributo "static".
 
-----
-11-07-2025
-----
-	Pasando Parametros a constructores o metodos.
-	 Variables pasadas a un constructor o a un metodo se llaman method parameters o constructor parameters respectivamente.
+	Una variable de clase o instancia no es necesaria que sea inicializada. Cuenta con un valor por defecto ya sea null para un objeto y cero para el caso de una variable
+	numerica, o falso para un booleano. No es necesario que sepamos todos los valores por defecto, pero si soy curioso, para un char es '\u0000'(NUL)
 
+
+	Infiriendo el Tipo a con var:
+	  Tu tu tienes la oportunidad de usar la palabra clave "var" en vez del tipo cuando declaras una variable local, bajo ciertas condiciones. PAra usar esta caracteristica, 
+	  tu solo debes escribir var en vez del primitivo o tipo de referencia. Aqui un ejemplo:
+
+	  public class Zoo{
+
+		public void whatTypeAmi(){
+			var name="Hello";
+			var size = 7;
+		}		
+
+	  }
 
 
 
