@@ -738,6 +738,8 @@ Algunas consideraciones:
 	  Cuando yo escribo var, le estoy diciendo al compilador que determine el tipo por mi. EL compilador mira la declaracion
 	  e infiere el tipo.
 
+	  
+
 
 
 
