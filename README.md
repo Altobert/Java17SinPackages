@@ -559,30 +559,30 @@ Algunas consideraciones:
 	 Vimos al comienzo una definicion simple de string, pero que pasa si necesitamos algo mas complicado?
 	 Imaginemos que tenemos que crear un string con la siguiente forma:
 
-	 (identacion incluida) 
-	 "Java Study Guide"    
+	 (identacion incluida)
+	 "Java Study Guide"   
 	 	by Scott & Jeanne
 
 	Para construir el string anterior, requiere dos cosas que no hemos aprendido aun.
 	sintaxis \"podemos poner lo que queramos"
 			 \n para una nueva linea
-	
+
 	lo anterior es llamado caracteres de escape. El backslash provee un especial sentido.
-	
-	void sandFence() {    
+
+	void sandFence() {   
 		String s1, s2;    // variables solamente declaradas
 		String s3 = "yes", s4 = "no"; // variables declaradas e inicializadas.
 	}
-	
+
 	// declarado y ambos inicializados en cero.
-	void paintFence() {    
-		int i1, i2, i3 = 0; 
+	void paintFence() {   
+		int i1, i2, i3 = 0;
 	}
 
-	***04/07 - 
-	Inicializacion de variables, 
-	Antes que UD pueda usar una variable, necesita un valor. Algunos tipos de variable 
-	traen un valor por defecto, se forma automatica y otras requiere que el programador las especifique. 
+	***04/07 -
+	Inicializacion de variables,
+	Antes que UD pueda usar una variable, necesita un valor. Algunos tipos de variable
+	traen un valor por defecto, se forma automatica y otras requiere que el programador las especifique.
 	Veremos las diferencias entre:
 		default para local: (dentro de un metodo)
 		instancia (atributos de un objeto)
@@ -631,7 +631,7 @@ Algunas consideraciones:
 		return reply;
 	}
 
-	Al compilador java le interesa lo que yo uso sin ser inizializado, es decir, solamente le concierne 
+	Al compilador java le interesa lo que yo uso sin ser inizializado, es decir, solamente le concierne
 	si yo intento usar no inicializadas variables locales, no le importa lo que nunca voy a usar.
 
 	public void findAnswer(boolean check){
@@ -650,7 +650,7 @@ Algunas consideraciones:
 
 	// el compilador es lo suficientemente inteligente para darse cuenta que onlyOneBranch
 	   puede ser NO inicializado al pasar a false de la rama (else).
-	   SIn embargo, la variable answer  pase por la rama que sea, siempre se inicializara y eso 
+	   SIn embargo, la variable answer  pase por la rama que sea, siempre se inicializara y eso
 	   el compilador lo detecta.
 
 	   la variable otherAnswer, no se inicializa, pero no se usa, asi que el compilador
@@ -661,13 +661,13 @@ Algunas consideraciones:
 
 	***
 
-	inicialización de bloques, 
+	inicialización de bloques,
 		el orden en que se ejecuta la ejecución y compilación.
 		Inicializacion de variables locales e instancias.
 
 	//*** LA certificacion es aprender a reconocer y entender al compilador JAVA, de acuerdo a su. */
 
-	El compilador puede darse cuenta que al pasar por las ramas IF-ELSE, la variable podria no inicializarse, por lo que arrojara un 
+	El compilador puede darse cuenta que al pasar por las ramas IF-ELSE, la variable podria no inicializarse, por lo que arrojara un
 	error de compilacion.
 
 	***NOTA Importante: En el examen de certificaicon tenga cuidado con con cualquier variable local sea declarada pero no inicializada
@@ -679,9 +679,9 @@ Algunas consideraciones:
 	Variables pasados a un constructor ao a un metodo se llaman "constructor parameters" o "method parameters", respectivamente.
 
 	In the previous example, check is a method parameter.
-	
+
 	public void findAnswer(boolean check) {}
- 	
+
 	Take a look at the following method checkAnswer() in the same class:
 	public void checkAnswer() {
    		boolean value;
@@ -700,13 +700,13 @@ Algunas consideraciones:
 
 	***Definiendo instancia y Variables de Clase***
 
-	"Variables que no son locales entonces son variables de instancia (variables de un objeto) o variables de clase (static)." Una variable de instancia tambien definido campo, 
+	"Variables que no son locales entonces son variables de instancia (variables de un objeto) o variables de clase (static)." Una variable de instancia tambien definido campo,
 	es un valor definido dentro de una instancia especifica de un objeto. Digamos lo siguiente:
 	Tenemos una clase Persona con una variable de instancia nombre, de tipo String, Cada instancia de esta clase, tendra su propio valor de name
 	tal como "Elyshia" o "Sarah". Dos instancias pueden tener el mismo valor para nombre , pero cambiando el valor de uno no midificara el otro.
 
 	Lo que por el momento vamos a aprender es que una variable de clase puede ser accedira por cualquier clase, sin necesitar un objeto. SOlo debe tener antes del
-	nombre de la variable el atributo static. EN el ejemplo anterior un atributo de clase podria representar una lista de personas en el zoologico hoy. Por lo tanto, 
+	nombre de la variable el atributo static. EN el ejemplo anterior un atributo de clase podria representar una lista de personas en el zoologico hoy. Por lo tanto,
 	Podemos decir que una variable es declarada como "de clase" cuando cuenta con el atributo "static".
 
 	Una variable de clase o instancia no es necesaria que sea inicializada. Cuenta con un valor por defecto ya sea null para un objeto y cero para el caso de una variable
@@ -714,20 +714,22 @@ Algunas consideraciones:
 
 
 	Infiriendo el Tipo a con var:
-	  Tu tu tienes la oportunidad de usar la palabra clave "var" en vez del tipo cuando declaras una variable local, bajo ciertas condiciones. PAra usar esta caracteristica, 
+	  Tu tu tienes la oportunidad de usar la palabra clave "var" en vez del tipo cuando declaras una variable local, bajo ciertas condiciones. PAra usar esta caracteristica,
 	  tu solo debes escribir var en vez del primitivo o tipo de referencia. Aqui un ejemplo:
+
+		La formalidad es tipo inferencia variable local. Esta caracteristica es solo para variables locales. El examen intentara engañarme.
 
 	  public class Zoo{
 
-		public void whatTypeAmi(){
-			var name="Hello";
-			var size = 7;
-		}		
+			public void whatTypeAmi(){
+				var name="Hello";
+				var size = 7;
+			}		
 
 	  }
 
 	  public class VarKeyword{
-		var tricky="Hello" // No compila
+			var tricky="Hello" // No compila
 	  }
 
 	  "Lo anterior no compila por que solo se utiliza como variable local, dentro de un metodo, y no como variable de instancia."
@@ -738,14 +740,73 @@ Algunas consideraciones:
 	  Cuando yo escribo var, le estoy diciendo al compilador que determine el tipo por mi. EL compilador mira la declaracion
 	  e infiere el tipo.
 
-	  
+		public void reassignment() {
+8:     var number = 7;
+9:     number = 4;
+10:    number = "five";  // DOES NOT COMPILE
+11: }
+
+    linea 8, definimos var con un valor inicial, luego linea 9 seteamos
+		el valor 4 y en la linea 10 le pasamos un string a la misma variable.
+		Eso es un problema de compilacion!
+
+		El tipo var en java asigna el tipo en tiempo de compilacion
+		por lo que no puede ser modificado el tipo en tiempo de ejecucion.
+
+		otro ejemplo:
+3:  public void doesThisCompile(boolean check) {
+4:     var question;
+5:     question = 1;
+6:     var answer;
+7:     if (check) {
+8:        answer = 2;
+9:     } else {
+10:       answer = 3;
+11:    }
+12:    System.out.println(answer);
+13: }
+
+	La inicializacion de un tipo de inferencia debe ser en una misma linea, Liea 4 y 6 estan con un error de compilacion.
+
+	otro ejemplo:
+	4: public void twoTypes() {
+	5:    int a, var b = 3;  // DOES NOT COMPILE Se debe compartir el 			//mismo 		tipo al momento de declarar en una misma linea.
+	6:    var n = null;      // DOES NOT COMPILE
+	7: }
+
+	Según mi entender, en este punto (5) estoy mezlando en una misma linea Dos
+	cosas.
+	linea 6 estoy haciendo que infiera un tipo de referencia, pero que tipo?, podria ser tipo Object . Pero los diseñadores de java prefieren no suponer
+	por lo tanto no lo permiten
+
+	While a var cannot be initialized with a null value without a type, it can be reassigned a null value after it is declared, provided that the underlying data type is a reference type.
+
+	 String nombre  			= null;
+	 var stringescondido  = nombre;
+
+	""AUNQUE un tipo var no se le puede asignar un valor null, si se puede reasignar null cuando el tipo de referencia sea declarado.""
 
 
+	public int addition(var a, var b) { // DOES NOT COMPILE
+   return a + b;
+}
+ In this example, a and b are method parameters. These are not local variables. Be on the lookout for var used with constructors, method parameters, or instance variables. Using var in one of these places is a good exam trick to see if you are paying attention. Remember that var is only used for local variable type inference!
 
+ EL keyword var solo se puede usar como variable local dentro de un metodo,
+ y no como parametro. El compilador lo rechaza.
 
+ package var;
 
-	
+public class Var {
+   public void var() {
+      var var = "var";
+   }
+   public void Var() {
+      Var var = new Var();
+   }
+}
+ Believe it or not, this code does compile. Java is case sensitive, so Var doesn't introduce any conflicts as a class name. Naming a local variable var is legal. Please don't write code that looks like this at your job! But understanding why it works will help get you ready for any tricky exam questions the exam creators could throw at you.
 
+ EL codigo anterior funciona. Java es "case sensitive" y no se introduce ningun conflifco con el codigo anterior. Nombre variavle var es legal tambien.
 
-	
-
+ 
