@@ -10,8 +10,8 @@ public class Mcd {
     }
 
     public static void main(String[] args) {
-        int a = 48;
-        int b = 18;
+        int a = 7;
+        int b = 11;
         int mcd = calcularMCD(a, b);
         System.out.println("El MCD de " + a + " y " + b + " es: " + mcd);
     }
