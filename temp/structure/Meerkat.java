@@ -19,4 +19,12 @@ public class Meerkat{
     public void setHeight(double height) {
         this.height = height;
     }
+
+    public static void main(String[] args) {
+        Meerkat mk = new Meerkat();
+        mk.setWeight(0.7);
+        mk.setHeight(30);
+        mk.getWeight();
+        mk.getHeight();
+    }
 }
