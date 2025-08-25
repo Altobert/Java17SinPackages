@@ -792,7 +792,7 @@ Algunas consideraciones:
 }
  In this example, a and b are method parameters. These are not local variables. Be on the lookout for var used with constructors, method parameters, or instance variables. Using var in one of these places is a good exam trick to see if you are paying attention. Remember that var is only used for local variable type inference!
 
- EL keyword var solo se puede usar como variable local dentro de un metodo,
+ EL keyword var SOLO se puede usar como variable local dentro de un metodo,
  y no como parametro. El compilador lo rechaza.
 
  package var;
