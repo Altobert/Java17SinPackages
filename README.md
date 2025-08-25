@@ -371,7 +371,8 @@ Reglas que sebe tener un archivo java
 
     Este comando compila y los .class los guarda en otro directorio, llamado classes.
     Lo anterior se hace pasandole el comando -d a javac. Es case sensitive, por lo que no reconocera el parametro D
-    javac -d classes packagea/*.java packageb/*.java packagec/*.java
+
+    [[********   javac -d classes packagea/*.java packageb/*.java packagec/*.java *****************]]
 
     Para ejecutar el programa se realiza de la siguiente forma :
     	java -cp classes packageb.ClassB
