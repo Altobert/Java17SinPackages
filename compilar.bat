@@ -8,8 +8,7 @@ rem Compilando
 javac -d classes packagea/*.java packageb/*.java packagec/*.java algoritmos/*.java
 
 rem Ejecutando
-java -cp classes algoritmos.Mcd 
-java -cp classes orderinit.Egg
+java -cp classes algoritmos.Mcd 7 11
 java -cp classes structure.Meerkat
 
 endlocal
