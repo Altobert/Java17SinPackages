@@ -9,5 +9,6 @@ javac -d classes packagea/*.java packageb/*.java packagec/*.java algoritmos/*.ja
 
 rem Ejecutando
 java -cp classes algoritmos.Mcd
+java -cp classes orderinit.Egg
 
 endlocal
