@@ -23,7 +23,6 @@ public class Zoo {
     public void whatTypeAmi(){
       var name ="Alberto";
       var size = 7;
-
     }
 
 }
