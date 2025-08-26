@@ -1,0 +1,10 @@
+./packageb/ClassB.java
+./packagec/ClassC.java
+./swanexample/Swan.java
+./orderinit/Egg.java
+./algoritmos/Mcd.java
+./varsample/Zoo.java
+./varsample/VarKeyboard.java
+./teststring/TestString.java
+./packagea/ClassA.java
+./structure/Meerkat.java
