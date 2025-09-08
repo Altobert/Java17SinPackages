@@ -5,7 +5,7 @@ rem Compila todos los archivos .java en el directorio temp
 cd temp
 
 rem Compilando
-javac -d classes packagea/*.java packageb/*.java packagec/*.java algoritmos/*.java
+javac -d classes packagea/*.java packageb/*.java packagec/*.java algoritmos/*.java structure/*.java swanexample/*.java teststring/*.java varsample/*.java
 
 rem Ejecutando
 java -cp classes algoritmos.Mcd 7 11
