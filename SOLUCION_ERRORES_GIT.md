@@ -182,5 +182,5 @@ git log --oneline -5  # Ver últimos 5 commits
 
 ---
 
-*Documentación creada el: $(date)*
+*Documentación creada el: alberto san martin mas IA cursor :) $(date)*
 *Proyecto: Java17SinPackages*
