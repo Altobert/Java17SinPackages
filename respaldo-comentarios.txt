@@ -806,8 +806,62 @@ public class Var {
       Var var = new Var();
    }
 }
- Believe it or not, this code does compile. Java is case sensitive, so Var doesn't introduce any conflicts as a class name. Naming a local variable var is legal. Please don't write code that looks like this at your job! But understanding why it works will help get you ready for any tricky exam questions the exam creators could throw at you.
 
- EL codigo anterior funciona. Java es "case sensitive" y no se introduce ningun conflifco con el codigo anterior. Nombre variavle var es legal tambien.
+ Believe it or not, this code does compile. 
+ 	Java is case sensitive, 
+	so Var doesn't introduce any conflicts as a class name. 
+	Naming a local variable var is legal. 
+	Please don't write code that looks like this at your job! 
+	But understanding why it works will help get you ready for any tricky exam questions the exam creators could throw at you.
+
+
+ 07-11-2025
+ 
+ EL codigo anterior funciona. Java es "case sensitive" y Var no introduce ingun conflicto como nombre de clase.
+  var es un nombre local de variable, legal
+  Por favor, no escriba codigo que luzca asi en su trabajo., pero entienda por que funciona, y este listo para las trampas del examen
+  y que los creadores pudiesen lanzar.
+
+
+Declarando variables:
+Ud. ya ha visto algunas variables. Una variable es una pieza de memoria que almacena data.
+Cuando UD. declara una variable Ud necesita tipo de estado con el nombre dado.
+Al dar el valor a una variable, UD se encuentra inicializando una variable.
+Para inicializar una variable solo escriba el nombre de la variable seguida por el signo =
+seguido por el valor deseado. El siguiente ejemplo muestra como declarar e inicializar una variable en una linea
+String zooName="The best zoo";
+
+En las siguientes secciones miraremos como defininir de forma correcta variables en una o multiples lineas.
+
+Identificando Identificadores
+	Quizas no le sorprenda que java precisa reglas para sus identificadores. Un identificador es el nombre 
+	de una variable, metodo, clase interface o package.
+	Cuatro reglas para identificadores legales:
+
+	identificadores deben comenzar con una letra., simbolo de dinero o a_symbolo.
+	Los simbolos de dinero incluyen dollar  ($), yuan (¥), euro (€), y sigue ..
+
+	identificadores pueden incluir numeros pero no comenzar con ellos.
+
+	un unico guin bajo no se encuentra permitido como un identificador.
+
+	No puede usar el minsmo nombre que ua palabra reservada de java. Una palabra reservada 
+	en java es una palabra especial que java mantiene en un lado y que no tengo permitido 
+	utilizar.
+	Recuerde que java es case sensitive entonces puedo usar versiones de estas palabras reservadas que solo difieran en eso. Por favor, ni lo piense.
+	FOTO PALABRAS RESERVADAS
+
+	La palabras reservadas const and goto no se usan actualmente en java. Estas son reservadas para 
+	personas que vienen de otros lenguajes no los uses por accidente 
+
+
+
+
+
+
+
+
+
+ 
 
  
