@@ -852,7 +852,27 @@ Identificando Identificadores
 	FOTO PALABRAS RESERVADAS
 
 	La palabras reservadas const and goto no se usan actualmente en java. Estas son reservadas para 
-	personas que vienen de otros lenguajes no los uses por accidente 
+	personas que vienen de otros lenguajes no los uses. en teoria, solo
+	cuando Java quiera usarlos un dia.
+
+	Existen otros nombres que no se pueden usar. Por ejemplo, true, false, and null
+	son valores literales, entonces no pueden ser nombres de variables.
+	Adicionalmente existen palabras de contexto como "module" que se veran
+	posteriormente en el capitulo 12. Preparate para ser testeado en esas reglas.
+
+	Los siguientes ejemplos son legales:
+	long okidentifier;
+	float $OK2Identifier;
+	boolean _alsoOK1d3ntifi3r;
+	char __SStillOkbutKnotsonice$;
+ 	
+	These examples are not legal: int 3DPointClass;    // identifiers cannot begin with a number
+
+	byte hollywood@vine; // @ is not a letter, digit, $ or _
+	String *$coffee;     // * is not a letter, digit, $ or _
+	double public;       // public is a reserved word
+	short _;             // a single underscore is not allowed
+
 
 
 
