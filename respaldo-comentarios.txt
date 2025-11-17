@@ -873,4 +873,8 @@ Identificando Identificadores
 	double public;       // public is a reserved word
 	short _;             // a single underscore is not allowed
 
-	saludos cordiales
+	Reglas de escritura de codigo:
+	Camel case, metodos (toUpper()),
+	 						nombres de variables,
+							Clases (ArrayList)
+	Snack case,
