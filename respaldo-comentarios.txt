@@ -873,6 +873,9 @@ Identificando Identificadores
 	double public;       // public is a reserved word
 	short _;             // a single underscore is not allowed
 
+	Camel case amd Snake Case
+	222222222222
+
 
 
 
