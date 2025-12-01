@@ -85,7 +85,7 @@ Capitulos del libro (15)
 	* Cap 13
 		concurrencia y administracion segura de hilos
 	* Cap 14
-		IO administracion de archivos.		
+		IO administracion de archivos.
 	* Cap 15
 		Simple. JDBC
 
@@ -725,7 +725,7 @@ Algunas consideraciones:
 			public void whatTypeAmi(){
 				var name="Hello";
 				var size = 7;
-			}		
+			}
 
 	  }
 
@@ -807,16 +807,16 @@ public class Var {
    }
 }
 
- Believe it or not, this code does compile. 
- 	Java is case sensitive, 
-	so Var doesn't introduce any conflicts as a class name. 
-	Naming a local variable var is legal. 
-	Please don't write code that looks like this at your job! 
+ Believe it or not, this code does compile.
+ 	Java is case sensitive,
+	so Var doesn't introduce any conflicts as a class name.
+	Naming a local variable var is legal.
+	Please don't write code that looks like this at your job!
 	But understanding why it works will help get you ready for any tricky exam questions the exam creators could throw at you.
 
 
  07-11-2025
- 
+
  EL codigo anterior funciona. Java es "case sensitive" y Var no introduce ingun conflicto como nombre de clase.
   var es un nombre local de variable, legal
   Por favor, no escriba codigo que luzca asi en su trabajo., pero entienda por que funciona, y este listo para las trampas del examen
@@ -834,7 +834,7 @@ String zooName="The best zoo";
 En las siguientes secciones miraremos como defininir de forma correcta variables en una o multiples lineas.
 
 Identificando Identificadores
-	Quizas no le sorprenda que java precisa reglas para sus identificadores. Un identificador es el nombre 
+	Quizas no le sorprenda que java precisa reglas para sus identificadores. Un identificador es el nombre
 	de una variable, metodo, clase interface o package.
 	Cuatro reglas para identificadores legales:
 
@@ -845,13 +845,13 @@ Identificando Identificadores
 
 	un unico guin bajo no se encuentra permitido como un identificador.
 
-	No puede usar el minsmo nombre que ua palabra reservada de java. Una palabra reservada 
-	en java es una palabra especial que java mantiene en un lado y que no tengo permitido 
+	No puede usar el minsmo nombre que ua palabra reservada de java. Una palabra reservada
+	en java es una palabra especial que java mantiene en un lado y que no tengo permitido
 	utilizar.
 	Recuerde que java es case sensitive entonces puedo usar versiones de estas palabras reservadas que solo difieran en eso. Por favor, ni lo piense.
 	FOTO PALABRAS RESERVADAS
 
-	La palabras reservadas const and goto no se usan actualmente en java. Estas son reservadas para 
+	La palabras reservadas const and goto no se usan actualmente en java. Estas son reservadas para
 	personas que vienen de otros lenguajes no los uses. en teoria, solo
 	cuando Java quiera usarlos un dia.
 
@@ -865,7 +865,7 @@ Identificando Identificadores
 	float $OK2Identifier;
 	boolean _alsoOK1d3ntifi3r;
 	char __SStillOkbutKnotsonice$;
- 	
+
 	These examples are not legal: int 3DPointClass;    // identifiers cannot begin with a number
 
 	byte hollywood@vine; // @ is not a letter, digit, $ or _
@@ -873,6 +873,7 @@ Identificando Identificadores
 	double public;       // public is a reserved word
 	short _;             // a single underscore is not allowed
 
+<<<<<<< HEAD
 	Camel case amd Snake Case
 	222222222222
 
@@ -888,3 +889,10 @@ Identificando Identificadores
  
 
  
+=======
+	Reglas de escritura de codigo:
+	Camel case, metodos (toUpper()),
+	 						nombres de variables,
+							Clases (ArrayList)
+	Snack case,
+>>>>>>> 5f701176411b9b3223504d7eee0556e128d582a2
