@@ -873,26 +873,18 @@ Identificando Identificadores
 	double public;       // public is a reserved word
 	short _;             // a single underscore is not allowed
 
-<<<<<<< HEAD
-	Camel case amd Snake Case
-	222222222222
-
-
-
-
-
-
-
-
-
-
- 
-
- 
-=======
 	Reglas de escritura de codigo:
 	Camel case, metodos (toUpper()),
 	 						nombres de variables,
 							Clases (ArrayList)
-	Snack case,
->>>>>>> 5f701176411b9b3223504d7eee0556e128d582a2
+
+	Camel case and Snack case
+	-------------------------
+	A pesar que se pueden hacer cosas locas con los identificadores de nombre, UD no las haga. Java tiene convenciones
+	para hacer el codigo leible y entendible.
+	Java utiliza el camel case, para los metodos, un nombre de metodo podria se asi: toUpper(), para una clase, la primera letra 
+	es capitalizada como Mamofero o PErsona o AUtomovil. Clases e interfaces tambien llevan camel case style, como : ArrayList
+
+	Otro estylo snake case: Utiliza un guion bajo para separar palabras Java utiliza snake case para CONSTANTES o valores enum
+	como NUMBER_FLAGS. Recomendamos seguir estas convenciones en los trabajos, pero el examen no sigue las convenciones para
+	crear trampas en los identificadores de nombres.
