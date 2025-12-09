@@ -5,7 +5,7 @@ rem Compila todos los archivos .java en el directorio temp
 cd temp
 
 rem Compilando
-javac -d classes packagea/*.java packageb/*.java packagec/*.java algoritmos/*.java structure/*.java swanexample/*.java teststring/*.java varsample/*.java
+javac -d classes packagea/*.java packageb/*.java packagec/*.java algoritmos/*.java structure/*.java swanexample/*.java teststring/*.java varsample/*.java multiplevariables/*.java
 
 rem Ejecutando
 java -cp classes packagea.ClassA
@@ -18,5 +18,6 @@ java -cp classes varsample.Zoo 10 10
 ::java -cp classes orderinit.Egg
 java -cp classes algoritmos.Mcd 10 10
 java -cp classes structure.Meerkat
+java -cp classes multiplevariables.Multiplevar
 
 endlocal
