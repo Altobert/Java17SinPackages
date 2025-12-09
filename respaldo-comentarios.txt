@@ -883,8 +883,18 @@ Identificando Identificadores
 	A pesar que se pueden hacer cosas locas con los identificadores de nombre, UD no las haga. Java tiene convenciones
 	para hacer el codigo leible y entendible.
 	Java utiliza el camel case, para los metodos, un nombre de metodo podria se asi: toUpper(), para una clase, la primera letra 
-	es capitalizada como Mamofero o PErsona o AUtomovil. Clases e interfaces tambien llevan camel case style, como : ArrayList
+	es capitalizada como Mamofero o Persona o Automovil. Clases e interfaces tambien llevan camel case style, como : ArrayList
 
 	Otro estylo snake case: Utiliza un guion bajo para separar palabras Java utiliza snake case para CONSTANTES o valores enum
 	como NUMBER_FLAGS. Recomendamos seguir estas convenciones en los trabajos, pero el examen no sigue las convenciones para
 	crear trampas en los identificadores de nombres.
+
+	REPASO:{
+		Clase: Es un bloque basico de construccion en java
+		Existen otros bloques de construccion como: interfaces, records, and enums
+
+		PAra usar las clases debo crear objetos.
+		Un objeto es una instancia de una clase en tiempo de ejecucion.
+		A menudo se hace referencia a un objeto como una instancia, ya que representa una unica representacion de una clase.
+	}
+	
