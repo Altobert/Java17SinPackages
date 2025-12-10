@@ -937,6 +937,12 @@ Identificando Identificadores
 	//si en la misma sentencia le agrego el mismo tipo, no es valido, 
 	//no se debe repetir el tipo.
 
+	boolean b1, b2;
+	String s1="1", s2;
+	double1, double2;// no valido, se repite el tipo en la misma sentencia.
+	int i1;inti2; //valido, es como si fueran dos sentencias independientes.
+	int i3;i4; //no valido, i4 carece de tipo de dato.
+
 
 
 
