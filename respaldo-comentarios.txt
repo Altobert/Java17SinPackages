@@ -941,7 +941,9 @@ Identificando Identificadores
 	String s1="1", s2;
 	double1, double2;// no valido, se repite el tipo en la misma sentencia.
 	int i1;inti2; //valido, es como si fueran dos sentencias independientes.
-	int i3;i4; //no valido, i4 carece de tipo de dato.
+	int i3;i4; //no valido, i4 carece de tipo de dato. Esto imaginalo que sea en dos lineas separadas.
+
+
 
 
 
