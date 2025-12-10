@@ -897,4 +897,23 @@ Identificando Identificadores
 		Un objeto es una instancia de una clase en tiempo de ejecucion.
 		A menudo se hace referencia a un objeto como una instancia, ya que representa una unica representacion de una clase.
 	}
+
+	Declarando multiple Variables:
+	Se pueden declarar multiples variables en la misma sentencia. Siempre que sean del mismo tipo se puede declarar valores
+	cuan largo sea, ejemplo:
+
+	//traduccion: valla de arena
+	void sandFence(){
+		//valores permanecen declarados, pero no utilizados.
+		String s1 , s2;
+
+		//valores inicializados
+		String s3="null", s4 = "capicua"
+
+	}
 	
+	Importante:
+	LITERAL en programacion, Es el valor asignado auna variable, valor fijo.
+	Importante:
+
+
