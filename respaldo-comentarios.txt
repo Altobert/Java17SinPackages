@@ -931,6 +931,9 @@ Identificando Identificadores
 	Si comparten el mismo tipo, se pueden declarar en la misma sentencia. 
 	int i1, i2, i3=0;
 
+	Legal, Valid, and compile, es sinonimo en el examen Java.
+
+
 
 
 
