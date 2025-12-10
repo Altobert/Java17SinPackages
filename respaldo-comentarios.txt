@@ -943,6 +943,46 @@ Identificando Identificadores
 	int i1;inti2; //valido, es como si fueran dos sentencias independientes.
 	int i3;i4; //no valido, i4 carece de tipo de dato. Esto imaginalo que sea en dos lineas separadas.
 
+	Antes que Ud use una variable, necesita un valor. Algunos tipos de variable, tienen un valor 
+	por defecto o de form automatica y otros requieresn que el programador lo especifique.
+
+	Por eso veremos los diferentes tipos de variables:
+	default, local, instance, and class variable.
+
+	Variables locales, 
+		Se definen dentro de un constructor, metodo o bloque inicializador. Primero veremos
+		las variables locales. 
+		
+		final local variables:
+			final variables equivalen a constantes en otros lenguajes y se aplican a variables
+			locales.
+		
+		Ej:
+		final int y = 10;
+		int x =20;
+		y = x + 10; // esto es un error de compilacion por que una variable final no es posible de modificar.
+
+	
+		Una variable local final tambien se puede aplicar a referencias de variables locales.
+
+		Otro ejemplo mas:
+
+		final int [] favoriteNumers =new int [10];
+		favoriteNumers[0]=10;
+		favoriteNumers[1]=20;
+		favoriteNumers = null; // NO ES VALIDO O NO COMPILA
+
+		Es posible cambiar el contenido del arreglo, pero no es valor de la referencia.
+
+		
+
+
+
+
+		
+
+
+
 
 
 
