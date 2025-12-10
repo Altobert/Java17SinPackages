@@ -917,3 +917,17 @@ Identificando Identificadores
 	Importante:
 
 
+	void paintFence(){
+		int i1, i2, i3=0;
+	}
+	//En este ejemplo solo tenemos 1 variable inicializada y dos declaradassin inicializar.
+	//Cada snipet separado por coma es una pequeña declaracion de si misma. Aunque se encuentra
+	//declarada en la misma linea, no tiene nada que hacer con i1 y i2.
+    // no se puede usar ni i1 tampoco i1 al no estar inicializadas.
+
+	
+
+
+
+
+
