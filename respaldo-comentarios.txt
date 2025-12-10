@@ -933,6 +933,10 @@ Identificando Identificadores
 
 	Legal, Valid, and compile, es sinonimo en el examen Java.
 
+	double1, double2; // esto no es valido, por que no se debe repetir el tipo.
+	//si en la misma sentencia le agrego el mismo tipo, no es valido, 
+	//no se debe repetir el tipo.
+
 
 
 
