@@ -925,7 +925,15 @@ Identificando Identificadores
 	//declarada en la misma linea, no tiene nada que hacer con i1 y i2.
     // no se puede usar ni i1 tampoco i1 al no estar inicializadas.
 
-	
+	otra forma de engañarme es asi:
+	int num, String value;// no es valido, declara en la misma sentencia variables de diferentes tipos.
+
+	Si comparten el mismo tipo, se pueden declarar en la misma sentencia. 
+	int i1, i2, i3=0;
+
+
+
+
 
 
 
