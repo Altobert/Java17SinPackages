@@ -974,7 +974,10 @@ Identificando Identificadores
 
 		Es posible cambiar el contenido del arreglo, pero no es valor de la referencia.
 
+		No inicializados Variables locales:
 		
+
+
 
 
 
