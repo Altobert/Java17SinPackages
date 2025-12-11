@@ -1034,10 +1034,13 @@ Identificando Identificadores
 
 		public class Anwser{
 
+			// aca se asume que la variable ha sido inicializada.
 			public void findAnswer(boolean check){}
 
 			//metodo the caller;
 			public void checkAnswer(){
+
+				//aca debemos ser responsables en inicializar value.
 				boolean value;
 				findAndswer(value);//NOT VALID OR NOT COMPILE
 			}
