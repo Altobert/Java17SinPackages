@@ -1065,7 +1065,22 @@ Identificando Identificadores
 		(Por que son distintas instancias)
 
 
+		De otra forma, Una variable de clase, se encuentra definida al nivel de una clase y compartida
+		a lo largo de todas las instancias de la clase Persona.
+		Tambien puede ser publicamente accedida desde fuera de la clase y no requerir una instancia para
+		ser usada.
+
+		En nuestro dejemplo de instancia de la clase persona, la variable de clase compartida puede ser 
+		usada para representar la lista de personas en el zoologico hoy. Ud puede decir que es una variable
+		de clase por que tiene la palabra clave static antes de ella.
+
+		static List<Person> listPeopleZooToday;
+
 		
+
+
+
+
 
 
 
