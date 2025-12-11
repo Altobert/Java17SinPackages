@@ -1023,7 +1023,33 @@ Identificando Identificadores
 
 		Aca no es valido por que existe una posibilidad que al pasar por el else, la variable
 		onlyOneBranch no sea inicializada. y Fuera de los brackets, sea utilizada.
-		Al compilador le importa que usemos variables no inicializadas. 
+		Al compilador le importa que usemos variables no inicializadas. NO LE IMPORTA
+		LO QUE NUNCA USAMOS.
+
+		
+		********************[Pasando Constructores y metodos parametros]*************************
+
+		LAs variables pasadas a constructor a un metodo son llamadas variables metodos o 
+		variables constructores. Estas variables son iguales que las variables locales
+
+		public class Anwser{
+
+			public void findAnswer(boolean check){}
+
+			//metodo the caller;
+			public void checkAnswer(){
+				boolean value;
+				findAndswer(value);//NOT VALID OR NOT COMPILE
+			}
+
+		}
+
+		En el ejemplo, estamos pasando un valor no inicializado, por lo tanto
+		tendremos un error de compilacion.
+		
+
+
+
 
 
 
