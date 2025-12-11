@@ -1023,6 +1023,7 @@ Identificando Identificadores
 
 		Aca no es valido por que existe una posibilidad que al pasar por el else, la variable
 		onlyOneBranch no sea inicializada. y Fuera de los brackets, sea utilizada.
+		Al compilador le importa que usemos variables no inicializadas. 
 
 
 
