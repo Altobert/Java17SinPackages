@@ -972,10 +972,60 @@ Identificando Identificadores
 		favoriteNumers[1]=20;
 		favoriteNumers = null; // NO ES VALIDO O NO COMPILA
 
-		Es posible cambiar el contenido del arreglo, pero no es valor de la referencia.
+		Es posible cambiar el contenido del arreglo, pero no es valor de la referencia.l
 
 		No inicializados Variables locales:
+		Variables locales no tienen valor por defecto y deben ser inicializadas antes
+		de ser usadas. Ademas el compilador reportara un error si uso la variable sin antes de 
+		ser inicializada.
+
+		public int notValid(){
+			int y = 10;
+			int x;
+			int reply = x+y; // NOT VALID or DOES NOT COMPILE
+			return reply;
+		}
+
+		La variable y fue inicializada, pero x no se inicializo 
+		antes de ser usada, por esto, el compilador genero un error.
 		
+		El compilador es lo suficientemente listo como para reconocer 
+		variables que han sido inicializadas despues de su declaracion
+		pero antes ellas son usadas.
+
+		public int valid(){
+			int y=10;
+			int x;//declarada aca
+			x=20;//inicializada aca
+			int z; declarada no inicializada, pero no se utiliza.
+			int reply = x+y;
+			return reply;
+
+		}
+
+
+		tambien el compilador es lo suficientemente listo como para reconocer situaciones
+		mas complejas. EL siguiente ejemplo tiene dos ramas de codigo.
+
+		public void findAndswer(){
+			int answer;
+			int otherAnswer;
+			int onlyOneBranch;
+			if(check){
+				onlyOneBranch=1;
+				answer=1;
+			}else{
+				answer=2;
+			}
+			System.out.println(answer);
+			System.out.println(onlyOneBranch);//DOES NOT COMPILE // No compila o no es valido.
+		}
+
+		Aca no es valido por que existe una posibilidad que al pasar por el else, la variable
+		onlyOneBranch no sea inicializada. y Fuera de los brackets, sea utilizada.
+
+
+
 
 
 
