@@ -1076,7 +1076,12 @@ Identificando Identificadores
 
 		static List<Person> listPeopleZooToday;
 
+		Mas adelante, en el capitulo 5 aprenderemos esto. Ahora solo nos basta saber que es una variable
+		de clase si usa la palabra clave static en su declaracion.
+
 		
+
+
 
 
 
