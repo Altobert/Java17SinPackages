@@ -1051,6 +1051,22 @@ Identificando Identificadores
 		tendremos un error de compilacion.
 		
 
+		********************[Definiendo instancias y variables de clase]*************************
+
+		Variables que no son locales son llamadas variables de instancia o variables de clase.
+		Una variable de instancia tambien llamada campo, es un valor definido dentro de una 
+		especifica instancia de un objeto.
+
+		
+		Digamos que tenemos una instancia de la clase Persona, con una variable de 
+		instancia name del tipo String. Cada instancia de clase tendra su propio 
+		valor por name como Elyshia o Sarah. Dos instancias pueden tener el mismmo
+		valor para el nombre, pero cambiando el valor de uno, no modifica el valor del otro.
+		(Por que son distintas instancias)
+
+
+		
+
 
 
 
