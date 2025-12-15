@@ -1079,7 +1079,11 @@ Identificando Identificadores
 		Mas adelante, en el capitulo 5 aprenderemos esto. Ahora solo nos basta saber que es una variable
 		de clase si usa la palabra clave static en su declaracion.
 
-		
+		Variables de instancia o clase, no requieren su inicializacion. Ellas toman un valor por defecto.
+		EL compilador no sabe que valor usan. SImplemente le asigna el valor NULL para un objeto y cero
+		para un tipo numerico y falso para un booleano. No necesitas conocer el valor por defecto de char, 
+		pero si eres curioso, es '\u0000' (NUL).
+
 
 
 
