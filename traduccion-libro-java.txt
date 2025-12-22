@@ -751,7 +751,7 @@ Algunas consideraciones:
 		var silly
 		=1;
 	}
-	Es correcto, pero la inicializacion de silly debe ser en la misma línea.
+	Es correcto, pero la inicializacion de silly debe ser en la misma línea o sentencia.
 
 	:::::::::::Mas ejemplos con var::::::::::::
 	public boolean doesThisCompile(boolean check){
@@ -765,18 +765,62 @@ Algunas consideraciones:
 		}
 		System.out.println(answer);
 	}
-
-	EL codigo anterior no es valido por que desde question y answer, no fue inicializado en la misma sentencia
+	// este codigo no compila por que debe estar inicializado en la misma sentencia y no en la linea siguiente.
+	// el compilador no sabe que hacer por que no esta asignado el valor en la linea de la declaracion.
+	EL codigo anterior no es valido desde question y answer por que no fue inicializado en la misma sentencia
 	de declaracion. Ahora sabemos que la inicializacion debe formar parte de la declaracion, a hablar de var.
 
 	puede UD imaginar por que estas dos sentencias no compilan?
+	Por que 
+
+	// otro codigo de prueba
+	public void twoTypes(){
+		int a, var b=5; // does not valid
+		var n = null; // does not valid
+	}
+	no compila por que la primera linea no tiene le mismo tipo. Funcionaria si  b fuese int
+	y no esta permitido a los tipo inferencia recibir valores de objetos.
+
+	public int addition(var a , var b){ // does not valid
+		return a + b;
+	}
+	Lo anterior no es valido por que el tipo inferencia es usado de forma local, en los metodos,
+	y no en method parameters.
+
+	Se debe tener cuidado con el tipo inferencia cuando es usado en constructores, method parameters,
+	o variables de instancia. Usar variables de instancia en estos lugares es un buen intento 
+	que realiza el examen para engañarme.
+
+	package var;
+	public class Var{
+		public void var(){
+			var var = "var";
+		}
+		public void Var(){
+			Var var = new Var();
+		}
+	}
+
+	var puede ser utilizado como identificador por que no es palabra reservada
+	var es considerado un "reserved type name" y quiere decir que no puede ser usado para 
+	definir un type, como class, interface or enum.
+
+	var en el mundo Real:
+	Se usa solo para los autores de examenes y asi engañar a los participantes. Por favor no utilice var 
+	en su trabajo pero esta bien que entienda por que puede ser de ayuda en los examenes.
+
+	A vesves puede usar var cuando las sentencias son demasiado largas.
+	Ej.
+	PileOfPapersToFileInFilingCabinet pileOfPapersToFile= new PileOfPapersToFileInFilingCabinet();
+	var pileOfPapersToFile = new new PileOfPapersToFileInFilingCabinet();
+
+	If you are ever unsure whether it is appropriate to use var, 
+	we recommend “Local Variable Type Inference: Style Guidelines,” 
+	which is available at the following location. https://openjdk.java.net/projects/amber/LVTIstyle.html
+
+	
 
 
-
-
-
-	TL13
-	TL5 antes del 2013.
 
 
 
