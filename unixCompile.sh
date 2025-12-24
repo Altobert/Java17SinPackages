@@ -15,4 +15,4 @@ if [ -s sources.txt ]; then
 else
     echo "No se encontraron archivos .java en temp/"
 fi
-rm -f sources.txt
+#rm -f sources.txt
