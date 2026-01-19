@@ -841,6 +841,20 @@ Algunas consideraciones:
 	var s = "Hola"; // aquí el compilador infiere que s es String
     s = null;       // válido, porque String es un tipo de referencia
 
+	method parameters.
+	public void sumar(int a, int b)
+	
+	parameter local
+	public void sumar(){int a, int b;}
+
+	variable de instancia
+	el momento en que se ejecuta el objeto de la clase
+	cada objeto tiene su variable de instancia. 
+
+	variable de clase
+	tiene el atributo static
+	
+
 	19-01-2026
 
 	
