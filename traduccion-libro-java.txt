@@ -836,7 +836,14 @@ Algunas consideraciones:
 	La unica opcion que puede ser es null. EL diseñador de 
 	java encontro mejor no permtir var de null.
 
+	// esto si es permitio:
+
+	var s = "Hola"; // aquí el compilador infiere que s es String
+    s = null;       // válido, porque String es un tipo de referencia
+
 	19-01-2026
+
+	
 
 
 	
