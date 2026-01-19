@@ -800,7 +800,7 @@ Algunas consideraciones:
 			Var var = new Var();
 		}
 	}
-	//crealo o no este codigo compila.
+	//crealo o no este codigo compila. No lo haga en su trabajo, pero entienda por que no funciona.
 
 	var puede ser utilizado como identificador por que no es palabra reservada
 	var es considerado un "reserved type name" y quiere decir que no puede ser usado para 
