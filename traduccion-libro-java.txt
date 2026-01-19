@@ -835,11 +835,25 @@ Algunas consideraciones:
 	inferir el tipo null. Puede ser cualquier referencia.
 	La unica opcion que puede ser es null. EL diseñador de 
 	java encontro mejor no permtir var de null.
+	No se puede inferir un null cuando no se sabe el tipo.
 
 	// esto si es permitio:
 
 	var s = "Hola"; // aquí el compilador infiere que s es String
     s = null;       // válido, porque String es un tipo de referencia
+
+	public class VarNullExample {
+    public static void main(String[] args) {
+        // var x = null; // ERROR: no se puede inferir tipo
+
+        var texto = "Copilot"; // tipo inferido: String
+        texto = null;          // válido, porque String es referencia
+
+        var numero = 10;       // tipo inferido: int
+        // numero = null;      // ERROR: int no admite null
+    }
+}
+
 
 	method parameters.
 	public void sumar(int a, int b)
