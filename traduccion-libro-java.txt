@@ -800,7 +800,8 @@ Algunas consideraciones:
 			Var var = new Var();
 		}
 	}
-	//crealo o no este codigo compila. No lo haga en su trabajo, pero entienda por que no funciona.
+	//Crealo o no este codigo compila. No lo haga en su trabajo, pero entienda por que no funciona
+	para el caso que algun examinador lance una pregunta como estas.
 
 	var puede ser utilizado como identificador por que no es palabra reservada
 	var es considerado un "reserved type name" y quiere decir que no puede ser usado para 
@@ -890,7 +891,23 @@ public int adition(var a, var b){
 	es considerado como un rerserved type name, y su sentido es que no puede ser usado 
 	para definir un tipo como Class Interface o Enum.
 
-	
+	Importante a considerar
+
+	Esto es importante que lo entienda:
+
+	PileOfPapersToFileInFilingCabinet pileOfPapersToFile = new PileOfPapersToFileInFilingCabinet();
+O
+	var pileOfPapersToFile =  new PileOfPapersToFileInFilingCabinet();
+
+	Si UD aun no se encuentra seguro donde utilizar o no el variable tipo de inferencia, 
+	puede leeer lo siguiente:
+
+	If you are ever unsure whether it is appropriate to use var, 
+	we recommend “Local Variable Type Inference: Style Guidelines,” which is available at the following location. https://openjdk.java.net/projects/amber/LVTIstyle.html
+
+
+	Maning variable scope
+	---------------------
 
 	19-01-2026
 
