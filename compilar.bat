@@ -7,13 +7,20 @@ cd temp
 rem Compilando
 echo "*********compilando*********"
 echo "Compilando archivos .java..."
-echo "Compilando paquete packagea: "+javac -d classes packagea/*.java 
-echo "Compilando paquete packageb: "+javac -d classes packageb/*.java 
-echo "Compilando paquete packagec: "+javac -d classes packagec/*.java 
-echo "Compilando paquete algoritmos, structure, swanexample: "+javac -d classes algoritmos/*.java structure/*.java swanexample/*.java
-echo "Compilando paquete teststring, varsample, multiplevariables: "+javac -d classes teststring/*.java varsample/*.java multiplevariables/*.java
-echo "Compilando paquete firstclasses, orderinit: "+javac -d classes firstclasses/*.java orderinit/*.java
-echo "Compilando paquete luliana17: "+javac -d classes luliana17/*.java
+echo "Compilando paquete packagea: "
+javac -d classes packagea/*.java 
+echo "Compilando paquete packageb: "
+javac -d classes packageb/*.java 
+echo "Compilando paquete packagec: "
+javac -d classes packagec/*.java 
+echo "Compilando paquete algoritmos, structure, swanexample: "
+javac -d classes algoritmos/*.java structure/*.java swanexample/*.java
+echo "Compilando paquete teststring, varsample, multiplevariables: "
+javac -d classes teststring/*.java varsample/*.java multiplevariables/*.java
+echo "Compilando paquete firstclasses, orderinit: "
+javac -d classes firstclasses/*.java orderinit/*.java
+echo "Compilando paquete luliana17: "
+javac -d classes luliana17/*.java
 
 rem Ejecutando
 echo "*********ejecucion*********"
