@@ -800,6 +800,7 @@ Algunas consideraciones:
 			Var var = new Var();
 		}
 	}
+	//crealo o no este codigo compila.
 
 	var puede ser utilizado como identificador por que no es palabra reservada
 	var es considerado un "reserved type name" y quiere decir que no puede ser usado para 
@@ -880,6 +881,15 @@ public int adition(var a, var b){
 	no se puede usar en contructores, method parameters, or
 	instance variables. Usar en estos lugares es un buen engaño
 	si UD. esta tomando atencion.
+
+	... lo ultimo, var no es una palabra reservada por lo que se puede usar 
+	package var;
+
+
+	var puede ser utilizado como identificador de variable ya que no es palabra reservada.
+	es considerado como un rerserved type name, y su sentido es que no puede ser usado 
+	para definir un tipo como Class Interface o Enum.
+
 	
 
 	19-01-2026
