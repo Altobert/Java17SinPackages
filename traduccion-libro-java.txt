@@ -818,6 +818,27 @@ Algunas consideraciones:
 	we recommend “Local Variable Type Inference: Style Guidelines,” 
 	which is available at the following location. https://openjdk.java.net/projects/amber/LVTIstyle.html
 
+	19-01-2026
+	Se puede imaginar por que estas dos sentencias no compilan?
+	public void twoTypes(){
+		int a, var b=3; // does not compile
+		var n = null;  // does not compile
+	}
+	primera linea compilaria si se agrega el tipo.
+	si se declara en una linea, deben compartir el mismo tipo
+
+	pero tampoco puede ser asi:
+	int a, int b; // tampoco compila.
+
+	var n = null;
+	Acá el compilador esta siendo consultado para 
+	inferir el tipo null. Puede ser cualquier referencia.
+	La unica opcion que puede ser es null. EL diseñador de 
+	java encontro mejor no permtir var de null.
+
+	19-01-2026
+
+
 	
 
 
