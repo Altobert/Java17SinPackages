@@ -21,6 +21,7 @@ echo "Compilando paquete firstclasses, orderinit: "
 javac -d classes firstclasses/*.java orderinit/*.java
 echo "Compilando paquete luliana17: "
 javac -d classes luliana17/*.java
+echo "Compilaccion finalizada."
 
 rem Ejecutando
 echo "*********Ejecucion*********"
@@ -39,5 +40,7 @@ java -cp classes firstclasses.Chick
 java -cp classes firstclasses.Chicken
 java -cp classes firstclasses.NumberPicker
 java -cp classes luliana17.Example01
+::java -cp classes varsample.Var
+echo "Ejecucion finalizada."
 
 endlocal
