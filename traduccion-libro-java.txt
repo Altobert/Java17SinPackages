@@ -854,6 +854,11 @@ Algunas consideraciones:
     }
 }
 
+// no se puede usar en este lugar el tipo de variable inferencia
+public int adition(var a, var b){	
+	return a + b;
+}
+
 
 	method parameters.
 	public void sumar(int a, int b)
@@ -867,6 +872,14 @@ Algunas consideraciones:
 
 	variable de clase
 	tiene el atributo static
+
+
+	El tipo de variable var, (tipo inferencia)
+	solo puede ser usado en variables locales.
+
+	no se puede usar en contructores, method parameters, or
+	instance variables. Usar en estos lugares es un buen engaño
+	si UD. esta tomando atencion.
 	
 
 	19-01-2026
