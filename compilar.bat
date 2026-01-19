@@ -5,7 +5,7 @@ rem Compila todos los archivos .java en el directorio temp
 cd temp
 
 rem Compilando
-echo "*********compilando*********"
+echo "*********Compilacion*********"
 echo "Compilando archivos .java..."
 echo "Compilando paquete packagea: "
 javac -d classes packagea/*.java 
@@ -23,7 +23,7 @@ echo "Compilando paquete luliana17: "
 javac -d classes luliana17/*.java
 
 rem Ejecutando
-echo "*********ejecucion*********"
+echo "*********Ejecucion*********"
 java -cp classes packagea.ClassA
 java -cp classes packageb.ClassB
 ::java -cp classes packagec.ClassC
