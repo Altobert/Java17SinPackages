@@ -905,11 +905,47 @@ O
 	If you are ever unsure whether it is appropriate to use var, 
 	we recommend “Local Variable Type Inference: Style Guidelines,” which is available at the following location. https://openjdk.java.net/projects/amber/LVTIstyle.html
 
+	19-01-2026
 
-	Maning variable scope
+20-01-2026
+	Maning variable scope	
 	---------------------
 
-	19-01-2026
+	Las variables locales son declaradas dentro de un bloque de codigo. 
+	cuantas variables se pueden ver?
+
+	public void eat(int pieceOfChease){
+		int bitesOfChiesse=1;
+	}
+
+	veo dos, method parameter and local variable.
+
+	Variables locales no pueden tener un contexto mas largo que el metodo
+	donde se encuentran. Tambien pueden tener un contexto mucho mas pequeño
+
+	public void eatIdHungry(boolean humgry){ // hungry tiene todo el contexto del metodo
+
+		if(hungry){
+			int bitesOfChesse = 1;
+
+		}// bitesOfChese se encuentra fuera de contexto desde aca
+
+		System.out.println("bitesOfChesse"); //DOES NOT COMPILE
+
+	}
+
+	la variable hungry tiene todo el contexto del metodo.
+	la variable bitesOfChesse se encuentran eun contexto pequeño, dentro del if.
+
+	{} estos simbolos indican que has entrado a un nuevo bloque de codigo y tienen 
+	un contexto propio y mas pequeño.
+
+
+
+
+
+
+	
 
 	
 
