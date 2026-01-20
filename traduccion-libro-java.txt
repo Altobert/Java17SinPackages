@@ -942,6 +942,27 @@ O
 	{} estos simbolos indican que has entrado a un nuevo bloque de codigo y tienen 
 	un contexto propio y mas pequeño.
 
+	Variables definidad en loques mas largos pueden ser dedifinos en contextos mas 
+	pequeños, pero no viceversa.
+
+
+	public void eatIdHungry(boolean humgry){ // hungry tiene todo el contexto del metodo
+
+		if(hungry){
+
+			int bitesOfChesse = 1; // esto si puede ser;
+			{
+				var teenyBit = true;
+				System.out.println(bitesOfChesse); //Yes COMPILE
+			}
+
+		}// bitesOfChese se encuentra fuera de contexto desde aca
+		System.out.println(teenyBit); //Yes COMPILE
+		
+	}
+
+	
+
 
 
 
