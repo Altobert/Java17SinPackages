@@ -961,7 +961,35 @@ O
 		
 	}
 
-	
+	Traceando el contexto
+	---------------------
+	Algunas veces el programa, en el examen, fallara en la compilacion
+	por que se cae en el contexto. Alguna variable ha sido utilizada 
+	fuera de su contexto local.
+	Hagamos un ejercicio, no te asustes si no te sientes familiar, conlas sentencias 
+	if o while loops.
+	Imaginate cual de las 5 variables locales se encuentra una o mas fuera del contexto.
+
+11: public void eatMore(boolean hungry, int amountOfFood) {
+12:    int roomInBelly = 5;
+13:    if (hungry) {
+14:       var timeToEat = true;
+15:       while (amountOfFood> 0) {
+16:          int amountEaten = 2;
+17:          roomInBelly = roomInBelly - amountEaten;
+18:          amountOfFood = amountOfFood - amountEaten;
+19:       }
+20:    }
+21:    System.out.println(amountOfFood);
+22: }
+// yo creo que no hay error y estan todas las variables locales en su contexto. Ninguna utilizada fuerade su contexto.
+
+
+
+
+
+
+
 
 
 
