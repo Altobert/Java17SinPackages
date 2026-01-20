@@ -903,6 +903,8 @@ O
 	puede leeer lo siguiente:
 
 	If you are ever unsure whether it is appropriate to use var, 
+	Si Ud aun no se encuentra seguro de como usar apropiadamente 
+	la variable tipo de inferencia.
 	we recommend “Local Variable Type Inference: Style Guidelines,” which is available at the following location. https://openjdk.java.net/projects/amber/LVTIstyle.html
 
 	19-01-2026
