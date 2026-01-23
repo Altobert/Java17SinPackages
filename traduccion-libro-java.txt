@@ -983,6 +983,17 @@ O
 21:    System.out.println(amountOfFood);
 22: }
 // yo creo que no hay error y estan todas las variables locales en su contexto. Ninguna utilizada fuerade su contexto.
+23-01-2026
+Aplicando lo enseñado, se debe comenzar desde el bloque mas interno hasta el externo asi identificar los contextos.
+Partir por el while, luego el if y luego el bloque del metodo.
+Sabiendo lo anterior, podemos identificar el scope de cada variable.
+
+hungry and amountOfFood : son method parameters, por lo tanto, estan disponibles para todo el metodo. Es decir, 
+de la linea 11 a la 22.
+23-01-2026
+
+
+
 
 
 
