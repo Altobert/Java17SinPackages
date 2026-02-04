@@ -990,6 +990,15 @@ Sabiendo lo anterior, podemos identificar el scope de cada variable.
 
 hungry and amountOfFood : son method parameters, por lo tanto, estan disponibles para todo el metodo. Es decir, 
 de la linea 11 a la 22.
+
+variable roomInBelly, Se puede usar y está declarada dentro del metodo, y abarca hasta la linea 22.
+
+variable timeToEat, Se puede dentro del contexto del if y del while
+
+:: Se puede practicar esto, los brazos de los metodos para entender 
+en que contexto se encuentra la variable. Todo libro tiene muchos 
+ejemplos asi.
+
 23-01-2026
 
 
