@@ -1018,6 +1018,51 @@ encuentre.
 9:     }
 10: }
 
+En este ejemplo, se visualizó el contexto de la variable de clase MAX_LENGTH
+la variable de instancia length
+la method variables como inches
+y la variable int newSize se puede usar solo desde la 6 a la linea 8
+
+
+Revision del contexto
+
+De que va todo esto? Revisemos las reglas del contexto.
+Local variables : Dentro del contexto desde la declaracion hasta
+el fin del contexto.
+Method parameters : EN el contexto de duracion del metodo.
+Instance variables: Dentro del contexto de la declaracion hasya que el 
+objeto es eligible por el GB
+Class Variables: Dentro del scope de declaracion hasta que el programa
+finaliza.
+
+
+Destruyendo objetos:
+Hemos jugados con nuestros objetos, ahora es tiempo de ponerlos lejos
+Suertudamente JVM se preocupa de todo eso por nosotros. Java proveea GC 
+para que automaticamente busque los objetos que no son mas necesarios.
+
+Recuerda, tu codigo no es el unico corriendo en mi programa java. 
+El codigo java existe dentro de la JVM y la cual tiene dentro de siun monton
+de procesos independientes del codifo de mi aplicacion.
+
+Uno de los mas imposrtantes de ellos es el GC.
+
+Todos los objetos java son almacenados en el HEAP DE LA memoria
+de mi prgrama. EL HEAP tambien conocido como la memoria libre y 
+representa una larga piscina o espacio de memoria en deshuso
+asignada a mi aplicacion en java.
+
+Si mi programa se mantiene instanciando objetos y dejandolos
+dentro del HEAP, eventualmente correra un out of memory
+y se caera. Oh no, suertudamente el GC resuelve este problema.
+
+Entendiendo el GC
+
+El GC se refiere a un proveso que atumaticamente libera espacio en el HEAP
+eliminando objetos que dejaron de ser usados por mi programa.
+
+Existen muchos algoritmos que usa el GC pero yo no necesito saberlos
+para el examen.
 
 04-02-2026
 
