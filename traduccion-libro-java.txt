@@ -1063,8 +1063,45 @@ eliminando objetos que dejaron de ser usados por mi programa.
 
 Existen muchos algoritmos que usa el GC pero yo no necesito saberlos
 para el examen.
+EL GC determina cuando un objeto tiene pertenecer en memoria
+considerando ei el objeto es usado o no en el programa.
+
+Si un objeto es elegido por el GC, inmediatamente es colected 
+liberado? Definitivamente no. Cuando el objeto es descartado, 
+ya no se encuentra bajo mi control, pero para el examenes yo necesito saber 
+si en cualquier momento dado, cual objeto es eligible por el GC.
+
+ENtiendelo asi. Como enviando un paquete. Puedo tomar cualquier item 
+etiquetarlo y ponerlo en la casilla de correo. Esta es la forma analoga
+en que el GC hace eligible un item. CUando el cartero viene y se llevan
+el paquete ya se encuentra fuera de mi control.
 
 04-02-2026
+
+16-02-2026
+
+Para el examen, yo solo necesito saber que en cualquier momento dado, 
+cual o cuales objetos son elegibles por el GC.
+
+Yo puedo etiquetar mi objeto y ayudar al Gc con el siguiente metodo:
+System.gc();
+
+Al igual que una oficina postal, java me puede ignorar, y no me asegura
+que me tomara en cuenta. 
+
+
+:::::::Traceando la eligibilidad:::::::::
+COmo sabe la JVM que un objeto es elegible por la GC?
+La JVM espera y monitorea cada objeto hasta que determina que el objeto
+no necesita permanecer en memoria (HEAP)
+Un objeto se mantendra en el heap hasta que no sea accesible. Un objeto no permanece
+accesible cuando estas dos situaciones ocurren
+
+	El objeto no cuenta con mas referencias apuntandolo
+	Todas las referencias del objeto se han ido fuera del contexto.
+ 
+
+16-02-2026
 
 
 
