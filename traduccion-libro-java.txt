@@ -1099,7 +1099,13 @@ accesible cuando estas dos situaciones ocurren
 
 	El objeto no cuenta con mas referencias apuntandolo
 	Todas las referencias del objeto se han ido fuera del contexto.
- 
+
+
+:::::::::::::::::OJO::::::::::::::::::
+
+-No se confundri una referencia con el objeto al cual se refiere. Ellas son dos entidades diferentes.
+La referencia es una variable que tiene un nombre y puede ser usada para acceder al contenido de 
+un objeto. Una referencia puede ser asignada a otra referencia.
 
 16-02-2026
 
