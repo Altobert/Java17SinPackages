@@ -1103,9 +1103,39 @@ accesible cuando estas dos situaciones ocurren
 
 :::::::::::::::::OJO::::::::::::::::::
 
--No se confundri una referencia con el objeto al cual se refiere. Ellas son dos entidades diferentes.
+-No se confunda una referencia con el objeto al cual se refiere. Ellas son dos entidades diferentes.
 La referencia es una variable que tiene un nombre y puede ser usada para acceder al contenido de 
-un objeto. Una referencia puede ser asignada a otra referencia.
+un objeto. Una referencia puede ser asignada a otra referencia, pasada hacia un metodo o retoernada
+desde un metodo. Todas las referencias tienen el mismo peso y no importa que tipo sea. 
+
+Ub objeto se ajusta en el heap y no tiene nombre. Consecuentemente, tu no tienes una forma 
+de acceder al objeto si no es atraves de su referencia. Los objetos vienen en diferentes formas y tamanios
+y consumen diversos tamaños de memoria. 
+
+Un objeto no puede ser asignado a otro objeto. Y un objeto no puede ser asignado a otro objeto, y 
+un objeto no puede ser pasado hacia un metodo o devuelto desde un metodo. Es el objeto que se colecciona
+desde el GC , no su referencia.
+
+Realizando o llevando a cabo  la referenia entre el objeto que apunta
+queda un largo camino de comprendiendo el garbage collector, el operador new y muchasotras 
+caras del lenguaje java Mira el siguiente codigo y mira si es posible 
+imaginar cuando un objeto se vuelve eligible para el garbage collector.
+
+1: public class Scope {
+2:    public static void main(String[] args) {
+3:       String one, two;
+4:       one = new String("a");
+5:       two = new String("b");
+6:       one = two;
+7:       String three = one;
+8:       one = null;
+9:    } }
+
+Te recomiendo que dibujes que esta pasando cuando te hagan una pregunta acercadel GC 
+en el examen. Puedes comenter un error intentando mantener muchas cosas
+en tu cabeza.
+
+
 
 16-02-2026
 
