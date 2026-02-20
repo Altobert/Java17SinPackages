@@ -1129,7 +1129,7 @@ imaginar cuando un objeto se vuelve eligible para el garbage collector.
 6:       one = two;
 7:       String three = one;
 8:       one = null;
-9:    } }
+9: }}
 
 Te recomiendo que dibujes que esta pasando cuando te hagan una pregunta acercadel GC 
 en el examen. Puedes comenter un error intentando mantener muchas cosas
