@@ -1131,13 +1131,33 @@ imaginar cuando un objeto se vuelve eligible para el garbage collector.
 8:       one = null;
 9: }}
 
-Te recomiendo que dibujes que esta pasando cuando te hagan una pregunta acercadel GC 
-en el examen. Puedes comenter un error intentando mantener muchas cosas
-en tu cabeza.
-
-
-
+Te recomiendo que dibujes que esta pasando cuando te hagan una pregunta acerca del GC 
+en el examen. Puedes comenter un error intentando mantener muchas cosas en tu cabeza.
 16-02-2026
+
+02-03-2026
+no todas las preguntas incluiran declaracion de packetes o imports.
+No te preocupes acerca de paquetes extraviados sentencias de import
+a menos que te lo pregunten. Estos son los los casos que tu no tienes que 
+revisar los imports.
+	COdigo que comienza con un nombrde de clase.
+	codigo que comienza con la declaracion de un metodo.
+	codigo que comienza con un extracto de codigo que normalmente
+		esta dentro de una clase o metodo.
+	Codigo que tiene numeros de lineas que no comienzan con 1.
+
+	UD vera codigo que no tiene un metodo. Cuando esto ocurra asuma lo 
+	necesario, fontaneria de codigo, como un main method y definicion 
+	de clase fueron escritos correctament.  UD solo esta siendo consultado
+	que la parte del codigo que esta siendo mostrado compila cuando tu lo 
+	pones rodeado de un codigo valido.
+
+	Finalmente recuerda los extra espacios blancos no son importantes
+	en la sintaxis de java. 
+	El examen podria usar montones de espacios en blanco y varying 
+	para engalañarme.
+
+02-03-2026
 
 
 
