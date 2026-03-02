@@ -1157,6 +1157,47 @@ revisar los imports.
 	El examen podria usar montones de espacios en blanco y varying 
 	para engalañarme.
 
+
+
+:::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
+
+Java comienza la ejecucion de un programa con el metodo main.
+La firma mas comun para este metodo es public static void main(String[]args)
+Los argumentos son pasados despues del nombre de la clase Los argumentos
+estan indexados y comienzan con el 0 (cero)
+
+EL codigo java se encuentra organizado dentro de carpetas llamadas 
+paquetes. PAra referencias clases de otros paquetes tu puedes usar
+la sentencia import.
+
+Un arterisco terminando la sentencia import, indica que UD quiere importar
+todas las clases en ese packete.
+No se incluyen paquetes que estan dentro de uno.
+El packete java.lang es un paquete especialque no requiere 
+ser importado.
+
+PAra algunos elementos de clase, el orden importa dentro del archivo.
+Primero va la sentencia package, luego viene la sentencia import
+y luego viene la declaracion de clase. PIC (Package Import Clase)
+Atributos y metodos pueden ir en cualquier orden dentro de la clase
+java.
+
+Los tipos primitivos construyen algunos bloques escenciales en java.
+Ellos se encuentran esamblado dentro de tipos de referencia.
+Referencias tienen metodos y se les puede asignar valores null.
+
+Literales numericos pueden estar compuestos por _ underscores
+cuan largos sean ellos, no comienzan in terminan con un literal 
+y no van siguido un . decimal.
+
+Clases wrapper son tipos de referencias y hay uno por cada tipo de datos
+primitivo.
+
+BLoques de texto permiten crear cadenas de multiples lineas usando 
+""".
+
+:::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
+
 02-03-2026
 
 
