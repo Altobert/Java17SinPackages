@@ -1176,11 +1176,11 @@ No se incluyen paquetes que estan dentro de uno.
 El packete java.lang es un paquete especialque no requiere 
 ser importado.
 
-PAra algunos elementos de clase, el orden importa dentro del archivo.
+***** Para algunos elementos de clase, el orden importa dentro del archivo.
 Primero va la sentencia package, luego viene la sentencia import
 y luego viene la declaracion de clase. PIC (Package Import Clase)
 Atributos y metodos pueden ir en cualquier orden dentro de la clase
-java.
+java.*******
 
 Los tipos primitivos construyen algunos bloques escenciales en java.
 Ellos se encuentran esamblado dentro de tipos de referencia.
@@ -1199,6 +1199,43 @@ BLoques de texto permiten crear cadenas de multiples lineas usando
 :::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
 
 02-03-2026
+
+04-03-2024
+:::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
+Declarar una variable involucra dar un estado el tipo de dato y 
+dar un nombre a la variable. Las variables que representan un atributo
+en una clase son automaticamente inicitlizadas con su correspondiente 0,
+null or false valores durante la instanciacion del objeto.
+
+Variables locales deben ser especialmente inicializadas antes que ellossean usados.
+
+Identificadores pueden contener letras numers o signos de monedas or _
+Identificadores no pueden comenzar con numeros 
+
+Declaracion de Variables locales pueden usar la palabra clave var
+en vez del tipo actual de ddato. Cuando se usa var el tipo de datoes seteado 
+en tiempo de compilacion y no cambia. 
+
+(como se asigna un valor en tiempo de ejecucion?, con la reflexion??)
+
+El scope se refiere a una porcion de codigo donde una variable puede ser 
+accesada. Existen tres tipos de variables dependiendo de su scope:
+instance variable, class variables and local variables.
+Instance variable son los atributos no staticos de mi clase.
+Class variables son los atributos estaticos dentro de mi clase.
+Local variables se encuentran definidos en un contructor, metodo, 
+o bloque inicializador.
+
+Constructores crean objetos java. Constructor es un metodo que su nombre hacematch con el nombre de la clase
+y omite el tipo de retorno.
+Cuando un objeto es instanciado, atributos y bloques de codigo son inicializados primero, entonces el constructor
+se ejecuta o corre.
+
+Finalmente el GC es el responsable de remover objetos desde memoria cuando ellos no seran usados mas.
+Un objeto se vuelve elegible para el GC cuando 
+
+:::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
+04-03-2024
 
 
 
