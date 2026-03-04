@@ -1232,9 +1232,46 @@ Cuando un objeto es instanciado, atributos y bloques de codigo son inicializados
 se ejecuta o corre.
 
 Finalmente el GC es el responsable de remover objetos desde memoria cuando ellos no seran usados mas.
-Un objeto se vuelve elegible para el GC cuando 
-
+Un objeto se vuelve elegible para el GC cuando no existen referencias a si mismo o sus referencias
+se han ido fuera del contexto. 
 :::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
+
+Escenciales del examen:
+Se capaz de escribir codigo usando main method
+	A main method, es usualmente escrito como public static void main(String[]args){}
+	argumentos se encuentran referenciados con args[0].
+	Acceder a un argumento que no fue pasado causara que el codigo lance 
+	una excepcion.
+
+Entender el efecto de usar packetes e imports.
+	PAckages contain java classes. Las clases se pueden importar por nombre 
+	de clase o un asteristo (*). El (*) no busca en subdirectorios. En el evento
+	de un conflicto, el import toma el precedente. Package e import sentencias, 
+	son opcionales, SI ellas se estan presentes, ellas se encuetran antesde la declaracion de 
+	la clase en ese orden. 
+
+Ser capaz de reconocer un constructor
+	Un constructor tienen el mismo nombre de su clase y luce como un metodo 
+	sin tipo de retosno.
+
+
+Ser capaz de identificar egal and ilegal declaration and inicializations. 
+
+Ser capaz de usar var correctamente.
+	the keyboar var es para crear variable locales (dentro de metodos.)
+	var se inicializa en la misma linea que fue detectado y mientras
+	cambia el valor no puede cambiar el tipo.
+	a var no puede ser inicializado con null sin un type, 
+	tampoco puede ser usado dentro de multiples variable declaraciones. 
+
+Ser capaz de crear bloques de texto.
+
+Ser capaz de determinar cuando una variable se encuentra dento o fuera del contexto
+
+Conocer la diferencia cuando un objeto se encuentra elegible por el GC.
+	Dibuja un diagrama para mantener claridad de los objetos creados.
+	Cuando no existe una flecha que apunta a la caja, ese es elegible por el garbage
+	collector. 
 04-03-2024
 
 
