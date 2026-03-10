@@ -1303,6 +1303,30 @@ Test
 
 05-03-2026
 
+10-03-2026
+CAPITULO 2
+	Operadores
+
+Objetivos 
+	Manejo de fecha, tiempo, texto, numericos y valores booleanos.
+SUBOBJETIVO
+	Udo de primitivos, clases envolventes (Wrapper)
+
+EN el capitulo anterior hablamos de las Variables, pero que podemos hacer con las variables una vez
+creadas?.
+Este capitulo introduce los operadores y muestra como se pueden usar y conbinar 
+variables existentes y generar nuevos valores. 
+Muestra como aplicar operadores a muchas variables primitivas incluyendo los operadores
+que se pueden utilizar sobre objetos.
+
+Entendiendo los Operadores Java
+un operador es un especial codigo que opera sobre otros operandos
+variables valores o literales y devuelven un resultado.
+EL termino operando, usado en el capitulo, se refiere al 
+valor o variable donde el operador esta siendo aplicado.
+
+10-03-2026
+
 
 
 
