@@ -1121,6 +1121,7 @@ queda un largo camino de comprendiendo el garbage collector, el operador new y m
 caras del lenguaje java Mira el siguiente codigo y mira si es posible 
 imaginar cuando un objeto se vuelve eligible para el garbage collector.
 
+```java
 1: public class Scope {
 2:    public static void main(String[] args) {
 3:       String one, two;
@@ -1130,6 +1131,7 @@ imaginar cuando un objeto se vuelve eligible para el garbage collector.
 7:       String three = one;
 8:       one = null;
 9: }}
+´´´
 
 Te recomiendo que dibujes que esta pasando cuando te hagan una pregunta acerca del GC 
 en el examen. Puedes comenter un error intentando mantener muchas cosas en tu cabeza.
