@@ -1305,13 +1305,17 @@ Test
 ----
 05-03-2026
 
-10-03-2026
-CAPITULO 2
-	Operadores
+## 10-03-2026
 
-Objetivos 
+######
+
+## CAPITULO 2
+	#### Operadores
+
+## Objetivos 
 	Manejo de fecha, tiempo, texto, numericos y valores booleanos.
-SUBOBJETIVO
+
+## SUBOBJETIVO
 	Udo de primitivos, clases envolventes (Wrapper)
 
 EN el capitulo anterior hablamos de las Variables, pero que podemos hacer con las variables una vez
@@ -1327,7 +1331,7 @@ variables valores o literales y devuelven un resultado.
 EL termino operando, usado en el capitulo, se refiere al 
 valor o variable donde el operador esta siendo aplicado.
 
-10-03-2026
+## 10-03-2026
 
 ## 12-03
 
