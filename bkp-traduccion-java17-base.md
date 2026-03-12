@@ -1335,5 +1335,23 @@ valor o variable donde el operador esta siendo aplicado.
 
 ## 12-03
 
+TIpos de Operadores
+
+Java soporta operadoes unarios, binarios y ternarios. Estos tipos de operadores pueden ser
+aplicados a uno , dos o tres operandos respectivamente.
+Para el examen:
+	Conocer el subset especifico de java operadores.
+	Como aplicarlos
+	EL orden en el cual ellos deben ser eplicados. 
+
+
+Los peradores en java no necesariamente
+se aplican de izquiera a derecha. En el ejemplo, se aplica el orden de 
+derecha a izquierda, debido al especifico operador involucrado.
+
+int cookies = 4;
+double reward = 3+2 * --cookies
+
+
 ## 12-03
 
