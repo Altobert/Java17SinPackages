@@ -1273,8 +1273,9 @@ Conocer la diferencia cuando un objeto se encuentra elegible por el GC.
 	Cuando no existe una flecha que apunta a la caja, ese es elegible por el garbage
 	collector. 
 04-03-2024
-----
-05-03-2026
+
+## Test de fin de capitulo 05-03-2026
+``````
 Test
 1-E
 2-C
@@ -1299,8 +1300,9 @@ Test
 21: D
 22:D
 23:B
-
-
+``````
+## Test de fin de capitulo 05-03-2026
+----
 05-03-2026
 
 10-03-2026
@@ -1327,7 +1329,7 @@ valor o variable donde el operador esta siendo aplicado.
 
 10-03-2026
 
-12-03
+## 12-03
 
-12-03
+## 12-03
 
