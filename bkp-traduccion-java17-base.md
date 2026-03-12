@@ -1349,8 +1349,10 @@ Los peradores en java no necesariamente
 se aplican de izquiera a derecha. En el ejemplo, se aplica el orden de 
 derecha a izquierda, debido al especifico operador involucrado.
 
+```java
 int cookies = 4;
 double reward = 3+2 * --cookies
+```
 
 
 ## 12-03
