@@ -1003,10 +1003,11 @@ Aplicando scope a Clases:
 La regla para las variables de instancia es facil y estaran viceversapor toda la vidad del objeto se 
 encuentre.
 
-23-01-2026
+## 23-01-2026
 
-04-02-2026
+## 04-02-2026
 
+```java
 1:  public class Mouse {
 2:     final static int MAX_LENGTH = 5;
 3:     int length;
@@ -1017,6 +1018,8 @@ encuentre.
 8:        }
 9:     }
 10: }
+
+´´´
 
 En este ejemplo, se visualizó el contexto de la variable de clase MAX_LENGTH
 la variable de instancia length
@@ -1200,9 +1203,9 @@ BLoques de texto permiten crear cadenas de multiples lineas usando
 
 :::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
 
-02-03-2026
+## 02-03-2026
 
-04-03-2024
+## 04-03-2024
 :::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
 Declarar una variable involucra dar un estado el tipo de dato y 
 dar un nombre a la variable. Las variables que representan un atributo
@@ -1274,7 +1277,7 @@ Conocer la diferencia cuando un objeto se encuentra elegible por el GC.
 	Dibuja un diagrama para mantener claridad de los objetos creados.
 	Cuando no existe una flecha que apunta a la caja, ese es elegible por el garbage
 	collector. 
-04-03-2024
+## 04-03-2024
 
 ## Test de fin de capitulo 05-03-2026
 ``````
