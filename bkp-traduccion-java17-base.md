@@ -1314,14 +1314,15 @@ Test
 
 ######
 
-## CAPITULO 2
-	#### Operadores
+################################ CAPITULO 2 #################################
+
+#### Operadores
 
 ## Objetivos 
 	Manejo de fecha, tiempo, texto, numericos y valores booleanos.
 
 ## SUBOBJETIVO
-	Udo de primitivos, clases envolventes (Wrapper)
+	Uso de primitivos, clases envolventes (Wrapper)
 
 EN el capitulo anterior hablamos de las Variables, pero que podemos hacer con las variables una vez
 creadas?.
@@ -1358,7 +1359,60 @@ derecha a izquierda, debido al especifico operador involucrado.
 int cookies = 4;
 double reward = 3+2 * --cookies
 ```
-
-
 ## 12-03
+
+## 15-03
+
+```java
+	var c = a + b;
+```
+En la operacion anerior se encuentra el operador + y los operandos a y b
+El resultado se asigna al var c con el signo igual.
+Por lo tanto existirian en la operacion dos operadores, el = y el +
+
+Java soporta tres sabores de operadores, unario, binario y ternario. Estos tipos de operadores
+pueden ser aplicados a uno dos o tres operandos respectivamente.
+
+EN el examen java necesito saber un subgrupo de estos operadores:
+Como aplicarlos
+y el orden en cual ellos deberia ser aplicados.
+
+Los peradores java no necesariamente se aplican de iquiera a derecha
+EL siguiente ejemplo, la segunda expresion es evaluada desde derecha a izquierda, 
+dado el especifico operador involucrado.
+
+```java
+	int cookies = 4;
+	double reward = 3+2* --cookies;
+	System.out.print("zoo animal receives:"+reward+" ponts");
+```
+
+En el ejemplo anterio se decrementa en 3 cookies, luoego se multipolica el resultado del valor por dos.
+y finalmente se suma 3. Entonces el resultado es promovido, automaticamente de 9 a 9.0 y asignado a 
+reward.
+respuesta: "Zoo animal receives 9.0 reward points"
+
+Si UD. no siguio el problema anterior, no se preocupe, al terminar este capitulo, eso deberia
+ser de segunda naturaleza o importancia.
+
+## Operador de procedencia
+Java se encuentra cerca de las reglas de las matematicas para los operadores de procedencia.
+
+```java
+	var perimeter = 2 * higth + 2 * length;
+	var perimeter = (2 * higth) + (2 * length);
+```
+en el ejemplo anterior, para el compilador java, primeramente se ejecutan las multiplicaciones
+luego se suman ambas variables para luego se agregadad al resultado. 
+El operador (=) tiene la ultima procedencia.
+
+Una regla de java, si ambos operadores de procedencia son iguales, se evalua de derecha a izquierda
+Es decir, java garantiza izquiera-derecha mas que los otroa poeradores existentes en la operacion.
+
+![alt text](images/operadores-procedencia.png) tabla operadores de procedencia.
+![alt text](images/operador-ternario.png) Segunda parte operadores ternarios.
+
+
+
+## 15-03
 
