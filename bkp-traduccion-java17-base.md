@@ -1412,7 +1412,31 @@ Es decir, java garantiza izquiera-derecha mas que los otroa poeradores existente
 ![alt text](images/operadores-procedencia.png) tabla operadores de procedencia.
 ![alt text](images/operador-ternario.png) Segunda parte operadores ternarios.
 
-
-
 ## 15-03
+
+## 21-03
+	Chapter 6
+
+	Utilizando la aproximacion de la orientacion a objetos.
+	
+	Crear Clases y Records y definir y usar atributos de instancia y estaticos y metodos, constructores, e instancia y static inicializadores.
+
+
+	Entender el contexto de las variables. Usar local variable de tipo inferencia, aplicar
+	encapsulacion, y construir objetos inmutables.
+
+	Implementar polimorfismo y diferenciar object type versus reference type. Ejecutar casteo
+	de tipos, identificar tipos de objetos usando el operador instanceof y pattern matching.
+
+	En el capitulo 1 "construyendo bloques" introdujimos la definicion de una clase java.
+	En el capitulo 5 "methods" profundizamod en los modificadores de acceso de los los metodos
+	y mostramos como construir clases mas estructuradas. 
+
+	En este capitulo nos orientaremos como estructurar la clase y la herencia esl cual es uno de
+	los mas caracteristicas mas poderosas del lenguaje java.
+
+
+## 21-03
+
+
 
