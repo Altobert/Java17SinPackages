@@ -1435,6 +1435,9 @@ Es decir, java garantiza izquiera-derecha mas que los otroa poeradores existente
 	En este capitulo nos orientaremos como estructurar la clase y la herencia esl cual es uno de
 	los mas caracteristicas mas poderosas del lenguaje java.
 
+	EL nucleo, un propio diseño de clases java es acerca la reusabilidad del codigo, incrementar las
+	funcionalidades y la estandarizacion. Por ejemplo, Crear una nueva clase extendiendo de otra clase, 
+
 
 ## 21-03
 
