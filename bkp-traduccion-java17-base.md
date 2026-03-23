@@ -1437,6 +1437,16 @@ Es decir, java garantiza izquiera-derecha mas que los otroa poeradores existente
 
 	EL nucleo, un propio diseño de clases java es acerca la reusabilidad del codigo, incrementar las
 	funcionalidades y la estandarizacion. Por ejemplo, Crear una nueva clase extendiendo de otra clase, 
+	Podrás acceder a una gran cantidad de tipos de datos primitivos, objetos y métodos heredados, lo que aumenta la reutilización del código.
+
+	Este capitulo es la culminacion de alguno de los mas importantes topicos
+	en java incluyendo, herencia, diseño de clases, construcroes, orden de inicializacion
+	sobrescritura de metodos, abstract clasese e inmutables objetos. Lea este capitulo cuidadosamente
+	y asegurese de comprender sus topicos bien.
+	Este capitulo es la base, para el capitulo 7, Detras de las claases, en donde explicaremos, nuestra discusion
+	de tipos para incluir otros top level y embedidos tipos.
+
+	
 
 
 ## 21-03
