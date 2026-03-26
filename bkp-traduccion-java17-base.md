@@ -1419,25 +1419,27 @@ Es decir, java garantiza izquiera-derecha mas que los otroa poeradores existente
 
 	Utilizando la aproximacion de la orientacion a objetos.
 	
-	Crear Clases y Records y definir y usar atributos de instancia y estaticos y metodos, constructores, e instancia y static inicializadores.
+	Objetivos: 
+		Crear Clases y Records y definir y usar atributos de instancia y estaticos y metodos, constructores, 
+		e instancia y static inicializadores.
 
+		Entender el contexto de las variables. Usar local variable de tipo inferencia, aplicar
+		encapsulacion, y construir objetos inmutables.
 
-	Entender el contexto de las variables. Usar local variable de tipo inferencia, aplicar
-	encapsulacion, y construir objetos inmutables.
-
-	Implementar polimorfismo y diferenciar object type versus reference type. Ejecutar casteo
-	de tipos, identificar tipos de objetos usando el operador instanceof y pattern matching.
+		Implementar polimorfismo y diferenciar object type versus reference type.
+		Ejecutar casteo	de tipos, identificar tipos de objetos usando el operador instanceof y pattern matching.
 
 	En el capitulo 1 "construyendo bloques" introdujimos la definicion de una clase java.
-	En el capitulo 5 "methods" profundizamod en los modificadores de acceso de los los metodos
+	En el capitulo 5 "methods" profundizamos en los modificadores de acceso de los los metodos
 	y mostramos como construir clases mas estructuradas. 
 
-	En este capitulo nos orientaremos como estructurar la clase y la herencia esl cual es uno de
-	los mas caracteristicas mas poderosas del lenguaje java.
+	En este capitulo nos orientaremos como estructurar la clase y la herencia es la cual es uno de
+	los caracteristicas mas poderosas del lenguaje java.
 
-	EL nucleo, un propio diseño de clases java es acerca la reusabilidad del codigo, incrementar las
-	funcionalidades y la estandarizacion. Por ejemplo, Crear una nueva clase extendiendo de otra clase, 
-	Podrás acceder a una gran cantidad de tipos de datos primitivos, objetos y métodos heredados, lo que aumenta la reutilización del código.
+	El nucleo y objetivo:
+		 Un propio diseño de clases java que se acerque la reusabilidad del codigo, incrementar las
+		 funcionalidades y la estandarizacion. Por ejemplo, Crear una nueva clase extendiendo de otra clase, 
+		 Podrás acceder a una gran cantidad de tipos de datos primitivos, objetos y métodos heredados, lo que aumenta la reutilización del código.
 
 	Este capitulo es la culminacion de alguno de los mas importantes topicos
 	en java incluyendo, herencia, diseño de clases, construcroes, orden de inicializacion
