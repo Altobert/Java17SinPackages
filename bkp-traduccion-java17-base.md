@@ -1450,14 +1450,76 @@ Es decir, java garantiza izquiera-derecha mas que los otroa poeradores existente
 		sobrescritura de metodos, 
 		abstract clasese e inmutables objetos.
 		
-	 	Lea este capitulo cuidadosamentey asegurese de comprender sus topicos bien.
+	 	Lea este capitulo cuidadosamente y asegurese de comprender sus topicos bien.
 		Este capitulo es la base, para el capitulo 7, Detras de las claases, en donde explicaremos, nuestra discusion
 		de tipos para incluir otros top level y embedidos tipos.
+## 21-03
+
+## 29-03
+	Entendiendo la Herencia
+	CUando se crea una clase Java, uno puede heredar desde una clase ya existente.
+	Herencia es el proceso por el cual una subclase, automaticamente incluye
+	miembos de una clase, incliyendo primitivos, objetos o metodos, definodos 
+	en la clase padre.
+
+	Cualquier clase que herede de otra es una subclase o clase hija, como descendiente
+	de esa clase padre.
+	La clase de la cual se hereda es la clase Padre o Ancestor.
+
+	Cuando trabajamos con otros tipos como Interfaces tenemos la tendencia a llamarlos
+	subtipos o supertipos.
+
+	public class Mammal{} 								<- superclase
+	public final class Rinoceros extends Mammal{}       <- subclase
+
+	Una clase es subclase por declaracion utilizando la palabra clave extends.
+	No se necesita declarar nada en una clase padre, solo estar seguro que no es una clase 
+	marcada con final.
+
+	Otro aspecto clave de la herencia es si es transitiva. Dadas tres clases
+	(X,Y,Z) 
+	
+	Z
+	Y extends Z
+	X extends Y
+
+	ENtonces X es considerada subclase o decensiente de Z. o de otra forma Z es 
+	superclase o ancestor de X
+
+	Existe el termino subclase directa, o descendent para indicar que la clase directamente
+	hereda (extends) del padre. En este caso, X no es descenciente de X.
+
+	X es un subtipo o desecendiente directo de Y, pero no de Z.
+
+	En el ultimo capitulo UD aprendio acerca de los niveles de acceso.
+		public protected, package, private.
+	
+	Cuando se hereda de una clase padre, todos los miembros protected y public son 
+	automaticamente heredados por la clase hija o child.
+	SI ambas clases se encuentran en el mismo packete, los miembros paquete son 
+	disponibles para la clase hija. Como ultimo, los miembros privados estan restringidos
+	para la clase que los ha definido, y nunca disponible para herencia.
+
+	Lo anterior no significa que la clase padre no pueda tener miembros privados que pueda
+	mantener data o modificar un objeto. Solo significa que la subclase no tiene acceso directo
+	sobre los miembros (privados).
+
+	Class modifiers
+		final		esta clase no puede ser textendida
+		abstract.  	esta clase solo puede ser instanciada por una clase concreta.
+		sealed.    	solo una lista de clases puede heredad esta clase. 
+		non-sealed 	una subclase de sealed class permite potencialmente no nombradas subclases **
+		static		usada en clases internas dentro de una clase
+	
+	 
+
 
 	
+	
+
+## 29-03
 
 
-## 21-03
 
 
 
