@@ -1,12 +1,10 @@
-"# Java17SinPackages"
--------------------------
-Certificacion java 17
------------------------
+"# Java17SinPackages
 
+## Certificacion Java 17
 
-importante certificacion java
+## Importante: Certificación Java
 
-Enfocarse en lo importante que estan preguntando
+Enfocarse en lo importante que están preguntando
 
 Asumir que ciertas porciones de codigo ya se encuentran
 	imports
@@ -34,88 +32,81 @@ Rarezas: Pueden permitir obtener altos resultados en mi examen.
 	Preguntas que realmente estan fueras de contexto.
 		Debes hacer tu mejor esfuerzo por contestarlas.
 
----------
+## Para quien es este libro
 
-Para quien es este libro,
-	Para quienes deseen aprobar los examenes. Es entendible
+Para quienes deseen aprobar los examenes. Es entendible
 	y de claras explicaciones.
 
----------
+## Organización del Libro
 
-Organizacion del Libro.
-
-	Son 15 capitulos y uno va construyendo el siguiente:
+Son 15 capitulos y uno va construyendo el siguiente:
 	Tambien algunos capitulos cumplen mutipoes objetivos, para
 	recordar los anteriores.
 
-----------
+## Capítulos del libro (15)
 
-Capitulos del libro (15)
-	*$$
-
-    *Cap 1
+### Cap 1
 		Construcciones basicas
 		Bloques, tipos de datos.
-	* Cap 2
-		Operadores
-	* Cap 3
-		Haciendo desiciones
-	* Cap 4
-		Api principales
-	* Cap 5
-		Metodos, construcciones basicas
-		Como diseñar y escribir metodos
-	* Cap 6
-		Diseño de clases
-	* Cap 7
-		Dentro o detras de las clases
-		(interfaces, enums, sealed clases, records, nested clases)
-	* Cap 8
-		Lambdas e interfaces funcionales
-	* Cap 9
-		Collectiones y genericos
-	* Cap 10
-		Streams pipelines y Optional Class.
-		Lea el capito mas de una vez si quiere tener
-		los conocimientos.
-	* Cap 11
-		Exepciones y localizacion
-	* Cap 12
-		Modulos y compilacion de modulos
-	* Cap 13
-		concurrencia y administracion segura de hilos
-	* Cap 14
-		IO administracion de archivos.		
-	* Cap 15
-		Simple. JDBC
+* Cap 2
+	- Operadores
+* Cap 3
+	- Haciendo desiciones
+* Cap 4
+	- Api principales
+* Cap 5
+	- Metodos, construcciones basicas
+	- Como diseñar y escribir metodos
+* Cap 6
+	- Diseño de clases
+* Cap 7
+	- Dentro o detras de las clases
+	- (interfaces, enums, sealed clases, records, nested clases)
+* Cap 8
+	- Lambdas e interfaces funcionales
+* Cap 9
+	- Collectiones y genericos
+* Cap 10
+	- Streams pipelines y Optional Class.
+	- Lea el capito mas de una vez si quiere tener los conocimientos.
+* Cap 11
+	- Exepciones y localizacion
+* Cap 12
+	- Modulos y compilacion de modulos
+* Cap 13
+	- Concurrencia y administracion segura de hilos
+* Cap 14
+	- IO administracion de archivos.
+* Cap 15
+	- Simple. JDBC
 
--------------------------------------
-	Contestar los examenes al final de capitulo.
-		Si mi porcentaje de correctas es mejor al 80%, volver
-		a revisar los topicos. Comparar con apendix
+## Recomendaciones para el examen
 
--------------------------------------
-	El ultimo objetivo del libro es hacerme
-		un programador de calidad,
-		por supuesto tambien aprobar mi examen.
+### Contestar los examenes al final de capitulo
 
--------------------------------------
+Si mi porcentaje de correctas es mejor al 80%, volver
+a revisar los topicos. Comparar con apendix
 
-	Culquier duda o consulta, este sitio es utilicegit remote add origin https://github.com/Altobert/java-preparation-17-11.git
+### El ultimo objetivo del libro
+
+Hacerme un programador de calidad,
+por supuesto tambien aprobar mi examen.
+
+### Culquier duda o consulta, este sitio es utilicegit remote add origin https://github.com/Altobert/java-preparation-17-11.git
 	coderanch.com
 
------------
+### Antes de tomar el examen
 
-	Antes de tomar el examen, recordad entrar a www.selikoff.net/ocp17
-		Lo anterior por si existen actualizaciones.
+Recordar entrar a www.selikoff.net/ocp17
+Lo anterior por si existen actualizaciones.
 
------------
+---
 
-	www.wiley.com/go/Sybextestprep
+www.wiley.com/go/Sybextestprep
 
------------
+---
 
-	Como estudiar,
+### Como estudiar
 		Construir un plan de estudios ajustado a mis horarios.
 		Misntras mas consistente seas en tu estudio,
 		estaras mejor perpadado para dar el examen.
@@ -146,15 +137,14 @@ Capitulos del libro (15)
 
 	---
 
-capitulo 1:
-construyendo bloques:
-Los objetivos OCP del examen cubiertos en este capitulo
-* manejo de fechas, tiempo, texto y valores booleanos (true o false)
-	** Uso de primitivos y clases envolventes incluyendo la APi Math
-           uso de parentesis, promocion de tipos y casting para evaluar
-	   aritmeticos y valores booleanos.
-* comprender el contexto de las variable, usar variables locales tipo inferencia,
-  aplicar encapsulacion y hacer objetos inmutables.
+## Capitulo 1: Construyendo bloques
+
+### Los objetivos OCP del examen cubiertos en este capitulo
+
+* Manejo de fechas, tiempo, texto y valores booleanos (true o false)
+	- Uso de primitivos y clases envolventes incluyendo la API Math
+	- Uso de parentesis, promocion de tipos y casting para evaluar aritmeticos y valores booleanos.
+* Comprender el contexto de las variables, usar variables locales tipo inferencia, aplicar encapsulacion y hacer objetos inmutables.
 
 Partiremos del comienzo solo para asegurarnos que tendras toda la temrinologia.
 Como se dice, debemos caminar antes de correr, entonces deberemos saber lo basico de java
@@ -218,8 +208,9 @@ setName y espera que su parametro sea reemplazado por nueva información.
 
 comentarios simples dobles y los de documentacion, son materia sabida.
 
-***Clases y Archivos Fuentes.***
-Todo se encuentra en una clase pero tambien existen clases embedidas, o clases dento de clases. Clases de alto nivel, una clases embebida, tambien es una
+### Clases y Archivos Fuentes
+
+Todo se encuentra en una clase pero tambien existen clases embedidas, o clases dentro de clases. Clases de alto nivel, una clases embebida, tambien es una
 clase de alto nivel.
 
 Una clase no requiere que teng la la palabra clave public. Se puede definir una clase "class Animal{}" y esta no tiene la palabra publica. Pero si cuenta con una clase embebida, una clase del archivo debe ser publica y tiene que tener el nombre del archivo.
@@ -230,37 +221,43 @@ Una clase no requiere que teng la la palabra clave public. Se puede definir una 
 }
 4: class Animal2 {}
 
-Observacion: pero la clase Animal2  no compilara en el archivo llamado
+**Observación:** pero la clase Animal2 no compilara en el archivo llamado
 Animal.java
 
-Writing a main() Method (escribiendo un main method)
- Entry point o punto de entrada hacia el programa.
- Por que es el punto de inicio que la JVM busca para comenzar el inicio de cualquier
- programa.
+### Escribiendo un main() Method
 
-EL metodo main permite que la JVM llame a nuestro codigo
+Entry point o punto de entrada hacia el programa.
+Por que es el punto de inicio que la JVM busca para comenzar el inicio de cualquier
+programa.
 
-Reglas que sebe tener un archivo java
-	Cada archivo debe contener solamente una public class.
-	el nombre del archivo debe coincidir con el nombre de la clase Publica.
-	SI la clase java es entry point, entonces debe tener un valido metodo main,
-	es decir la firma (signature) debe ser valida.
+El metodo main permite que la JVM llame a nuestro codigo
 
-	String[] args
-	String options[]
-	String... friends
+### Reglas que debe tener un archivo java
 
- analisis del main:
-	***public (es un modificador de acceso)***: puede ser llamado de cualquier lugar
+* Cada archivo debe contener solamente una public class.
+* El nombre del archivo debe coincidir con el nombre de la clase Publica.
+* Si la clase java es entry point, entonces debe tener un valido metodo main, es decir la firma (signature) debe ser valida.
 
-	***static*** es un metodo que pertenece a la clase y que s epuede llamar sin crear un objeto de la clase. Ejemplo Zoo.main().
-	SI el main no tiene la firama correcta, la jvm no podra interpetar la clase,
-	lanzando un error al correrla.
+### Firmas válidas para el array de parámetros
 
-	***void*** representa el tipo de retorno vacio. Un metodo que no retorna nada,
-	devuelve el control a quien lo ha llamado.
-	Es buena practica utilizar un metodo void para cambiar el estado de los objetos.
-	El metodo main cambia el estado del programa desde el inicio hasta que finaliza
+```java
+String[] args
+String options[]
+String... friends
+```
+
+### Análisis del main
+
+**public (es un modificador de acceso)**: puede ser llamado de cualquier lugar
+
+**static**: es un metodo que pertenece a la clase y que se puede llamar sin crear un objeto de la clase. Ejemplo Zoo.main().
+Si el main no tiene la firma correcta, la JVM no podra interpretar la clase,
+lanzando un error al correrla.
+
+**void**: representa el tipo de retorno vacio. Un metodo que no retorna nada,
+devuelve el control a quien lo ha llamado.
+Es buena practica utilizar un metodo void para cambiar el estado de los objetos.
+El metodo main cambia el estado del programa desde el inicio hasta que finaliza
 
 	La lista de parametros del main es un array de java.lang.String objects. Existe una forama valida
 	String[] args
@@ -280,34 +277,37 @@ Reglas que sebe tener un archivo java
 
 	varargs:lista variable de argumentos.
 
-	------
+---
 
-	Para revisar, laJDK tiene un compilador, Java corre sobre
-	una JVM y ambas corren en cualquier maquina con java bastante que solo la maquina y el SO ellos saben lo que
-	se ha compilado en ellos.
+Para revisar, la JDK tiene un compilador, Java corre sobre
+una JVM y ambas corren en cualquier maquina con java bastante que solo la maquina y el SO ellos saben lo que
+se ha compilado en ellos.
 
-	Understanding Package Declarations and Imports
-	Entendiendo la declaracion de paquetes e imports.
+### Understanding Package Declarations and Imports
 
-	Java viene con un monton de clases construidas,
-	y se necesitan manejar como una cabina con archivos.
-	Yo pongo todas mis archivos en carpetas y java los
-	pone en packages. Existe una agrupoacion de clases.
+**Entendiendo la declaracion de paquetes e imports.**
 
-	Necesitamos decir a Java donde buscarm es por eso la organizaicon de paquetes (packages).
+Java viene con un monton de clases construidas,
+y se necesitan manejar como una cabina con archivos.
+Yo pongo todas mis archivos en carpetas y java los
+pone en packages. Existe una agrupacion de clases.
 
-	**Cuando declaras una clase y no importas el packete**
-	Ocurre un error que el tipo no es reconocido y puedo ver
-	que he omitido la sentencia import.
+Necesitamos decir a Java donde buscar, es por eso la organizacion de paquetes (packages).
 
-	java comienza a contar desde el 0 al 9 y tn total tenemos
-	10 alternativas.
+**Cuando declaras una clase y no importas el package**
 
-	Packages***
-	Clases java son agrupados en packetes y la sentencia
-	import le dice al compilador en cual packete ir a buscar
-	una clase.
-	Esto es lo mismo al enviar un correo con una direccion.
+Ocurre un error que el tipo no es reconocido y puedo ver
+que he omitido la sentencia import.
+
+Java comienza a contar desde el 0 al 9 y en total tenemos
+10 alternativas.
+
+### Packages
+
+Clases java son agrupadas en packages y la sentencia
+import le dice al compilador en cual package ir a buscar
+una clase.
+Esto es lo mismo al enviar un correo con una direccion.
 	si le decimos al cartero, 123 Main Street, Apartment 9.
 	java solo va a buscar el 9, que es el nombre de la clase.
 	Los packetes tambien tienen una forma jerarquica, desde lo mas grande a lo especifico.
@@ -399,26 +399,31 @@ java -cp ".;C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPac
 comando:
 java -cp "C:\Users\alberto.sanmartin\java-17-practica-certificacion\JavaSinPackage\directoryWithJars\*" packageb.ClassB
 
-*** Creacion de objetos **
-Nuestros programas no seran capaces de hacer nada si no tenemos la habilidad de crear objetos..
- Recordar que un objeto es una instancia de una clase en tiempo de ejecucion.
-{
-	En las siguientes secciones veremos
-	Construcctores,
-	Atributos de objeto,
-	Inicializadores de instancia
-	Orden en el cual los valores son inicializados.
-}
+### Creación de objetos
 
-Un objeto luce de esta forma:
-	Park p = new Park();
-	p = almacena la referencia al objeto.
-	new Park() = Es la parte que crea el objeto.
+Nuestros programas no seran capaces de hacer nada si no tenemos la habilidad de crear objetos.
+Recordar que un objeto es una instancia de una clase en tiempo de ejecucion.
 
-	Constructores:
-	Match con el nombre de la clase
-	No retornan un tipo. No puede tener un return.
-	El construcctor inicializa atributos.
+En las siguientes secciones veremos:
+* Constructores
+* Atributos de objeto
+* Inicializadores de instancia
+* Orden en el cual los valores son inicializados
+
+### Un objeto luce de esta forma:
+
+```java
+Park p = new Park();
+```
+
+* `p` = almacena la referencia al objeto.
+* `new Park()` = Es la parte que crea el objeto.
+
+### Constructores
+
+* Match con el nombre de la clase
+* No retornan un tipo. No puede tener un return.
+* El constructor inicializa atributos.
 
 	Muchas clase no tienen construcctores, pero por defecto el compilador crea un constructor por defecto,
 	que no hace nada.
@@ -437,15 +442,18 @@ public class Chicken {   
 	}
 }
 
-Reading and Writing Member Fields
+### Reading and Writing Member Fields
+
 Es posible leer y escribir en variables de instancia de
-forma directa de parte del "caller". Es descir desde quien lo llama.
+forma directa de parte del "caller". Es decir desde quien lo llama.
 Quien es el caller en el ejemplo, es el metodo main, que puede estar
 en la misma clase u en otra.
-PAra proteger los atributos se aprendera de la encapsulación en el cap5
+Para proteger los atributos se aprendera de la encapsulación en el cap5
 y no setear de forma negativa los atributos de instancia.
 
-Executing Instance Initializer Blocks (ejecutando bloques de inicializacion)
+### Executing Instance Initializer Blocks
+
+(Ejecutando bloques de inicializacion)
 
 	{} braces que inicializan y cierran un metodo
 	Dentro se escribe el codigo del metodo.
@@ -465,17 +473,19 @@ public class Bird {
 	{ System.out.println("Snowy"); }
 }
 
-SI no hay el mismo numero de pares de brazoz, el codigo no compilara.
+SI no hay el mismo numero de pares de brazos, el codigo no compilara.
 Esto es el "problema de balanceo de parenthesis" y se pregunta en las entrevistas
 
 Los inicializadores de instancia no existen dentro de un metodo, estan fuera, al nivel de la clase.
 
-**********Orden de inicializacion de brazos**********
+### Orden de inicializacion de brazos
+
 Cuando se encuentran los inicializadores en multiples lugares, se debe tener en
 cuenta el orden de iniciailzacion.
+
 Algunas consideraciones:
-	atributos e inicializadores bloques, se ejecuta en el orden que se encuentran en el archivo.
-	EL constructor de ejecuta despues que todos los atributos e inicializadores de bloques se hayan ejecutado.
+* Atributos e inicializadores bloques, se ejecuta en el orden que se encuentran en el archivo.
+* El constructor se ejecuta despues que todos los atributos e inicializadores de bloques se hayan ejecutado.
 
 	no se puede utililzar un atributo antes antes de ser definida.
 	{ System.out.println(name); }  // DOES NOT COMPILE
@@ -485,19 +495,23 @@ Algunas consideraciones:
 	Let's look at what's happening here. We start with the main() method because that's where Java starts execution. On line 9, we call the constructor of Chick. Java creates a new object. First it initializes name to "Fluffy" on line 2. Next it executes the println() statement in the instance initializer on line 3. Once all the fields and instance initializers have run, Java returns to the constructor. Line 5 changes the value of name to "Tiny", and line 6 prints another statement. At this point, the constructor is done, and then the execution goes back to the println() statement on line 10. Order matters for the fields and blocks of code. You can't refer to a variable before it has been defined:
 	******
 
-	Referencias:
-	Un tipo de dato primitivo se mantiene en memoria, con su valor.
-	Una referencia, no mantiene el valor del objeto a cual refieren. En vez de eso,
-	una referencia apunta a un objeto para almacenar la direccion de memoria,
-	donde el objeto es ubicado. El concepto referenciato es un puntero.
-	A diferencia de otros lenguajes, java no permite que aprendas que memoria fisica
-	estas direccionando.
-	Tu solamente puedes usar la referencia para referir al objeto.
+### Referencias
 
-	String greeting; // esta es una referencia apunta a un objeto String. El valor
-	es asignado a la referencia es una o dos formas
-		una referencia puede ser asignada a otro objeto del tipo compatible
-		una referencia puede ser asignada a un nuevo objeto usando el keyword
+Un tipo de dato primitivo se mantiene en memoria, con su valor.
+Una referencia, no mantiene el valor del objeto al cual refieren. En vez de eso,
+una referencia apunta a un objeto para almacenar la direccion de memoria,
+donde el objeto es ubicado. El concepto referencia es un puntero.
+A diferencia de otros lenguajes, java no permite que aprendas que memoria fisica
+estas direccionando.
+Tu solamente puedes usar la referencia para referir al objeto.
+
+```java
+String greeting; // esta es una referencia apunta a un objeto String.
+```
+
+El valor es asignado a la referencia de una o dos formas:
+* Una referencia puede ser asignada a otro objeto del tipo compatible
+* Una referencia puede ser asignada a un nuevo objeto usando el keyword
 		new.
 
 		En el siguiente ejemplo se asigna el nuevo objeto a la referencia
@@ -583,107 +597,130 @@ Algunas consideraciones:
 	Inicializacion de variables, 
 	Antes que UD pueda usar una variable, necesita un valor. Algunos tipos de variable 
 	traen un valor por defecto, se forma automatica y otras requiere que el programador las especifique. 
-	Veremos las diferencias entre:
-		default para local: (dentro de un metodo)
-		instancia (atributos de un objeto)
-		Variables de clase: (static)
+Veremos las diferencias entre:
+* Default para local: (dentro de un metodo)
+* Instancia (atributos de un objeto)
+* Variables de clase: (static)
 
-	Variables locales: son creadas dentro de un constructor, metodo o bloque de inicializacion.
+**Variables locales:** son creadas dentro de un constructor, metodo o bloque de inicializacion.
 
-	Variables locales final:
-	final es una palabra clave aplicada a una constante en otros lenguajes.
-	Ej:
-	final int y = 10;
-	int x = 20;
-	y = x + 10; //no compila. // y no puede ser modificado por ser final // constante.
+### Variables locales final
 
-	La palabra clave final tambien puede ser aplicada a variables locales de referencia.
+final es una palabra clave aplicada a una constante en otros lenguajes.
 
-	final int [] favoriteNumbers = new int[10];
-	favoriteNumbers[0] = 10;
-	favoriteNumbers[2] = 20;
-	favoriteNumbers = null // no compila.
+Ejemplo:
 
-	El error ocurre cuando trato de "CAMBIAR" el valor de la referencia favoriteNumbers
+```java
+final int y = 10;
+int x = 20;
+y = x + 10; //no compila. // y no puede ser modificado por ser final // constante.
+```
 
-	**Variables locales no inicializadas**
-	Las variables locales no tienen un valor por defecto y deben ser inicializadas antes
-	de ser usadas. El compilador reportara un error si tu intentas leer una variable sin inicializar.
+La palabra clave final tambien puede ser aplicada a variables locales de referencia.
 
-	public int notValid(){
-		int y = 10;
-		int x; // no ha sido inicializado
-		int reply = x+y; // no compila.
-		return reply;
+```java
+final int [] favoriteNumbers = new int[10];
+favoriteNumbers[0] = 10;
+favoriteNumbers[2] = 20;
+favoriteNumbers = null; // no compila.
+```
+
+El error ocurre cuando trato de "CAMBIAR" el valor de la referencia favoriteNumbers
+
+### Variables locales no inicializadas
+
+Las variables locales no tienen un valor por defecto y deben ser inicializadas antes
+de ser usadas. El compilador reportara un error si tu intentas leer una variable sin inicializar.
+
+```java
+public int notValid(){
+	int y = 10;
+	int x; // no ha sido inicializado
+	int reply = x+y; // no compila.
+	return reply;
+}
+```
+
+Y fue inicializado en 10 pero x por contraste no lo ha sido.
+
+El COMPILADOR es lo suficientemente listo como para reconocer variables que han sido inicializadas
+despues de su declaracion pero antes son usadas.
+
+```java
+public int valid(){
+	int y = 10;
+	int x;// x es declarado aqui
+	x = 3;
+	int z;//declarada la z pero no inicializada.
+	int reply = x+y;
+	return reply;
+}
+```
+
+Al compilador java le interesa lo que yo uso sin ser inicializado, es decir, solamente le concierne 
+si yo intento usar no inicializadas variables locales, no le importa lo que nunca voy a usar.
+
+```java
+public void findAnswer(boolean check){
+	int answer;
+	int otherAnswer;
+	int onlyOneBranch;
+	if(check){
+		onlyOneBranch = 1;
+		answer=1;  // sea true, aca se inicializa antes de ser usada.
+	}else{
+		answer =2; // sea false aca se inicializa antes de ser usada.
 	}
+	System.out.println(answer); // aca se usa la variable
+	System.out.println(onlyOneBranch); // error de compilacion
+}
+```
 
-	Y fue inicializado en 10 pero y por contraste no lo ha sido.
+// El compilador es lo suficientemente inteligente para darse cuenta que onlyOneBranch
+// puede ser NO inicializado al pasar a false de la rama (else).
+// Sin embargo, la variable answer pase por la rama que sea, siempre se inicializara y eso 
+// el compilador lo detecta.
 
-	El COMPILADOR es lo suficientemente lito como para reconocer variables que han sido inicializadas
-	despues de su declaracion pero antes son usadas.
+// La variable otherAnswer, no se inicializa, pero no se usa, asi que el compilador
+// continua feliz.
 
-	public int valid(){
-		int y = 10;
-		int x;// x es declarado aqui
-		x = 3;
-		int z;//declarada la z pero no inicializada.
-		int reply = x+y;
-		return reply;
-	}
+**IMPORTANTE:** Al compilador siempre le importa si yo intento utilizar variables no inicializadas,
+no le importa las variables que no inicializo y nunca uso.
 
-	Al compilador java le interesa lo que yo uso sin ser inizializado, es decir, solamente le concierne 
-	si yo intento usar no inicializadas variables locales, no le importa lo que nunca voy a usar.
+---
 
-	public void findAnswer(boolean check){
-		int answer;
-		int otherAnswer;
-		int onlyOneBranch;
-		if(check){
-			onlyOneBranch = 1;
-			answer=1;  // sea true, aca se inicializa antes de ser usada.
-		}else{
-			answer =2 // sea false aca se inicializa antes de ser usada.
-		}
-		System.out.println(answer); // aca se usa la variable
-		System.out.println(onlyOneBranch); // error de compilacion
-	}
+### Notas sobre inicialización de bloques
 
-	// el compilador es lo suficientemente inteligente para darse cuenta que onlyOneBranch
-	   puede ser NO inicializado al pasar a false de la rama (else).
-	   SIn embargo, la variable answer  pase por la rama que sea, siempre se inicializara y eso 
-	   el compilador lo detecta.
+* El orden en que se ejecuta la ejecución y compilación.
+* Inicializacion de variables locales e instancias.
 
-	   la variable otherAnswer, no se inicializa, pero no se usa, asi que el compilador
-	   continua feliz.
+> **LA certificación es aprender a reconocer y entender al compilador JAVA, de acuerdo a su versión.**
 
-	   IMPORTANTE, Al compilador siempre le importa si yo intento utilizar variables no inicializadas,
-	   no le importa las variables que no inicializo y nunca uso.
+El compilador puede darse cuenta que al pasar por las ramas IF-ELSE, la variable podria no inicializarse, por lo que arrojara un 
+error de compilacion.
 
-	***
+**NOTA Importante:** En el examen de certificación tenga cuidado con cualquier variable local sea declarada pero no inicializada
+en una unica linea. Esto puede resultar que la respuesta pregunta de certificacion "NO COMPILA". Asegurese de revisar y asegurarse
+si la variable sea INICIALIZADA ANTES DE SER USADA.
 
-	inicialización de bloques, 
-		el orden en que se ejecuta la ejecución y compilación.
-		Inicializacion de variables locales e instancias.
+### Pasando constructores y metodos parametros
 
-	//*** LA certificacion es aprender a reconocer y entender al compilador JAVA, de acuerdo a su version. */
-	//*** LA certificacion es aprender a reconocer y entender al compilador JAVA, de acuerdo a su. */
+Variables pasadas a un constructor o a un metodo se llaman "constructor parameters" o "method parameters", respectivamente.
 
-	El compilador puede darse cuenta que al pasar por las ramas IF-ELSE, la variable podria no inicializarse, por lo que arrojara un 
-	error de compilacion.
+In the previous example, check is a method parameter.
 
-	***NOTA Importante: En el examen de certificaicon tenga cuidado con con cualquier variable local sea declarada pero no inicializada
-	en una unica linea. Esto puede resultar que la respuesta pregunta de certificacion "NO COMPILA". Asegurese de revisar que y asegurarse
-	si la variable sea INICIALIZADA ANTES DE SER USADA.
+```java
+public void findAnswer(boolean check) {}
+```
 
-	** PASANDO CONSTRUCTORES Y METODOS PARAMETROS ***
+Take a look at the following method checkAnswer() in the same class:
 
-	Variables pasados a un constructor ao a un metodo se llaman "constructor parameters" o "method parameters", respectivamente.
-
-	In the previous example, check is a method parameter.
-	
-	public void findAnswer(boolean check) {}
- 	
-	Take a look at the following method checkAnswer() in the same class:
+```java
+public void checkAnswer() {
+   boolean value;
+   findAnswer(value);  // DOES NOT COMPILE
+}
+```
 	public void checkAnswer() {
    		boolean value;
    		findAnswer(value);  // DOES NOT COMPILE
@@ -1018,8 +1055,7 @@ encuentre.
 8:        }
 9:     }
 10: }
-
-´´´
+```
 
 En este ejemplo, se visualizó el contexto de la variable de clase MAX_LENGTH
 la variable de instancia length
@@ -1134,153 +1170,179 @@ imaginar cuando un objeto se vuelve eligible para el garbage collector.
 7:       String three = one;
 8:       one = null;
 9: }}
-´´´
+```
 
 Te recomiendo que dibujes que esta pasando cuando te hagan una pregunta acerca del GC 
 en el examen. Puedes comenter un error intentando mantener muchas cosas en tu cabeza.
 16-02-2026
 
-02-03-2026
-no todas las preguntas incluiran declaracion de packetes o imports.
-No te preocupes acerca de paquetes extraviados sentencias de import
-a menos que te lo pregunten. Estos son los los casos que tu no tienes que 
-revisar los imports.
-	COdigo que comienza con un nombrde de clase.
-	codigo que comienza con la declaracion de un metodo.
-	codigo que comienza con un extracto de codigo que normalmente
-		esta dentro de una clase o metodo.
-	Codigo que tiene numeros de lineas que no comienzan con 1.
+## 02-03-2026
 
-	UD vera codigo que no tiene un metodo. Cuando esto ocurra asuma lo 
-	necesario, fontaneria de codigo, como un main method y definicion 
-	de clase fueron escritos correctament.  UD solo esta siendo consultado
-	que la parte del codigo que esta siendo mostrado compila cuando tu lo 
-	pones rodeado de un codigo valido.
+No todas las preguntas incluiran declaracion de packages o imports.
+No te preocupes acerca de paquetes extraviados o sentencias de import
+a menos que te lo pregunten. Estos son los casos que tu no tienes que 
+revisar los imports:
 
-	Finalmente recuerda los extra espacios blancos no son importantes
-	en la sintaxis de java. 
-	El examen podria usar montones de espacios en blanco y varying 
-	para engalañarme.
+* Código que comienza con un nombre de clase.
+* Código que comienza con la declaracion de un metodo.
+* Código que comienza con un extracto de codigo que normalmente esta dentro de una clase o metodo.
+* Código que tiene numeros de lineas que no comienzan con 1.
 
+UD vera codigo que no tiene un metodo. Cuando esto ocurra asuma lo 
+necesario, fontaneria de codigo, como un main method y definicion 
+de clase fueron escritos correctamente. UD solo esta siendo consultado
+que la parte del codigo que esta siendo mostrado compila cuando tu lo 
+pones rodeado de un codigo valido.
 
+Finalmente recuerda los extra espacios blancos no son importantes
+en la sintaxis de java. 
+El examen podria usar montones de espacios en blanco y varying 
+para engañarme.
 
-:::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
+---
+
+## RESUMEN
+
+### Metodo main y argumentos
 
 Java comienza la ejecucion de un programa con el metodo main.
-La firma mas comun para este metodo es public static void main(String[]args)
-Los argumentos son pasados despues del nombre de la clase Los argumentos
+La firma mas comun para este metodo es `public static void main(String[]args)`
+Los argumentos son pasados despues del nombre de la clase. Los argumentos
 estan indexados y comienzan con el 0 (cero)
 
-EL codigo java se encuentra organizado dentro de carpetas llamadas 
-paquetes. PAra referencias clases de otros paquetes tu puedes usar
+### Packages e imports
+
+El codigo java se encuentra organizado dentro de carpetas llamadas 
+paquetes. Para referencias clases de otros paquetes tu puedes usar
 la sentencia import.
 
-Un arterisco terminando la sentencia import, indica que UD quiere importar
-todas las clases en ese packete.
+Un asterisco terminando la sentencia import, indica que UD quiere importar
+todas las clases en ese package.
 No se incluyen paquetes que estan dentro de uno.
-El packete java.lang es un paquete especialque no requiere 
+El package java.lang es un paquete especial que no requiere 
 ser importado.
 
-***** Para algunos elementos de clase, el orden importa dentro del archivo.
-Primero va la sentencia package, luego viene la sentencia import
-y luego viene la declaracion de clase. PIC (Package Import Clase)
-Atributos y metodos pueden ir en cualquier orden dentro de la clase
-java.*******
+**Para algunos elementos de clase, el orden importa dentro del archivo:**
 
-Los tipos primitivos construyen algunos bloques escenciales en java.
-Ellos se encuentran esamblado dentro de tipos de referencia.
+1. Primero va la sentencia package
+2. Luego viene la sentencia import
+3. Luego viene la declaracion de clase
+
+**PIC (Package Import Clase)**
+
+Atributos y metodos pueden ir en cualquier orden dentro de la clase java.
+
+### Tipos primitivos y referencias
+
+Los tipos primitivos construyen algunos bloques esenciales en java.
+Ellos se encuentran ensamblados dentro de tipos de referencia.
 Referencias tienen metodos y se les puede asignar valores null.
 
-Literales numericos pueden estar compuestos por _ underscores
-cuan largos sean ellos, no comienzan in terminan con un literal 
-y no van siguido un . decimal.
+Literales numericos pueden estar compuestos por `_` underscores
+cuan largos sean ellos, no comienzan ni terminan con un literal 
+y no van seguido de un `.` decimal.
 
 Clases wrapper son tipos de referencias y hay uno por cada tipo de datos
 primitivo.
 
-BLoques de texto permiten crear cadenas de multiples lineas usando 
-""".
+Bloques de texto permiten crear cadenas de multiples lineas usando 
+`"""`.
 
-:::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
+---
 
 ## 02-03-2026
 
-## 04-03-2024
-:::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
-Declarar una variable involucra dar un estado el tipo de dato y 
+## RESUMEN (continuación)
+
+### Declaración de variables
+
+Declarar una variable involucra dar un estado, el tipo de dato y 
 dar un nombre a la variable. Las variables que representan un atributo
-en una clase son automaticamente inicitlizadas con su correspondiente 0,
-null or false valores durante la instanciacion del objeto.
+en una clase son automaticamente inicializadas con su correspondiente 0,
+null o false valores durante la instanciacion del objeto.
 
-Variables locales deben ser especialmente inicializadas antes que ellossean usados.
+Variables locales deben ser especialmente inicializadas antes que ellos sean usados.
 
-Identificadores pueden contener letras numers o signos de monedas or _
-Identificadores no pueden comenzar con numeros 
+Identificadores pueden contener letras, numeros, signos de monedas o `_`
+Identificadores no pueden comenzar con numeros.
 
-Declaracion de Variables locales pueden usar la palabra clave var
-en vez del tipo actual de ddato. Cuando se usa var el tipo de datoes seteado 
-en tiempo de compilacion y no cambia. 
+### Declaración con var
 
-(como se asigna un valor en tiempo de ejecucion?, con la reflexion??)
+Declaracion de Variables locales pueden usar la palabra clave `var`
+en vez del tipo actual de dato. Cuando se usa `var` el tipo de dato es seteado 
+en tiempo de compilacion y no cambia.
+
+### Scope (contexto)
 
 El scope se refiere a una porcion de codigo donde una variable puede ser 
 accesada. Existen tres tipos de variables dependiendo de su scope:
-instance variable, class variables and local variables.
-Instance variable son los atributos no staticos de mi clase.
-Class variables son los atributos estaticos dentro de mi clase.
-Local variables se encuentran definidos en un contructor, metodo, 
-o bloque inicializador.
 
-Constructores crean objetos java. Constructor es un metodo que su nombre hacematch con el nombre de la clase
+* **Instance variable:** son los atributos no staticos de mi clase.
+* **Class variables:** son los atributos estaticos dentro de mi clase.
+* **Local variables:** se encuentran definidas en un constructor, metodo, o bloque inicializador.
+
+### Constructores y Garbage Collection
+
+Constructores crean objetos java. Constructor es un metodo que su nombre hace match con el nombre de la clase
 y omite el tipo de retorno.
 Cuando un objeto es instanciado, atributos y bloques de codigo son inicializados primero, entonces el constructor
-se ejecuta o corre.
+se ejecuta.
 
 Finalmente el GC es el responsable de remover objetos desde memoria cuando ellos no seran usados mas.
 Un objeto se vuelve elegible para el GC cuando no existen referencias a si mismo o sus referencias
-se han ido fuera del contexto. 
-:::::::::::::::::::::::::RESUMEN:::::::::::::::::::::::
+se han ido fuera del contexto.
 
-Escenciales del examen:
-Se capaz de escribir codigo usando main method
-	A main method, es usualmente escrito como public static void main(String[]args){}
-	argumentos se encuentran referenciados con args[0].
-	Acceder a un argumento que no fue pasado causara que el codigo lance 
-	una excepcion.
+---
 
-Entender el efecto de usar packetes e imports.
-	PAckages contain java classes. Las clases se pueden importar por nombre 
-	de clase o un asteristo (*). El (*) no busca en subdirectorios. En el evento
-	de un conflicto, el import toma el precedente. Package e import sentencias, 
-	son opcionales, SI ellas se estan presentes, ellas se encuetran antesde la declaracion de 
-	la clase en ese orden. 
+## Esenciales del examen
 
-Ser capaz de reconocer un constructor
-	Un constructor tienen el mismo nombre de su clase y luce como un metodo 
-	sin tipo de retosno.
+### Escribir código usando main method
 
+Un main method es usualmente escrito como `public static void main(String[]args){}`
+Los argumentos se encuentran referenciados con `args[0]`.
+Acceder a un argumento que no fue pasado causara que el codigo lance 
+una excepcion.
 
-Ser capaz de identificar egal and ilegal declaration and inicializations. 
+### Entender el efecto de usar packages e imports
 
-Ser capaz de usar var correctamente.
-	the keyboar var es para crear variable locales (dentro de metodos.)
-	var se inicializa en la misma linea que fue detectado y mientras
-	cambia el valor no puede cambiar el tipo.
-	a var no puede ser inicializado con null sin un type, 
-	tampoco puede ser usado dentro de multiples variable declaraciones. 
+Packages contienen java classes. Las clases se pueden importar por nombre 
+de clase o un asterisco (*). El (*) no busca en subdirectorios. En el evento
+de un conflicto, el import toma el precedente. Package e import sentencias 
+son opcionales. Si ellas se estan presentes, ellas se encuentran antes de la declaracion de 
+la clase en ese orden.
 
-Ser capaz de crear bloques de texto.
+### Reconocer un constructor
 
-Ser capaz de determinar cuando una variable se encuentra dento o fuera del contexto
+Un constructor tiene el mismo nombre de su clase y luce como un metodo 
+sin tipo de retorno.
 
-Conocer la diferencia cuando un objeto se encuentra elegible por el GC.
-	Dibuja un diagrama para mantener claridad de los objetos creados.
-	Cuando no existe una flecha que apunta a la caja, ese es elegible por el garbage
-	collector. 
+### Identificar legal e ilegal declaration and inicializations
+
+### Usar var correctamente
+
+El keyword `var` es para crear variable locales (dentro de metodos.)
+`var` se inicializa en la misma linea que fue detectado y mientras
+cambia el valor no puede cambiar el tipo.
+Un `var` no puede ser inicializado con null sin un type, 
+tampoco puede ser usado dentro de multiples variable declaraciones. 
+
+### Crear bloques de texto
+
+### Determinar cuando una variable se encuentra dentro o fuera del contexto
+
+### Conocer la diferencia cuando un objeto se encuentra elegible por el GC
+
+Dibuja un diagrama para mantener claridad de los objetos creados.
+Cuando no existe una flecha que apunta a la caja, ese es elegible por el garbage
+collector.
+
+---
+
 ## 04-03-2024
 
 ## Test de fin de capitulo 05-03-2026
-``````
+
+```
 Test
 1-E
 2-C
@@ -1305,73 +1367,78 @@ Test
 21: D
 22:D
 23:B
-``````
-## Test de fin de capitulo 05-03-2026
-----
-05-03-2026
+```
+
+---
+
+## 05-03-2026
+---
 
 ## 10-03-2026
 
-######
+---
 
-################################ CAPITULO 2 #################################
-
-#### Operadores
+# CAPÍTULO 2 - Operadores
 
 ## Objetivos 
-	Manejo de fecha, tiempo, texto, numericos y valores booleanos.
 
-## SUBOBJETIVO
-	Uso de primitivos, clases envolventes (Wrapper)
+Manejo de fecha, tiempo, texto, numericos y valores booleanos.
 
-EN el capitulo anterior hablamos de las Variables, pero que podemos hacer con las variables una vez
-creadas?.
-Este capitulo introduce los operadores y muestra como se pueden usar y conbinar 
+## Subobjetivo
+
+Uso de primitivos, clases envolventes (Wrapper)
+
+En el capitulo anterior hablamos de las Variables, pero que podemos hacer con las variables una vez
+creadas?
+
+Este capitulo introduce los operadores y muestra como se pueden usar y combinar 
 variables existentes y generar nuevos valores. 
 Muestra como aplicar operadores a muchas variables primitivas incluyendo los operadores
 que se pueden utilizar sobre objetos.
 
-Entendiendo los Operadores Java
-un operador es un especial codigo que opera sobre otros operandos
-variables valores o literales y devuelven un resultado.
-EL termino operando, usado en el capitulo, se refiere al 
+### Entendiendo los Operadores Java
+
+Un operador es un codigo especial que opera sobre otros operandos
+variables, valores o literales y devuelven un resultado.
+El termino operando, usado en el capitulo, se refiere al 
 valor o variable donde el operador esta siendo aplicado.
 
-## 10-03-2026
+---
 
 ## 12-03
 
-TIpos de Operadores
+### Tipos de Operadores
 
-Java soporta operadoes unarios, binarios y ternarios. Estos tipos de operadores pueden ser
-aplicados a uno , dos o tres operandos respectivamente.
+Java soporta operadores unarios, binarios y ternarios. Estos tipos de operadores pueden ser
+aplicados a uno, dos o tres operandos respectivamente.
+
 Para el examen:
-	Conocer el subset especifico de java operadores.
-	Como aplicarlos
-	EL orden en el cual ellos deben ser eplicados. 
+* Conocer el subset especifico de java operadores.
+* Como aplicarlos
+* El orden en el cual ellos deben ser aplicados. 
 
-
-Los peradores en java no necesariamente
-se aplican de izquiera a derecha. En el ejemplo, se aplica el orden de 
+Los operadores en java no necesariamente
+se aplican de izquierda a derecha. En el ejemplo, se aplica el orden de 
 derecha a izquierda, debido al especifico operador involucrado.
 
 ```java
 int cookies = 4;
-double reward = 3+2 * --cookies
+double reward = 3+2 * --cookies;
 ```
-## 12-03
+
+---
 
 ## 15-03
 
 ```java
-	var c = a + b;
+var c = a + b;
 ```
-En la operacion anerior se encuentra el operador + y los operandos a y b
-El resultado se asigna al var c con el signo igual.
-Por lo tanto existirian en la operacion dos operadores, el = y el +
+En la operacion anterior se encuentra el operador `+` y los operandos `a` y `b`
+El resultado se asigna a la variable `c` con el signo igual.
+Por lo tanto existirian en la operacion dos operadores, el `=` y el `+`
 
-Java soporta tres sabores de operadores, unario, binario y ternario. Estos tipos de operadores
-pueden ser aplicados a uno dos o tres operandos respectivamente.
+Java soporta tres sabores de operadores: unario, binario y ternario. Estos tipos de operadores
+pueden ser aplicados a uno, dos o tres operandos respectivamente.
 
 EN el examen java necesito saber un subgrupo de estos operadores:
 Como aplicarlos
@@ -1387,137 +1454,362 @@ dado el especifico operador involucrado.
 	System.out.print("zoo animal receives:"+reward+" ponts");
 ```
 
-En el ejemplo anterio se decrementa en 3 cookies, luoego se multipolica el resultado del valor por dos.
-y finalmente se suma 3. Entonces el resultado es promovido, automaticamente de 9 a 9.0 y asignado a 
+En el ejemplo anterior se decrementa en 1 cookies, luego se multiplica el resultado del valor por dos,
+y finalmente se suma 3. Entonces el resultado es promovido automaticamente de 9 a 9.0 y asignado a 
 reward.
-respuesta: "Zoo animal receives 9.0 reward points"
+
+**Respuesta:** "Zoo animal receives 9.0 reward points"
 
 Si UD. no siguio el problema anterior, no se preocupe, al terminar este capitulo, eso deberia
 ser de segunda naturaleza o importancia.
 
-## Operador de procedencia
-Java se encuentra cerca de las reglas de las matematicas para los operadores de procedencia.
+### Operador de precedencia
+
+Java se encuentra cerca de las reglas de las matematicas para los operadores de precedencia.
 
 ```java
-	var perimeter = 2 * higth + 2 * length;
-	var perimeter = (2 * higth) + (2 * length);
+var perimeter = 2 * height + 2 * length;
+var perimeter = (2 * height) + (2 * length);
 ```
-en el ejemplo anterior, para el compilador java, primeramente se ejecutan las multiplicaciones
-luego se suman ambas variables para luego se agregadad al resultado. 
-El operador (=) tiene la ultima procedencia.
+En el ejemplo anterior, para el compilador java, primeramente se ejecutan las multiplicaciones
+luego se suman ambas variables para luego ser agregadas al resultado. 
+El operador `=` tiene la ultima precedencia.
 
-Una regla de java, si ambos operadores de procedencia son iguales, se evalua de derecha a izquierda
-Es decir, java garantiza izquiera-derecha mas que los otroa poeradores existentes en la operacion.
+Una regla de java: si ambos operadores de precedencia son iguales, se evalua de izquierda a derecha.
+Es decir, java garantiza izquierda-derecha mas que los otros operadores existentes en la operacion.
 
-![alt text](images/operadores-procedencia.png) tabla operadores de procedencia.
-![alt text](images/operador-ternario.png) Segunda parte operadores ternarios.
+![Tabla operadores de precedencia](images/operadores-procedencia.png)
 
-## 15-03
+![Segunda parte operadores ternarios](images/operador-ternario.png)
+
+---
+
+# CAPÍTULO 3 - Haciendo Decisiones
+
+## Objetivos
+
+Manejo de fecha, tiempo, texto, numericos y valores booleanos.
+
+## Subobjetivos
+
+* Uso de operadores de decisión
+* Estructuras de control de flujo
+* Switch statements y expressions
+
+---
+
+### Introducción
+
+
+
+---
+
+### Sentencias if/else
+
+
+
+---
+
+### Switch statements
+
+
+
+---
+
+### Switch expressions
+
+
+
+---
+
+### Operador ternario
+
+
+
+---
+
+## Resumen del Capítulo 3
+
+
+
+---
+
+## Ejercicios del Capítulo 3
+
+
+
+---
+
+# CAPÍTULO 4 - APIs Principales
+
+## Objetivos
+
+Manejo de las APIs principales de Java.
+
+## Subobjetivos
+
+* Trabajar con String
+* Trabajar con StringBuilder
+* Entender Arrays
+* Trabajar con Math y Random
+* Trabajar con Dates y Times
+
+---
+
+### Trabajando con String
+
+
+
+---
+
+### Trabajando con StringBuilder
+
+
+
+---
+
+### Entendiendo Arrays
+
+
+
+---
+
+### Trabajando con Math
+
+
+
+---
+
+### Trabajando con Dates y Times
+
+
+
+---
+
+## Resumen del Capítulo 4
+
+
+
+---
+
+## Ejercicios del Capítulo 4
+
+
+
+---
+
+# CAPÍTULO 5 - Métodos
+
+## Objetivos
+
+Diseñar métodos y aplicar encapsulación.
+
+## Subobjetivos
+
+* Diseñar métodos
+* Declarar y usar métodos
+* Trabajar con Varargs
+* Aplicar modificadores de acceso
+* Aplicar el principio de encapsulación
+* Pasar datos entre métodos
+
+---
+
+### Diseñando métodos
+
+
+
+---
+
+### Declarando y usando métodos
+
+
+
+---
+
+### Trabajando con Varargs
+
+
+
+---
+
+### Modificadores de acceso
+
+
+
+---
+
+### Encapsulación
+
+
+
+---
+
+### Pasando datos entre métodos
+
+
+
+---
+
+### Sobrecarga de métodos (Method Overloading)
+
+
+
+---
+
+## Resumen del Capítulo 5
+
+
+
+---
+
+## Ejercicios del Capítulo 5
+
+
+
+---
 
 ## 21-03
-	Chapter 6
 
-	Utilizando la aproximacion de la orientacion a objetos.
+# CAPÍTULO 6
 
-	Objetivos: 
-		Crear Clases y Records y definir y usar atributos de instancia y estaticos y metodos, constructores, 
-		e instancia y static inicializadores.
+## Utilizando la aproximacion de la orientacion a objetos
 
-		Entender el contexto de las variables. Usar local variable de tipo inferencia, aplicar
-		encapsulacion, y construir objetos inmutables.
+### Objetivos
 
-		Implementar polimorfismo y diferenciar object type versus reference type.
-		Ejecutar casteo	de tipos, identificar tipos de objetos usando el operador instanceof y pattern matching.
+* Crear Clases y Records y definir y usar atributos de instancia y estaticos y metodos, constructores, e instancia y static inicializadores.
+* Entender el contexto de las variables. Usar local variable de tipo inferencia, aplicar encapsulacion, y construir objetos inmutables.
+* Implementar polimorfismo y diferenciar object type versus reference type.
+* Ejecutar casteo de tipos, identificar tipos de objetos usando el operador instanceof y pattern matching.
 
-	En el capitulo 1 "construyendo bloques" introdujimos la definicion de una clase java.
-	En el capitulo 5 "methods" profundizamos en los modificadores de acceso de los los metodos
-	y mostramos como construir clases mas estructuradas. 
+En el capitulo 1 "construyendo bloques" introdujimos la definicion de una clase java.
+En el capitulo 5 "methods" profundizamos en los modificadores de acceso de los metodos
+y mostramos como construir clases mas estructuradas.
 
-	En este capitulo nos orientaremos como estructurar la clase y la herencia es la cual es uno de
-	los caracteristicas mas poderosas del lenguaje java.
+En este capitulo nos orientaremos como estructurar la clase y la herencia, la cual es una de
+las caracteristicas mas poderosas del lenguaje java.
 
-	El nucleo y objetivo:
-		 Un propio diseño de clases java que se acerque la reusabilidad del codigo, incrementar las
-		 funcionalidades y la estandarizacion. Por ejemplo, Crear una nueva clase extendiendo de otra clase, 
-		 Podrás acceder a una gran cantidad de tipos de datos primitivos, objetos y métodos heredados, lo que aumenta la reutilización del código.
+### El nucleo y objetivo
 
-	Este capitulo es la culminacion de alguno de los mas importantes topicos
-	en java incluyendo, 
-		herencia, 
-		diseño de clases,
-		construcroes, 
-		orden de inicializacion
-		sobrescritura de metodos, 
-		abstract clasese e inmutables objetos.
-		
-	 	Lea este capitulo cuidadosamente y asegurese de comprender sus topicos bien.
-		Este capitulo es la base, para el capitulo 7, Detras de las claases, en donde explicaremos, nuestra discusion
-		de tipos para incluir otros top level y embedidos tipos.
-## 21-03
+Un propio diseño de clases java que se acerque a la reusabilidad del codigo, incrementar las
+funcionalidades y la estandarizacion. Por ejemplo, crear una nueva clase extendiendo de otra clase, 
+podras acceder a una gran cantidad de tipos de datos primitivos, objetos y métodos heredados, lo que aumenta la reutilización del código.
 
-## 29-03
-	Entendiendo la Herencia
-	CUando se crea una clase Java, uno puede heredar desde una clase ya existente.
-	Herencia es el proceso por el cual una subclase, automaticamente incluye
-	miembos de una clase, incliyendo primitivos, objetos o metodos, definodos 
-	en la clase padre.
+Este capitulo es la culminacion de algunos de los mas importantes topicos
+en java incluyendo:
+* Herencia
+* Diseño de clases
+* Constructores
+* Orden de inicializacion
+* Sobrescritura de metodos
+* Abstract classes e inmutables objetos
 
-	Cualquier clase que herede de otra es una subclase o clase hija, como descendiente
-	de esa clase padre.
-	La clase de la cual se hereda es la clase Padre o Ancestor.
+Lea este capitulo cuidadosamente y asegurese de comprender sus topicos bien.
+Este capitulo es la base para el capitulo 7, "Detras de las clases", en donde explicaremos nuestra discusion
+de tipos para incluir otros top level y embedidos tipos.
 
-	Cuando trabajamos con otros tipos como Interfaces tenemos la tendencia a llamarlos
-	subtipos o supertipos.
-
-	public class Mammal{} 								<- superclase
-	public final class Rinoceros extends Mammal{}       <- subclase
-
-	Una clase es subclase por declaracion utilizando la palabra clave extends.
-	No se necesita declarar nada en una clase padre, solo estar seguro que no es una clase 
-	marcada con final.
-
-	Otro aspecto clave de la herencia es si es transitiva. Dadas tres clases
-	(X,Y,Z) 
-	
-	Z
-	Y extends Z
-	X extends Y
-
-	ENtonces X es considerada subclase o decensiente de Z. o de otra forma Z es 
-	superclase o ancestor de X
-
-	Existe el termino subclase directa, o descendent para indicar que la clase directamente
-	hereda (extends) del padre. En este caso, X no es descenciente de X.
-
-	X es un subtipo o desecendiente directo de Y, pero no de Z.
-
-	En el ultimo capitulo UD aprendio acerca de los niveles de acceso.
-		public protected, package, private.
-	
-	Cuando se hereda de una clase padre, todos los miembros protected y public son 
-	automaticamente heredados por la clase hija o child.
-	SI ambas clases se encuentran en el mismo packete, los miembros paquete son 
-	disponibles para la clase hija. Como ultimo, los miembros privados estan restringidos
-	para la clase que los ha definido, y nunca disponible para herencia.
-
-	Lo anterior no significa que la clase padre no pueda tener miembros privados que pueda
-	mantener data o modificar un objeto. Solo significa que la subclase no tiene acceso directo
-	sobre los miembros (privados).
-
-	Class modifiers
-		final		esta clase no puede ser textendida
-		abstract.  	esta clase solo puede ser instanciada por una clase concreta.
-		sealed.    	solo una lista de clases puede heredad esta clase. 
-		non-sealed 	una subclase de sealed class permite potencialmente no nombradas subclases **
-		static		usada en clases internas dentro de una clase
-	
-	 
-
-
-	
-	
+---
 
 ## 29-03
+
+## Entendiendo la Herencia
+
+Cuando se crea una clase Java, uno puede heredar desde una clase ya existente.
+Herencia es el proceso por el cual una subclase automaticamente incluye
+miembros de una clase, incluyendo primitivos, objetos o metodos, definidos
+en la clase padre.
+
+Cualquier clase que herede de otra es una subclase o clase hija, como descendiente
+de esa clase padre.
+La clase de la cual se hereda es la clase Padre o Ancestor.
+
+Cuando trabajamos con otros tipos como Interfaces tenemos la tendencia a llamarlos
+subtipos o supertipos.
+
+```java
+public class Mammal{}                           // <- superclase
+public final class Rinoceros extends Mammal{}   // <- subclase
+```
+
+Una clase es subclase por declaracion utilizando la palabra clave `extends`.
+No se necesita declarar nada en una clase padre, solo estar seguro que no es una clase 
+marcada con `final`.
+
+### Herencia transitiva
+
+Otro aspecto clave de la herencia es si es transitiva. Dadas tres clases (X,Y,Z):
+
+```
+Z
+Y extends Z
+X extends Y
+```
+
+Entonces X es considerada subclase o descendiente de Z, o de otra forma Z es 
+superclase o ancestor de X.
+
+Existe el termino **subclase directa** o **descendiente** para indicar que la clase directamente
+hereda (extends) del padre. En este caso, X no es descendiente directo de Z.
+
+X es un subtipo o descendiente directo de Y, pero no de Z.
+
+### Niveles de acceso en herencia
+
+En el ultimo capitulo UD aprendio acerca de los niveles de acceso:
+* public
+* protected
+* package
+* private
+
+Cuando se hereda de una clase padre, todos los miembros `protected` y `public` son 
+automaticamente heredados por la clase hija o child.
+Si ambas clases se encuentran en el mismo package, los miembros package son 
+disponibles para la clase hija. Como ultimo, los miembros privados estan restringidos
+para la clase que los ha definido, y nunca disponible para herencia.
+
+Lo anterior no significa que la clase padre no pueda tener miembros privados que pueda
+mantener data o modificar un objeto. Solo significa que la subclase no tiene acceso directo
+sobre los miembros (privados).
+
+## Class Modifiers
+
+| Modificador | Descripción |
+|-------------|---------------|
+| `final` | Esta clase no puede ser extendida |
+| `abstract` | Esta clase solo puede ser instanciada por una clase concreta |
+| `sealed` | Solo una lista de clases puede heredar esta clase |
+| `non-sealed` | Una subclase de sealed class permite potencialmente no nombradas subclases |
+| `static` | Usada en clases internas dentro de una clase |
+
+El atributo `final` permite que una clase no se extienda mas.
+
+```java
+public final class Rinoceros extends Mammal{}
+
+public class Clara extends Rinoceros{} // <- esto no compila.
+```
+
+> **EN EL EXAMEN** UD debe tomar atencion a las clases marcadas con `final`.
+> Si UD ve una clase extendiendola, ese codigo inmediatamente no compila.
+
+## SINGLE AND MULTIPLE HERENCIA
+
+Java soporta **single herencia**. Quiere decir que una clase solo puede heredar de un padre directo
+solamente. Ejemplo:
+
+```java
+public class Persona{}
+public class Policia extends Persona{}
+```
+
+Java soporta multiples niveles de herencia permitiendo heredar miembros de ancestor clases.
+Por diseño java no soporta herencia multiple ya que un modelo de datos se tornaria 
+complejo y dificil de mantener.
+
+Java permite una excepcion para una unica regla de herencia: una clase puede implementar
+multiples interfaces.
+
+---
 
 
 
