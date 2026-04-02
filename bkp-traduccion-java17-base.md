@@ -1775,11 +1775,11 @@ sobre los miembros (privados).
 
 | Modificador | Descripción |
 |-------------|---------------|
-| `final` | Esta clase no puede ser extendida |
-| `abstract` | Esta clase solo puede ser instanciada por una clase concreta |
-| `sealed` | Solo una lista de clases puede heredar esta clase |
+| `final` 	  | Esta clase no puede ser extendida |
+| `abstract`  | Esta clase solo puede ser instanciada por      una              clase concreta |
+| `sealed`     | Solo una lista de clases puede heredar esta clase          |
 | `non-sealed` | Una subclase de sealed class permite potencialmente no nombradas subclases |
-| `static` | Usada en clases internas dentro de una clase |
+| `static`     | Usada en clases internas dentro de una clase |
 
 El atributo `final` permite que una clase no se extienda mas.
 
@@ -1802,8 +1802,8 @@ public class Persona{}
 public class Policia extends Persona{}
 ```
 
-Java soporta multiples niveles de herencia permitiendo heredar miembros de ancestor clases.
-Por diseño java no soporta herencia multiple ya que un modelo de datos se tornaria 
+Java soporta multiples niveles de herencia permitiendo heredar miembros de ancestor clases (clases mas padres).
+Por diseño java no soporta herencia multiple ya que un modelo de datos se volveria
 complejo y dificil de mantener.
 
 Java permite una excepcion para una unica regla de herencia: una clase puede implementar
