@@ -1800,6 +1800,7 @@ solamente. Ejemplo:
 ```java
 public class Persona{}
 public class Policia extends Persona{}
+public class Detective extends Policia{} // Aca existe una herencia ancestor.
 ```
 
 Java soporta multiples niveles de herencia permitiendo heredar miembros de ancestor clases (clases mas padres).
