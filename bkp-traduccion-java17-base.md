@@ -1810,6 +1810,11 @@ complejo y dificil de mantener.
 Java permite una excepcion para una unica regla de herencia: una clase puede implementar
 multiples interfaces.
 
+La figura ilustra varios tipos de modelos de herencia. Los items a la izquierda son considerados 
+herencia unica o singular por que cada hijo tiene exactamente un padre.
+
+UD. puede notar que la herencia unica, no impide que los padres tengan varios hijos. EL lado derecho del modelo, muestra los items que tienen multiple herencia, como UD. puede ver un objeto Perro tiene multiple designaciones de padre. ![tipos de herencia](images/tipos-herencia.png)
+
 ---
 
 
