@@ -1820,6 +1820,40 @@ De acuerdo a lo anterior es que es complicado determinar cual padre hereda valor
 Ejemplo. CUando un metodo se encuentra en toos los padre, de cual de los padres se encuentra heredando?
 Es por eso que java vacia estos errores deshabilitando la herencia multiple.
 
+
+Inherithing Object.
+
+UD. ha notado que muchas veces en el libro hablamos de la palabra Object. Y por una buena razon. Todo en Java
+hereda de una unica clase java.lang.Object, or Object en corto. POr otra parte Object es la unica clase que no tiene clase padre.
+
+Ud me podria decir, ninguna clse que yo he escrito ha heredado desde la clase Object. PEro eso lo realiza el compilador de forma automatica. Ejemplo, estas clases son equivalientes.
+
+public class Zoo{}
+public class Zoo extends java.lang.Object{}
+
+La clave es que cuando tu defines una clase que no extiende de otra, el compilador automaticamente
+agrega la palabra extends java.lang.Object en la definicion de la clase. EL resultado es que la clase
+gana accedo a todos los metodos de la clase Object. Por ejemplo toString(). equals() methodos estan disponibles dentro de Object. Ahora se encuentran accesible dentreo de todas las clases.
+
+SI no se encuentran, estos metodos, sobrescritos en las subclases, podrian ser no muy particularmente
+usables. Cubriremos mas adelante la sobrescritura de metodos.
+
+POr otra parte, cuando Ud define una clase nueva que extiende de una clase exsitente, java no extiende automaticamente desde una Object class. Extender desde una clase existente significa que la clase Hija ya hereda desde Object por definicion.
+
+java.lang.Object
+       |
+	  ....
+	   |
+public class Mammal{}
+	   |
+	   Ox
+
+(TODOS los objecot heredan de java.lang.Object)
+
+
+Los tipos de datos primitivos no heredan desde Object, desde que ellos no son clases.
+COmo UD. ha aprendido en el capitulo 5 atraves del autoboxing.
+
 ---
 
 
