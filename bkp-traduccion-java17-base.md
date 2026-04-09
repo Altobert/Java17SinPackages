@@ -1815,6 +1815,11 @@ herencia unica o singular por que cada hijo tiene exactamente un padre.
 
 UD. puede notar que la herencia unica, no impide que los padres tengan varios hijos. EL lado derecho del modelo, muestra los items que tienen multiple herencia, como UD. puede ver un objeto Perro tiene multiple designaciones de padre. ![tipos de herencia](images/tipos-herencia.png)
 
+De acuerdo a lo anterior es que es complicado determinar cual padre hereda valores de un caso con un conflicto. 
+
+Ejemplo. CUando un metodo se encuentra en toos los padre, de cual de los padres se encuentra heredando?
+Es por eso que java vacia estos errores deshabilitando la herencia multiple.
+
 ---
 
 
