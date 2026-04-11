@@ -1803,11 +1803,11 @@ public class Policia extends Persona{}
 public class Detective extends Policia{} // Aca existe una herencia ancestor.
 ```
 
-Java soporta multiples niveles de herencia permitiendo heredar miembros de ancestor clases (clases mas padres).
+Java soporta multiples niveles de herencia permitiendo heredar miembros de ancestor clases (clases de una jerarquia superior).
 Por diseño java no soporta herencia multiple ya que un modelo de datos se volveria
 complejo y dificil de mantener.
 
-Java permite una excepcion para una unica regla de herencia: una clase puede implementar
+Java permite una excepcion para una unica regla de herencia: Una clase puede implementar
 multiples interfaces.
 
 La figura ilustra varios tipos de modelos de herencia. Los items a la izquierda son considerados 
@@ -1815,6 +1815,7 @@ herencia unica o singular por que cada hijo tiene exactamente un padre.
 
 UD. puede notar que la herencia unica, no impide que los padres tengan varios hijos. EL lado derecho del modelo, muestra los items que tienen multiple herencia, como UD. puede ver un objeto Perro tiene multiple designaciones de padre. ![tipos de herencia](images/tipos-herencia.png)
 
+<<<<<<< HEAD
 De acuerdo a lo anterior es que es complicado determinar cual padre hereda valores de un caso con un conflicto. 
 
 Ejemplo. CUando un metodo se encuentra en toos los padre, de cual de los padres se encuentra heredando?
@@ -1853,6 +1854,15 @@ public class Mammal{}
 
 Los tipos de datos primitivos no heredan desde Object, desde que ellos no son clases.
 COmo UD. ha aprendido en el capitulo 5 atraves del autoboxing.
+=======
+Cuando hay pproblemas, y es necesario saber de que padre hereda el metodo o atributo el hijo, es ahi 
+cuando java prefiere no implementar la herencia multiple.
+
+Herencia OBJECT
+A traves de la discusion de java en este libro hemos lanzado la palabra  "Object" en numerosas veces.
+Y por una buena razon, en java todas las clases heredan de java.lang.Object or Object. Object es la 
+unica clase que no tiene Clase Padre.
+>>>>>>> d95ce3a (herencia multiple y simple)
 
 ---
 
