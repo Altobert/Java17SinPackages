@@ -1836,6 +1836,50 @@ La clave reside en que, cuando Java detecta la definición de una clase que no h
 Abordaremos la sobreescritura de métodos más adelante en este capítulo. Por otro lado, cuando se define una nueva clase que hereda de una clase existente, Java no hereda automáticamente de la clase `Object`. Dado que todas las clases heredan de `Object`, heredar de una clase existente implica que la clase hija ya hereda de `Object` por definición. Si se observa la estructura de herencia de cualquier clase, siempre terminará con `Object` en la raíz del árbol, como se muestra en la Figura 6.3.
 ![Herencia desde Object](images/herencia-object.png)
 
+Los tipos primitivos de datos no heredan de la clase Object. Lo anterior desde que no son clases. 
+De acuerdo a lo aprendido en el capitulo 5 ellos pueden ser asignados o pasados como instancia de una clase envolvente o wrapper, la cual si hereda de Object.
+
+## Creacion de clases
+
+Ahora que hemos establecido como trabaja la herencia, podemos crear y definir complejas relaciones
+EN esta seccion revisaremos lo basico para crear y trabajar con clases.
+
+```java
+	// Animal.java
+	public class Animal{
+		private int age;
+		protected String name;
+		public void setAge(String age){
+			this.age = age;
+		}
+		public int getAge(){
+			return age;
+		}
+	}
+
+	// Lion.java
+	public class Lion extends Animal{
+		// age not accecible directamente por herencia
+		protected void setProperties(int age, String n){
+			setAge(age); // PERO ACA SI PUEDO ACCEDER A AGE POR HERENCIA
+			name = n ; // aca si se puede acceder a la variable de forma directa -> protected
+		}
+		public void roar(){
+			// en ninguna parte se declara name -> NO COMPILA
+			System.out.print(name, + ", age " + getAge() +", says: Roar! ");
+		}
+
+		public static void main(String []  args){
+			var lion = new Lion();
+			lion.setProperties(3, "kion");
+			lion.roar();
+		}
+	} 	
+```
+
+Las subclases no heredan los atributos de instancia privados.
+miembros package solo son hererados por dos clases si ambas pertenecen al packete.
+SI UD quiere refrescar los atributos de acceso, vuelva al capitulo 5, nuevamente.
 
 
 ---
