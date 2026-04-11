@@ -1815,54 +1815,21 @@ herencia unica o singular por que cada hijo tiene exactamente un padre.
 
 UD. puede notar que la herencia unica, no impide que los padres tengan varios hijos. EL lado derecho del modelo, muestra los items que tienen multiple herencia, como UD. puede ver un objeto Perro tiene multiple designaciones de padre. ![tipos de herencia](images/tipos-herencia.png)
 
-<<<<<<< HEAD
-De acuerdo a lo anterior es que es complicado determinar cual padre hereda valores de un caso con un conflicto. 
-
-Ejemplo. CUando un metodo se encuentra en toos los padre, de cual de los padres se encuentra heredando?
-Es por eso que java vacia estos errores deshabilitando la herencia multiple.
-
-
-Inherithing Object.
-
-UD. ha notado que muchas veces en el libro hablamos de la palabra Object. Y por una buena razon. Todo en Java
-hereda de una unica clase java.lang.Object, or Object en corto. POr otra parte Object es la unica clase que no tiene clase padre.
-
-Ud me podria decir, ninguna clse que yo he escrito ha heredado desde la clase Object. PEro eso lo realiza el compilador de forma automatica. Ejemplo, estas clases son equivalientes.
-
-public class Zoo{}
-public class Zoo extends java.lang.Object{}
-
-La clave es que cuando tu defines una clase que no extiende de otra, el compilador automaticamente
-agrega la palabra extends java.lang.Object en la definicion de la clase. EL resultado es que la clase
-gana accedo a todos los metodos de la clase Object. Por ejemplo toString(). equals() methodos estan disponibles dentro de Object. Ahora se encuentran accesible dentreo de todas las clases.
-
-SI no se encuentran, estos metodos, sobrescritos en las subclases, podrian ser no muy particularmente
-usables. Cubriremos mas adelante la sobrescritura de metodos.
-
-POr otra parte, cuando Ud define una clase nueva que extiende de una clase exsitente, java no extiende automaticamente desde una Object class. Extender desde una clase existente significa que la clase Hija ya hereda desde Object por definicion.
-
-java.lang.Object
-       |
-	  ....
-	   |
-public class Mammal{}
-	   |
-	   Ox
-
-(TODOS los objecot heredan de java.lang.Object)
-
-
-Los tipos de datos primitivos no heredan desde Object, desde que ellos no son clases.
-COmo UD. ha aprendido en el capitulo 5 atraves del autoboxing.
-=======
 Cuando hay pproblemas, y es necesario saber de que padre hereda el metodo o atributo el hijo, es ahi 
 cuando java prefiere no implementar la herencia multiple.
 
-Herencia OBJECT
+## Herencia OBJECT
+
 A traves de la discusion de java en este libro hemos lanzado la palabra  "Object" en numerosas veces.
 Y por una buena razon, en java todas las clases heredan de java.lang.Object or Object. Object es la 
 unica clase que no tiene Clase Padre.
->>>>>>> d95ce3a (herencia multiple y simple)
+
+Quizás te preguntes: «Ninguna de las clases que he escrito hasta ahora hereda de `Object`, ¿cómo es que todas las demás heredan de ella?». La respuesta es que el compilador inserta automáticamente código en cualquier clase que escribas que no herede de una clase específica. Por ejemplo, los dos ejemplos siguientes son equivalentes:
+
+La clave reside en que, cuando Java detecta la definición de una clase que no hereda de otra, el compilador añade automáticamente la sintaxis `extends java.lang.Object` a la definición de la clase. Como resultado, todas las clases obtienen acceso a los métodos disponibles en la clase `Object`. Por ejemplo, los métodos `toString()` y `equals()` están disponibles en `Object`; por lo tanto, son accesibles en todas las clases. Sin embargo, si no se sobrescriben en una subclase, pueden resultar poco útiles. 
+
+Abordaremos la sobreescritura de métodos más adelante en este capítulo. Por otro lado, cuando se define una nueva clase que hereda de una clase existente, Java no hereda automáticamente de la clase `Object`. Dado que todas las clases heredan de `Object`, heredar de una clase existente implica que la clase hija ya hereda de `Object` por definición. Si se observa la estructura de herencia de cualquier clase, siempre terminará con `Object` en la raíz del árbol, como se muestra en la Figura 6.3.
+![Herencia desde Object](images/herencia-object.png)
 
 ---
 
