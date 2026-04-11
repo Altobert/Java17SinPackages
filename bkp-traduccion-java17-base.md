@@ -1828,8 +1828,15 @@ Quizás te preguntes: «Ninguna de las clases que he escrito hasta ahora hereda 
 
 La clave reside en que, cuando Java detecta la definición de una clase que no hereda de otra, el compilador añade automáticamente la sintaxis `extends java.lang.Object` a la definición de la clase. Como resultado, todas las clases obtienen acceso a los métodos disponibles en la clase `Object`. Por ejemplo, los métodos `toString()` y `equals()` están disponibles en `Object`; por lo tanto, son accesibles en todas las clases. Sin embargo, si no se sobrescriben en una subclase, pueden resultar poco útiles. 
 
+```java
+	public class Zoo{}
+	public class Zoo extends java.lang.Object {} 
+```
+
 Abordaremos la sobreescritura de métodos más adelante en este capítulo. Por otro lado, cuando se define una nueva clase que hereda de una clase existente, Java no hereda automáticamente de la clase `Object`. Dado que todas las clases heredan de `Object`, heredar de una clase existente implica que la clase hija ya hereda de `Object` por definición. Si se observa la estructura de herencia de cualquier clase, siempre terminará con `Object` en la raíz del árbol, como se muestra en la Figura 6.3.
 ![Herencia desde Object](images/herencia-object.png)
+
+
 
 ---
 
