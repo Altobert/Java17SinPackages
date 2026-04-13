@@ -1877,9 +1877,84 @@ EN esta seccion revisaremos lo basico para crear y trabajar con clases.
 	} 	
 ```
 
-Las subclases no heredan los atributos de instancia privados.
-miembros package solo son hererados por dos clases si ambas pertenecen al packete.
-SI UD quiere refrescar los atributos de acceso, vuelva al capitulo 5, nuevamente.
+## Las subclases no heredan los atributos de instancia privados. Se accede a los atributos mediante sus metodos publicos.
+## Miembros package solo son hererados por dos clases si ambas pertenecen al packete.
+## SI UD quiere refrescar los atributos de acceso, vuelva al capitulo 5, nuevamente.
+
+# Aplicando modificadores de clases
+	como metodos o variables, los modificadores de acceso pueden ser aplicados a las clases. como puede recordar en el capitulo 1, una clase es unica y puede estar definida
+	dentro de otra clase, pero un archivo .java debe tener como minimo una clase publica de alto nivel. 
+
+	Incluso no es obligatorio que su clase sea declarada publica.
+
+	class Bird{}
+	class Bear{}
+	class Fish{}
+
+	//Clownfish.java
+	protected class Clownfish{} does not compile
+
+	//Bluetang.java
+	private class Bluetang{} does not compile
+
+	Entonces no se puede declarar una clase private o protected?. NO exactamente, Mas adelante en el capitulo 7 hablaremos de las clases anidadas (nested) que pueden
+	usar cualquier modificador de acceso.
+
+
+## Accesando la referencia this.
+	QUe ocurre cuando un method parameter tiene el misno nombre que un atributo de instancua definido en la clase?.
+
+## Calling the super reference
+
+	```java
+		// Reptile.java
+	1: public class Reptile {
+	2:    protected int speed = 10;
+	3: }
+	
+	// Crocodile.java
+	1: public class Crocodile extends Reptile {
+	2:    protected int speed = 20;
+	3:    public int getSpeed() {
+	4:       return speed;
+	5:    }
+	6:    public static void main(String[] data) {
+	7:       var croc = new Crocodile();
+	8:       System.out.println(croc.getSpeed()); // 20
+	9:    } }
+	```
+
+	La palabra super() incluye miembros heredados, 
+	sin embargo this. incluye clase actual y heredados.
+
+```java
+	1:  class Insect {
+	2:     protected int numberOfLegs = 4;
+	3:     String label = "buggy";
+	4:  }
+
+	6:  public class Beetle extends Insect {
+	7:     protected int numberOfLegs = 6;
+	8:     short age = 3;
+	9:     public void printData() {
+	10:       System.out.println(this.label); // compila this sirve para local y here
+	11:       System.out.println(super.label); // compila.
+	12:       System.out.println(this.age); // no compula.
+	13:       System.out.println(super.age); // si compila.
+	14:       System.out.println(numberOfLegs); //compila
+	15:    }
+	16:    public static void main(String []n) {
+	17:       new Beetle().printData();
+	18:    }
+	19: }
+	```
+
+## Declarando constructores.
+
+
+
+
+
 
 
 ---
