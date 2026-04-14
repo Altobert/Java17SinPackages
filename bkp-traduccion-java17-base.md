@@ -1822,7 +1822,7 @@ cuando java prefiere no implementar la herencia multiple.
 
 A traves de la discusion de java en este libro hemos lanzado la palabra  "Object" en numerosas veces.
 Y por una buena razon, en java todas las clases heredan de java.lang.Object or Object. Object es la 
-unica clase que no tiene Clase Padre.
+unica clase en Java que no tiene Clase Padre.
 
 Quizás te preguntes: «Ninguna de las clases que he escrito hasta ahora hereda de `Object`, ¿cómo es que todas las demás heredan de ella?». La respuesta es que el compilador inserta automáticamente código en cualquier clase que escribas que no herede de una clase específica. Por ejemplo, los dos ejemplos siguientes son equivalentes:
 
