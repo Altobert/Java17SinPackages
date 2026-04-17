@@ -1826,12 +1826,13 @@ unica clase en Java que no tiene Clase Padre.
 
 Quizás te preguntes: «Ninguna de las clases que he escrito hasta ahora hereda de `Object`, ¿cómo es que todas las demás heredan de ella?». La respuesta es que el compilador inserta automáticamente código en cualquier clase que escribas que no herede de una clase específica. Por ejemplo, los dos ejemplos siguientes son equivalentes:
 
-La clave reside en que, cuando Java detecta la definición de una clase que no hereda de otra, el compilador añade automáticamente la sintaxis `extends java.lang.Object` a la definición de la clase. Como resultado, todas las clases obtienen acceso a los métodos disponibles en la clase `Object`. Por ejemplo, los métodos `toString()` y `equals()` están disponibles en `Object`; por lo tanto, son accesibles en todas las clases. Sin embargo, si no se sobrescriben en una subclase, pueden resultar poco útiles. 
-
 ```java
 	public class Zoo{}
 	public class Zoo extends java.lang.Object {} 
 ```
+
+La clave reside en que, cuando Java detecta la definición de una clase que no hereda de otra, el compilador añade automáticamente la sintaxis `extends java.lang.Object` a la definición de la clase. Como resultado, todas las clases obtienen acceso a los métodos disponibles en la clase `Object`. Por ejemplo, los métodos `toString()` y `equals()` están disponibles en `Object`; por lo tanto, son accesibles en todas las clases. Sin embargo, si los metodos no se sobrescriben en una subclase, pueden resultar poco útiles.
+
 
 Abordaremos la sobreescritura de métodos más adelante en este capítulo. Por otro lado, cuando se define una nueva clase que hereda de una clase existente, Java no hereda automáticamente de la clase `Object`. Dado que todas las clases heredan de `Object`, heredar de una clase existente implica que la clase hija ya hereda de `Object` por definición. Si se observa la estructura de herencia de cualquier clase, siempre terminará con `Object` en la raíz del árbol, como se muestra en la Figura 6.3.
 ![Herencia desde Object](images/herencia-object.png)
