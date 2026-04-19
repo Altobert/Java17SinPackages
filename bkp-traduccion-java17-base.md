@@ -1388,12 +1388,11 @@ Manejo de fecha, tiempo, texto, numericos y valores booleanos.
 
 Uso de primitivos, clases envolventes (Wrapper)
 
-En el capitulo anterior hablamos de las Variables, pero que podemos hacer con las variables una vez
-creadas?
+En el capitulo anterior hablamos de las Variables, pero que podemos hacer con las variables una vez creadas?
 
 Este capitulo introduce los operadores y muestra como se pueden usar y combinar 
 variables existentes y generar nuevos valores. 
-Muestra como aplicar operadores a muchas variables primitivas incluyendo los operadores
+Muestra como aplicar operadores a muchas variables primitivas incluyendo los operadores que con posibles de utilizar tambien sobre objetos.
 que se pueden utilizar sobre objetos.
 
 ### Entendiendo los Operadores Java
