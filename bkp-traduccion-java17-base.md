@@ -1422,8 +1422,8 @@ se aplican de izquierda a derecha. En el ejemplo, se aplica el orden de
 derecha a izquierda, debido al especifico operador involucrado.
 
 ```java
-int cookies = 4;
-double reward = 3+2 * --cookies;
+int cookies 	= 4;
+double reward 	= 3 + 2 * --cookies;
 ```
 
 ---
@@ -1477,8 +1477,6 @@ El operador `=` tiene la ultima precedencia.
 
 Una regla de java: si ambos operadores de precedencia son iguales, se evalua de izquierda a derecha.
 Es decir, java garantiza izquierda-derecha mas que los otros operadores existentes en la operacion.
-
-![Tabla operadores de precedencia](images/operadores-procedencia.png)
 
 ![Segunda parte operadores ternarios](images/operador-ternario.png)
 
