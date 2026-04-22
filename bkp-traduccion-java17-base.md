@@ -1465,11 +1465,12 @@ ser de segunda naturaleza o importancia.
 
 ### Operador de precedencia
 
+Determinar en que orden son evaluados los operadores se refiere a los operadores de procedencia.
 Java se encuentra cerca de las reglas de las matematicas para los operadores de precedencia.
 
 ```java
 var perimeter = 2 * height + 2 * length;
-var perimeter = (2 * height) + (2 * length);
+var perimeter = ((2 * height) + (2 * length))
 ```
 En el ejemplo anterior, para el compilador java, primeramente se ejecutan las multiplicaciones
 luego se suman ambas variables para luego ser agregadas al resultado. 
@@ -1477,6 +1478,11 @@ El operador `=` tiene la ultima precedencia.
 
 Una regla de java: si ambos operadores de precedencia son iguales, se evalua de izquierda a derecha.
 Es decir, java garantiza izquierda-derecha mas que los otros operadores existentes en la operacion.
+
+```java
+// permiteme agregar añgunos parentesis.
+var perimeter = ((2 * height) + (2 * length))
+```
 
 ![Segunda parte operadores ternarios](images/operador-ternario.png)
 
