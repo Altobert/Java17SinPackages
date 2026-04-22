@@ -1484,6 +1484,11 @@ Es decir, java garantiza izquierda-derecha mas que los otros operadores existent
 var perimeter = ((2 * height) + (2 * length))
 ```
 
+Los operadores * tienen mas alta procedencia que los + y el operador = tiene ultima procedencia.
+(Java sigue los lineamients de la matematica.)
+
+
+
 ![Segunda parte operadores ternarios](images/operador-ternario.png)
 
 ---
