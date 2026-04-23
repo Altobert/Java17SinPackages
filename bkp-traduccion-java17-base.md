@@ -1488,7 +1488,8 @@ Los operadores * tienen mas alta procedencia que los + y el operador = tiene ult
 (Java sigue los lineamients de la matematica.)
 
 ### Aplicando operadores Unarios.
-### Trabajando con Operadores Binarios Aritheticos.
+### Trabajando con Operadores Binarios Aritmicos.
+	Son los mas utilizados + - * %(resto)
 ### Asignando Valores.
 ### Comparando Valores.
 ### Construyendo desiciones con operador Ternario.
