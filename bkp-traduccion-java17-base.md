@@ -1487,6 +1487,16 @@ var perimeter = ((2 * height) + (2 * length))
 Los operadores * tienen mas alta procedencia que los + y el operador = tiene ultima procedencia.
 (Java sigue los lineamients de la matematica.)
 
+### Aplicando operadores Unarios.
+### Trabajando con Operadores Binarios Aritheticos.
+### Asignando Valores.
+### Comparando Valores.
+### Construyendo desiciones con operador Ternario.
+### Resumen.
+### Examen.
+### Revision Preguntas.
+
+
 
 
 ![Segunda parte operadores ternarios](images/operador-ternario.png)
