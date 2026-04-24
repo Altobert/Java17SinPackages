@@ -1441,10 +1441,10 @@ Java soporta tres sabores de operadores: unario, binario y ternario. Estos tipos
 pueden ser aplicados a uno, dos o tres operandos respectivamente.
 
 EN el examen java necesito saber un subgrupo de estos operadores:
-Como aplicarlos
-y el orden en cual ellos deberia ser aplicados.
+Como aplicarlos,
+Y El orden en cual ellos deberia ser aplicados.
 
-Los peradores java no necesariamente se aplican de iquiera a derecha
+Los peradores java no necesariamente se aplican de izquierda a derecha
 EL siguiente ejemplo, la segunda expresion es evaluada desde derecha a izquierda, 
 dado el especifico operador involucrado.
 
