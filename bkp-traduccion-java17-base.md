@@ -1455,7 +1455,7 @@ dado el especifico operador involucrado.
 	System.out.print("zoo animal receives:"+reward+" ponts");
 ```
 
-En el ejemplo anterior se decrementa en 1 cookies, luego se multiplica el resultado del valor por dos,
+En el ejemplo anterior se decrementa de inmediato 1 en cookies, luego se multiplica el resultado del valor por 2,
 y finalmente se suma 3. Entonces el resultado es promovido automaticamente de 9 a 9.0 y asignado a 
 reward.
 
