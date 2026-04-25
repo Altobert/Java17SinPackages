@@ -1412,7 +1412,7 @@ Java soporta operadores unarios, binarios y ternarios. Estos tipos de operadores
 aplicados a uno, dos o tres operandos respectivamente.
 
 Para el examen:
-* Conocer el subset especifico de java operadores.
+* Conocer el subset especifico de java operadores. (La cantidad o subgrupo de operadores necesarios.)
 * Como aplicarlos
 * El orden en el cual ellos deben ser aplicados. 
 
@@ -1434,17 +1434,19 @@ var c = a + b;
 ```
 En la operacion anterior se encuentra el operador `+` y los operandos `a` y `b`
 El resultado se asigna a la variable `c` con el signo igual.
-Por lo tanto existirian en la operacion dos operadores, el `=` y el `+`
+Por lo tanto existirian en la operacion dos operadores, el `=` y el `+`. 
+El operador = es el que se aplica al ultimo.
 
 Java soporta tres sabores de operadores: unario, binario y ternario. Estos tipos de operadores
 pueden ser aplicados a uno, dos o tres operandos respectivamente.
 
-EN el examen java necesito saber un subgrupo de estos operadores:
-Como aplicarlos,
-Y El orden en cual ellos deberia ser aplicados.
+Importante:
+Subgrupo de operadores importantes en el examen
+COmo se aplican 
+El orden como aplicarlos.
 
 Los peradores java no necesariamente se aplican de izquierda a derecha
-EL siguiente ejemplo, la segunda expresion es evaluada desde derecha a izquierda, 
+El siguiente ejemplo, la segunda expresion es evaluada desde derecha a izquierda, 
 dado el especifico operador involucrado.
 
 ```java
