@@ -1455,14 +1455,14 @@ dado el especifico operador involucrado.
 	System.out.print("zoo animal receives:"+reward+" ponts");
 ```
 
-En el ejemplo anterior se decrementa de inmediato 1 en cookies, luego se multiplica el resultado del valor por 2,
-y finalmente se suma 3. Entonces el resultado es promovido automaticamente de 9 a 9.0 y asignado a 
-reward.
-
+En el ejemplo anterior se decrementa de "inmediato 1 en cookies", luego se multiplica el resultado del valor por 2,
+y finalmente se suma 3. Entonces el resultado es promovido automaticamente de 9 a 9.0 y asignado a reward. 
+**double reward** // al ser un tipo primitivo, automaticamente el compilador
+le asigna un .0, es decir, 9.0
 **Respuesta:** "Zoo animal receives 9.0 reward points"
 
-Si UD. no siguio el problema anterior, no se preocupe, al terminar este capitulo, eso deberia
-ser de segunda naturaleza o importancia.
+Si UD. no siguió el problema anterior, no se preocupe, al terminar este capitulo, eso deberia ser de segunda naturaleza o importancia.
+
 
 ### Operador de precedencia
 
