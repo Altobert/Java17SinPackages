@@ -1466,7 +1466,7 @@ Si UD. no siguió el problema anterior, no se preocupe, al terminar este capitul
 
 ### Operador de precedencia
 
-Determinar en que orden son evaluados los operadores se refiere a los operadores de procedencia.
+Determinar en que orden son evaluados los operadores se refiere a los **operadores de procedencia**.
 Java se encuentra cerca de las reglas de las matematicas para los operadores de precedencia.
 
 ```java
@@ -1477,7 +1477,7 @@ En el ejemplo anterior, para el compilador java, primeramente se ejecutan las mu
 luego se suman ambas variables para luego ser agregadas al resultado. 
 El operador `=` tiene la ultima precedencia.
 
-Una regla de java: si ambos operadores de precedencia son iguales, se evalua de izquierda a derecha.
+Una regla de java: **si ambos operadores de precedencia son iguales, se evalua de izquierda a derecha.**
 Es decir, java garantiza izquierda-derecha mas que los otros operadores existentes en la operacion.
 
 ```java
@@ -1485,8 +1485,10 @@ Es decir, java garantiza izquierda-derecha mas que los otros operadores existent
 var perimeter = ((2 * height) + (2 * length))
 ```
 
-Los operadores * tienen mas alta procedencia que los + y el operador = tiene ultima procedencia.
+El operador * tienen ma alta procedencia que el operador + y el operador = tiene ultima procedencia.
 (Java sigue los lineamients de la matematica.)
+
+Entonces, 
 
 ### Aplicando operadores Unarios.
 ### Trabajando con Operadores Binarios Aritmicos.
