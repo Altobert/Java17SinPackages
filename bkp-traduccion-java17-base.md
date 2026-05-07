@@ -1536,6 +1536,8 @@ Entonces,
 		int price = 2 * (8 * 4 - 8); // comienza a operar de derecha a izquiera. (orden de operadores binarios.)
 		int price = 48
 	```	
+	Los parentesis pueden aparecer cerca de cualquier pregunta en el examen envolviendo valores numericos. Entienda
+	que esto puede cambiar el orden de la operacion cuando los vea.
 
 
 
