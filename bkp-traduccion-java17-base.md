@@ -1536,8 +1536,16 @@ Entonces,
 		int price = 2 * (8 * 4 - 8); // comienza a operar de derecha a izquiera. (orden de operadores binarios.)
 		int price = 48
 	```	
-	Los parentesis pueden aparecer cerca de cualquier pregunta en el examen envolviendo valores numericos. Entienda
+	Los parentesis se pueden aparecer cerca de cualquier pregunta en el examen envolviendo valores numericos. Entienda
 	que esto puede cambiar el orden de la operacion cuando los vea.
+
+##	Verificando Syntax parenthesis
+	Tener cuidado que al trabajar con parentesis siempre deben ser validos y balanceados.
+
+	```java
+		int pigeon  = 1 + ((3 * 5)/3; // NO COMPILA
+		int blurjay = (9+2)+3)/(2*4;  // NO COMPILA
+	```	
 
 
 
