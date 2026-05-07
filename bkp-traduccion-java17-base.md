@@ -1491,6 +1491,22 @@ El operador * tienen ma alta procedencia que el operador + y el operador = tiene
 Entonces, 
 
 ### Aplicando operadores Unarios.
+##	Incremento y decremento de operadores.
+	Son los primeros que se aplican en una expresion, tienen una alta prioridad y se aplican sobre valore numericos.
+	Es lo que se aplica primero en una expresion.
+	Se debe tener especial cuidado en el orden de uso de los operadores de incremento y decremento cuando son adjuntados a su variable. Pueden hacer la diferencia cuando son procesados.
+```java
+	int parkAttendance = 0;
+	System.out.println(parkAttendance);   //0 normal
+	System.out.println(++parkAttendance); //1 pre incremento
+	System.out.println(parkAttendance);   //1 normal
+	System.out.println(parkAttendance--); //1 post decremento
+	System.out.println(parkAttendance);   //0 normal
+```
+	NOTA: TENER ESPECIAL CUIDADO CON LOS OPERADORES ++ y --
+	POR QUE PUEDEN HACER PERDER MUCHOS PUNTOS.
+
+
 ### Trabajando con Operadores Binarios Aritmicos.
 	Son los mas utilizados + - * %(resto)
 ### Asignando Valores.
