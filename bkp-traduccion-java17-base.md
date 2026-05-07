@@ -1508,7 +1508,26 @@ Entonces,
 
 
 ### Trabajando con Operadores Binarios Aritmicos.
-	Son los mas utilizados + - * %(resto)
+	SOn las operaciones que usan dos operandos.	Son los mas utilizados + - * %(resto)
+	Permiten ejecutar:
+		Operaciones Matematicas.
+		Crear Logicas.
+		Ejecutacion asignaciones basicas.
+		Tambien permiten ejecutar complejas expresiones que contienen operadores binarios.
+		EJ: i % j = Retorna el resto de una division numerica de un numero por otro.
+			a + b = operador binario suma
+			c - d
+			e * f
+			g / h
+		Operaciones *, /, y % tienen una mayor orden de procedencia que + y -
+
+		```java
+			int price = 2 * 5 + 3 * 4 -8; // lo primero que se ejecuta es la multiplicacion
+			int price = 10 + 12 - 8; // comienza a operar de derecha a izquiera. (orden de operadores binarios.)
+			int price = 14
+		```
+
+
 ### Asignando Valores.
 ### Comparando Valores.
 ### Construyendo desiciones con operador Ternario.
