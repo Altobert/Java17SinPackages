@@ -1526,6 +1526,18 @@ Entonces,
 			int price = 10 + 12 - 8; // comienza a operar de derecha a izquiera. (orden de operadores binarios.)
 			int price = 14
 		```
+##	Agregando parentesis
+	UD. debio haber notado "a menos que sobrescriba con parentesis" lo anterior es por que UD puede cambiar el orden de la operacion sobrescribiendo con parentesis y logrando que se evalue primero.
+##	Cambiando el orden de la operacion.
+	Misma operacion anterior pero se agregaron parentesis.
+
+	```java
+		int price = 2 * ((5 + 3) * 4 -8); // lo primero que se ejecuta es la multiplicacion
+		int price = 2 * (8 * 4 - 8); // comienza a operar de derecha a izquiera. (orden de operadores binarios.)
+		int price = 48
+	```	
+
+
 
 
 ### Asignando Valores.
