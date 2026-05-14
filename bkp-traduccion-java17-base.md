@@ -1546,7 +1546,20 @@ Entonces,
 		int pigeon  = 1 + ((3 * 5)/3; // NO COMPILA
 		int blurjay = (9+2)+3)/(2*4;  // NO COMPILA
 	```	
+##  Basado en una descripcion debe ser obvios que elgunos operadores requieren que la variable o expresion actue sobre un tipo especifico.Ejemplo:
+	NO se puede aplicar un operador (-) a una expresion booleana.
+	tampoco es posible aplicar un operador logico (!) a una expresion numerica.
 
+	Tenga cuidado con estas expresiones en el examen, por que podrian hacerlo 
+	perder muchas preguntas.
+
+	```java
+		int pelican = !5; // No se puede negar un valor nuerico 
+		boolean penguin = -true; // no se puede negar un booleano, se debe usar un operador logico.
+		boolean peacok = !0; // no se puede asignar un operador logico a un valor numerico y no se puede esignar un numero a un tipo de dato booleano.
+	```	
+
+## TIP : Aunque se encuentre en otros lenguajes, en java 1 no es true y no esta   	relacionado de ninguna forma, tal commo 0 y falso tampoco se encuentra relacionado.
 
 
 
