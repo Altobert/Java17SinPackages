@@ -1584,6 +1584,9 @@ Entonces,
 	Es necesario que comprenda la diferencia entre  ++parkAttendance y parkAttendance++ .	
 	
 ### Trabajando con binerios, Arithetics Operadores.
+    SOn operadores que se pueden aplicar a dos operandos o variables.
+
+### Operadores Aritmeticos.
 
 ### Asignando Valores.
 ### Comparando Valores.
