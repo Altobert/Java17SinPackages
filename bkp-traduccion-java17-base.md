@@ -1580,8 +1580,10 @@ Entonces,
 		System.out.println(parkAttendance);   // 1
 		System.out.println(parkAttendance--); // 1
 		System.out.println(parkAttendance);   // 0
-	```	
+	```
+	Es necesario que comprenda la diferencia entre  ++parkAttendance y parkAttendance++ .	
 	
+### Trabajando con binerios, Arithetics Operadores.
 
 ### Asignando Valores.
 ### Comparando Valores.
