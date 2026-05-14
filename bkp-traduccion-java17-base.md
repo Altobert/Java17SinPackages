@@ -1561,7 +1561,27 @@ Entonces,
 
 ## TIP : Aunque se encuentre en otros lenguajes, en java 1 no es true y no esta   	relacionado de ninguna forma, tal commo 0 y falso tampoco se encuentra relacionado.
 
+### Operadores de Incremento y decremento 
+	Los operadores ++ y -- son aplicados a operandos o variables numericos
+	y tienen un alto orden de procedencia en comparacion a los operadores binarios.
+	EN otras palabras, son los que se aplican primero en una expresion.
 
+	EL orden don de son aplicador los operadores de incremento y decremento, debe ser cuidadosamente aplicado. Pueden hacer ladiferencia entre como una expresion es procesada.
+    
+	++w = incrementa y luego retorna el nuevo valor;
+	--w = decrementa y luego retorna el nuevo valor;
+	h++ = Post incremento = usa valor original y luego incrementa 
+	h-- = Post decremento = usa valor original y luego decrementa
+
+	```java
+		int parkAttendance = 0;
+		System.out.println(parkAttendance);   // 0
+		System.out.println(++parkAttendance); // 1
+		System.out.println(parkAttendance);   // 1
+		System.out.println(parkAttendance--); // 1
+		System.out.println(parkAttendance);   // 0
+	```	
+	
 
 ### Asignando Valores.
 ### Comparando Valores.
