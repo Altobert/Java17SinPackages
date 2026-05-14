@@ -1598,6 +1598,7 @@ Entonces,
 	SI Ud lo reemplaza por parentesis, el codigo si compilara.
 
 ### Division y operador modulo.
+	Es el operador % y es el resto de la ivision de dos numeros.
 
 ### Operadores Aritmeticos.
 
