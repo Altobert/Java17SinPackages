@@ -1584,7 +1584,15 @@ Entonces,
 	Es necesario que comprenda la diferencia entre  ++parkAttendance y parkAttendance++ .	
 	
 ### Trabajando con binerios, Arithetics Operadores.
-    SOn operadores que se pueden aplicar a dos operandos o variables.
+    SOn operadores que se pueden aplicar a dos operandos o variables. SOn los operadores, por lejos, los mas comunes en el lenguaje java. Ellos pueden ser
+	usados para ejecutar operaciones matematicas en variables, expresiones logicas en variables y ejecutar basicas asignaciones.
+
+	a + b suma dos valores numericos.
+	c - d sustraen dos variables numericas.
+	e * f multiplica dos operandos numericos.
+	g / h divide dos tipos de datos numericos
+	i % j retorna el resto de la division de dos numeros enteros.
+
 
 ### Operadores Aritmeticos.
 
