@@ -1593,6 +1593,11 @@ Entonces,
 	g / h divide dos tipos de datos numericos
 	i % j retorna el resto de la division de dos numeros enteros.
 
+	Probemos otro ejemplo:
+	short robin = 3+[(4*2)+4] // Does not compile. POr que java no permite operadores corchete.
+	SI Ud lo reemplaza por parentesis, el codigo si compilara.
+
+### Division y operador modulo.
 
 ### Operadores Aritmeticos.
 
