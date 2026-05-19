@@ -1624,6 +1624,20 @@ Entonces,
 	
 	Debes memorizar ciertas reglas que java seguira cuando aplica operadores sobre los tipos de datos:
 
+	Si dos valores tienen distintos tipos de datos, java automaticamente promovera uno de los valores hacia el mas largo de los dos tipos de datos.
+
+	SI uno de los valores es integral y el otro de punto flotante, java automaticamente promovera el valor integral hacia el coma flotante tipo de dato.
+
+	Los pequeños tipos de datos, llamados byte, short y char son primero promovidos hacia int en cualquier momento ellos son usados conun operador aritmetico binario con una variable (como opuesto al valor)
+	aun si ninguno de los operandos es int.
+	(explicacion..)
+	Cuando usas byte, short o char en operaciones aritméticas:
+		- Se convierten automáticamente a int.
+		- El resultado es int, aunque los operandos no lo sean.
+		- Si quieres guardar el resultado en un tipo pequeño, necesitas un cast explícito.
+	(explicacion..)
+
+
 
 ### Operadores Aritmeticos.
 
