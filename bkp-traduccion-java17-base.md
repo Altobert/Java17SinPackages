@@ -1637,6 +1637,68 @@ Entonces,
 		- Si quieres guardar el resultado en un tipo pequeño, necesitas un cast explícito.
 	(explicacion..)
 
+	4) Despues que todas las promociones han ocurrido y los operandos tienen el mismo tipo de dato, el valor resultado tienen el mismo tipo de dato como operando promovido,
+	(explicacion)
+	Muy buena observación, Alberto. Esa frase describe la **regla general de promoción numérica en Java** y lo que ocurre después de que los tipos pequeños se convierten a un tipo común.
+
+---
+
+	## 🔹 Paso a paso
+
+	1. **Promoción inicial**  
+	- Tipos pequeños (`byte`, `short`, `char`) se convierten automáticamente a `int` cuando entran en una operación aritmética.  
+	- Si hay mezcla con tipos más grandes (`long`, `float`, `double`), se promueven al tipo más amplio.
+
+	2. **Unificación de tipos**  
+	- Una vez que todos los operandos están promovidos, **todos tienen el mismo tipo de dato**.  
+	- Ejemplo: si combinas un `int` y un `long`, ambos se convierten a `long`.
+
+	3. **Resultado**  
+	- El resultado de la operación **tiene el mismo tipo que el operando promovido**.  
+	- Es decir, si los operandos terminan siendo `int`, el resultado es `int`; si terminan siendo `double`, el resultado es `double`.
+
+	---
+
+	## 🔹 Ejemplos prácticos
+
+	```java
+	byte a = 5;
+	byte b = 10;
+	int c = a + b; // a y b se promueven a int, resultado es int
+	```
+
+	```java
+	short s = 100;
+	char ch = 50;
+	int r = s + ch; // ambos promovidos a int, resultado int
+	```
+
+	```java
+	int i = 100;
+	long l = 200L;
+	long res = i + l; // int promovido a long, resultado long
+	```
+
+	```java
+	float f = 3.5f;
+	double d = 2.1;
+	double result = f + d; // float promovido a double, resultado double
+	```
+
+	---
+
+	## 🔹 Resumen en palabras simples
+	- Primero, los tipos pequeños se convierten a `int`.  
+	- Luego, si hay mezcla de tipos, todos se convierten al más grande de la operación.  
+	- Finalmente, el resultado **hereda ese tipo promovido**.  
+
+	👉 En otras palabras: **el resultado siempre tiene el tipo del operando más grande después de las promociones.**
+
+	---
+
+	¿Quieres que te arme una **tabla completa de promociones numéricas en Java** (de `byte` hasta `double`) para que tengas una visión clara de cómo se decide el tipo final en cada operación?
+
+	(explicacion)
 
 
 ### Operadores Aritmeticos.
