@@ -1580,7 +1580,7 @@ Entonces,
 		System.out.println(parkAttendance);   // 1
 		System.out.println(parkAttendance--); // 1
 		System.out.println(parkAttendance);   // 0
-	```
+	```	
 	Es necesario que comprenda la diferencia entre  ++parkAttendance y parkAttendance++ .	
 	
 ### Trabajando con binerios, Arithetics Operadores.
@@ -1598,7 +1598,22 @@ Entonces,
 	SI Ud lo reemplaza por parentesis, el codigo si compilara.
 
 ### Division y operador modulo.
-	Es el operador % y es el resto de la ivision de dos numeros.
+	Es el operador %  es el resto de la division de dos numeros.
+	Por EJemplo 9/3, tiene como reminder 0 . Es decir, no deja ninguna diferencia. De otra forma 11 / 3 no es exacto, por lo que queda como resto 2.
+
+	```java
+		System.out.println(9 / 3);//3
+		System.out.println(9 % 3);//0
+
+		System.out.println(10 / 3);//3
+		System.out.println(10 % 3);//1
+
+		System.out.println(11 / 3);//3
+		System.out.println(11 % 3);//2
+
+		System.out.println(12 / 3);//4
+		System.out.println(12 % 3);//0
+	```	
 
 ### Operadores Aritmeticos.
 
