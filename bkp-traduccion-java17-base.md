@@ -1615,6 +1615,8 @@ Entonces,
 		System.out.println(12 % 3);//0
 	```	
 
+### Promocion numerica.	
+
 ### Operadores Aritmeticos.
 
 ### Asignando Valores.
