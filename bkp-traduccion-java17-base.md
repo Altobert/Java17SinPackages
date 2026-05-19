@@ -1614,8 +1614,16 @@ Entonces,
 		System.out.println(12 / 3);//4
 		System.out.println(12 % 3);//0
 	```	
+	NOTA:
+	La opeacion modulo no se limita solo a los integer en java, tambien se puede aplicar a los float numbers and enteros negativos. PAra el examen no es requerido se capaz de tomar el modulo de un entero negatigo o un numero con coma flotante.
 
-### Promocion numerica.	
+### Numeric Promotion.
+	Java suele realizar cosas que suele parecer inusuales como primera vez. EN el capitulo 1 cada tipo primitivo tiene un largo en bit. No se necesita conocer el valor exacto de cada uno, pero si cual es mas largo que cada uno.EJ.
+	Un long toma mas espacio que un int,
+	el cual toma mas espacio qe un short.
+	
+	Debes memorizar ciertas reglas que java seguira cuando aplica operadores sobre los tipos de datos:
+
 
 ### Operadores Aritmeticos.
 
