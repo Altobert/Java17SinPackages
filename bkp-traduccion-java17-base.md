@@ -1692,13 +1692,40 @@ Entonces,
 	- Luego, si hay mezcla de tipos, todos se convierten al más grande de la operación.  
 	- Finalmente, el resultado **hereda ese tipo promovido**.  
 
-	👉 En otras palabras: **el resultado siempre tiene el tipo del operando más grande después de las promociones.**
+	👉 En otras palabras: **el resultado siempre tendra el tipo del operando más grande después de las promociones.**
 
 	---
 
 	¿Quieres que te arme una **tabla completa de promociones numéricas en Java** (de `byte` hasta `double`) para que tengas una visión clara de cómo se decide el tipo final en cada operación?
 
 	(explicacion)
+
+	Las dos ultimas reglas, son las donde la gente tiene mas problemas.Para la tercera regla, los operadores unarios son excluidos de esta regla. Por ejemplo, aplicando ++ hacia un valor short resultado dentro de un short value. 
+
+	Ejemplos para ilustrar el proposito:
+	
+	Que tipo de dato es X*Y?
+	int x=1;
+	long y = 33;
+	var z = x*y;
+
+	Ya que y es el tipo de dato mas grande, se promueve hacia long.
+	PAra lo anterior x es primeramente promovido a long.
+
+	Cual es el tipo de dato de x + y
+	double x = 39.21;
+	float y = 2.1;	
+	var z = x + y;
+
+	trampa en este ejercicio, por que no compila.
+	COmo tu puedes recordar, desde el capitulo 1, 
+	los punto flotante literales son asumidos como double
+	a menos que un postfixed f como 2.1f.
+
+	Si se utiliza el valor como corresponde, se promovera hacia double
+	al ser un tipo de dato mayor.
+
+
 
 
 ### Operadores Aritmeticos.
