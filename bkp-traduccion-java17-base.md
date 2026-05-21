@@ -1723,7 +1723,13 @@ Entonces,
 	a menos que un postfixed f como 2.1f.
 
 	Si se utiliza el valor como corresponde, se promovera hacia double
-	al ser un tipo de dato mayor.
+	al ser un tipo de dato mayor o mas grande.
+
+	```java
+	short x = 3;
+	short x = 10;
+	var result = x + y; // float promovido a double, resultado double
+	```
 
 
 
