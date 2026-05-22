@@ -1728,8 +1728,9 @@ Entonces,
 	```java
 	short x = 3;
 	short x = 10;
-	var result = x + y; // float promovido a double, resultado double
+	var result = x * y; // float promovido a double, resultado double
 	```
+	en este ejemplo, el compilador transformara el short hacia int antes de utilizar el operador binario
 
 
 
