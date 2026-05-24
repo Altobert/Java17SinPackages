@@ -1,3 +1,4 @@
+./testcompile/Test.java
 ./packageb/ClassB.java
 ./typeinference/PileOfPapersToFileInFilingCabinet.java
 ./typeinference/TesTypeInference.java

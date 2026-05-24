@@ -10,6 +10,7 @@ if [ -s sources.txt ]; then
     java -cp classes structure.Meerkat    
     java -cp classes typeinference.TesTypeInference
     java -cp classes operator.Operator
+    java -cp classes testcompile.Test
     echo "Compilación y ejecución completada."
 else
     echo "No se encontraron archivos .java en temp/"
