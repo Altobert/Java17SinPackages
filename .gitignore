@@ -35,8 +35,7 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-# Temporary compilation directories
-temp/
+# Build outputs
 classes/
 
 # Gradle
@@ -107,6 +106,5 @@ ehthumbs.db
 Thumbs.db
 
 # Project specific
-temp/
 testtemp/
 bkp.txt

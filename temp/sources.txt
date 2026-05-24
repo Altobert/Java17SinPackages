@@ -1,0 +1,15 @@
+./packageb/ClassB.java
+./typeinference/PileOfPapersToFileInFilingCabinet.java
+./typeinference/TesTypeInference.java
+./packagec/ClassC.java
+./swanexample/Swan.java
+./orderinit/Egg.java
+./algoritmos/Mcd.java
+./varsample/Zoo.java
+./varsample/VarKeyboard.java
+./teststring/TestString.java
+./practicalaberinto/GraphExample.java
+./packagea/ClassA.java
+./mariona/ArbolTalla.java
+./structure/Meerkat.java
+./operator/Operator.java

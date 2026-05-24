@@ -1,0 +1,223 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/albertosanmartin/proyectos/vss/cotizadorvss-fxjava/cotizador-config.properties",
+		"/Users/albertosanmartin/Certificaciones/comandos-importantes/estudio",
+		"/Users/albertosanmartin/Desktop/07-Pagos-Usach/empresaNro TransacciónFecha pagoMonto",
+		"/Users/albertosanmartin/Certificaciones/comandos-importantes/comandos",
+		"/Users/albertosanmartin/cuentas-asm/Cuentas ASM",
+		"/Users/albertosanmartin/Documents/VSS-COTIZACIONES/:Users:albertosanmartin:Documents:VSS-COTIZACIONES",
+		"/Users/albertosanmartin/Certificaciones/comandos-importantes/admin-linux",
+		"/Users/albertosanmartin/Certificaciones/introduccion-evangelios/introduccion a los evangelios",
+		"/Users/albertosanmartin/Desktop/🎓 DEFENSA_PROYECTO_USACH/corregir_superposicion.py",
+		"/Users/albertosanmartin/Downloads/resumen-defensa-usach",
+		"/Users/albertosanmartin/Downloads/resumen-proyecto-titulo",
+		"/Users/albertosanmartin/usach-memoria-implementacion/memoria/resumen-pruebas-modelos-llm",
+		"/Users/albertosanmartin/Documents/proyecto-titulo-correcciones",
+		"/Users/albertosanmartin/Desktop/pruebas chat",
+		"/Users/albertosanmartin/Documents/usach-paradigmas/comandos-importantes/todos mis fuentes estan en ti ciudad de dios, alel",
+		"/Users/albertosanmartin/Documents/sublime-text-apuntes/comandos",
+		"/Users/albertosanmartin/estudio-cursos/bash scripting",
+		"/Users/albertosanmartin/Documents/sublime-text-apuntes/Observaciones Prof. Roberto Gonzalez.",
+		"/Users/albertosanmartin/Documents/sublime-text-apuntes/memoria-apuntes-final",
+		"/Users/albertosanmartin/Documents/sublime-text-apuntes/apuntes",
+		"/Users/albertosanmartin/Documents/proyecto-titulo-links",
+		"/Users/albertosanmartin/Documents/PARADIGMAS-USACH/CATEDRA/Logico/apuntes",
+		"/Users/albertosanmartin/Desktop/NotasImportantes/Ejercicios",
+		"/Users/albertosanmartin/Desktop/NotasImportantes/Laboratorio de Sistemas operativos",
+		"/Users/albertosanmartin/Desktop/NotasImportantes/Token_y_Claves",
+		"/Users/albertosanmartin/Desktop/NotasImportantes/prolog-study",
+		"/Users/albertosanmartin/Desktop/;Desde aca llamar a funcion: create",
+		"/Users/albertosanmartin/Downloads/Ejemplos-20210914/map.rkt",
+		"/Users/albertosanmartin/Documents/TextosDeRespaldo",
+		"/Users/albertosanmartin/Desktop/NotasImportantes/SantaMisaOnline",
+		"/Users/albertosanmartin/Desktop/NotasImportantes/TrabajoEnClasesTDA",
+		"/Users/albertosanmartin/Documents/Apuntes/githubtoken",
+		"/Users/albertosanmartin/Desktop/NotasImportantes/contrasenas",
+		"/Users/albertosanmartin/Desktop/NotasImportantes/ErroresPropyme",
+		"/Users/albertosanmartin/Documents/Apuntes/PepSistemasOperativosUSach",
+		"/Users/albertosanmartin/Documents/TrabajoSII/FOGAPE_MODIF_Y2021_M04.txt",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/LabEda/Lab 2/src/Laberinto.c",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE40.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE37.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE36.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE25.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE24.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE23.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE22.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE21.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE20.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE19.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE18.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/EDA-UANDES/DISQUETE/DISQUETE/CAP-0/EJEMPLOS/EJE17.C",
+		"/Users/albertosanmartin/Documents/EDAUsach/AlgoritmosPersonales/sumaPolinomios"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "Mcd.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/proyecto-titulo-links"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 356.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
