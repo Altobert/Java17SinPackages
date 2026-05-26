@@ -6,6 +6,7 @@ public class Operator {
         short x = 3;
 	    short y  = 10;
 	    var result = (int)(x * y);        
+        
         System.out.println("Ejemplo utilizando operador binario * y cast automatico de short hacia int: " + result);
     }
 }
