@@ -1,0 +1,64 @@
+Perfecto, Alberto. Aquí tienes un **checklist práctico** 
+para aplicar cada vez que termines un test de certificación en Java. 
+La idea es transformar cada error en un aprendizaje sólido,
+evitando la trampa de solo memorizar respuestas.
+
+---
+
+# 📝 Checklist post-test de certificación Java
+
+### 1. **Revisión inicial**
+- ✅ Marca las preguntas incorrectas sin mirar la respuesta aún.  
+- ✅ Identifica si el error fue por **descuido** (ej. leer mal la pregunta) o por **desconocimiento real**.
+
+---
+
+### 2. **Análisis profundo**
+- ✅ Revisa la respuesta correcta y compárala con tu razonamiento inicial.  
+- ✅ Pregúntate: *¿qué concepto subyacente no entendí bien?*  
+- ✅ Si es un tema de sintaxis o API, abre un snippet en tu IDE y prueba el caso.
+
+---
+
+### 3. **Clasificación del error**
+- ✅ Sintaxis básica (ej. alcance de variables, tipos primitivos).  
+- ✅ Concepto avanzado (ej. sealed classes, records, módulos).  
+- ✅ API específica (ej. Streams, Collections, Concurrency).  
+- ✅ Trampa de examen (ej. comportamiento por defecto de `equals` o `hashCode`).
+
+---
+
+### 4. **Mini laboratorio**
+- ✅ Escribe un ejemplo de código que reproduzca el error.  
+- ✅ Modifica el ejemplo para ver cómo cambia el resultado.  
+- ✅ Documenta en una nota breve: *“Aprendí que `var` infiere tipo en compilación, no en runtime”*.
+
+---
+
+### 5. **Consolidación**
+- ✅ Resume en tus propias palabras la regla aprendida.  
+- ✅ Si es un tema recurrente, crea una **flashcard** con la pregunta y la explicación.  
+- ✅ Guarda tus ejemplos en un repositorio (GitHub o carpeta personal).
+
+---
+
+### 6. **Repetición inteligente**
+- ✅ No repitas el mismo test inmediatamente.  
+- ✅ Haz otro set de preguntas o cambia el orden.  
+- ✅ Vuelve al test original después de unos días: si recuerdas la lógica y no solo la opción, significa que aprendiste.
+
+---
+
+### 7. **Simulación real**
+- ✅ Haz bloques de 60–90 minutos con preguntas seguidas.  
+- ✅ No revises hasta terminar.  
+- ✅ Evalúa tu resistencia mental y gestión del tiempo.
+
+---
+
+## 🎯 Resultado esperado
+Cada error deja de ser un “fallo” y se convierte en un **ejercicio práctico de aprendizaje**. Así, cuando llegues al examen real, no solo sabrás la respuesta, sino que tendrás la **comprensión profunda** detrás de cada pregunta.
+
+---
+
+Alberto, ¿quieres que te arme un **ejemplo aplicado** de este checklist con una pregunta típica de certificación Java (por ejemplo sobre `sealed classes` o `Streams`) para que veas cómo se transforma el error en aprendizaje?

@@ -23,7 +23,10 @@ echo "Compilando paquete luliana17: "
 javac -d classes luliana17/*.java
 echo "Compilando paquete varsample: "
 javac -d classes varsample/*.java
+echo "Compilando paquete operator: "
+javac -d classes operator/*.java
 echo "Compilaccion finalizada."
+
 
 rem Ejecutando
 echo "*********Ejecucion*********"
@@ -43,6 +46,7 @@ java -cp classes firstclasses.Chicken
 java -cp classes firstclasses.NumberPicker
 java -cp classes luliana17.Example01
 java -cp classes varsample.Eat
+java -cp classes operator.Operator
 echo "Ejecucion finalizada."
 
 endlocal
