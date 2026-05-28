@@ -1752,12 +1752,18 @@ Entonces,
 
 	En la siguiente seccion, discutiremos los intrincados de asignar esos valores a variables de un tipo particular.
 
-
-
-
-### Operadores Aritmeticos.
-
 ### Asignando Valores.
+
+	Los errores de compilación derivados de los operadores de asignación suelen pasarse por alto en el examen, en parte debido a su sutileza.
+
+	Para lograr el exitocon los operadores de asignacion, Ud debe fluir en la comprension como el compildor maneja la promocion numerica y cuando realizar un casting requerido.  Es fundamental poder detectar estos problemas para aprobar el examen, ya que los operadores de asignación aparecen en casi todas las preguntas que incluyen un fragmento de código.
+
+###	Assignment Operator
+	Un operador de asignacion es un operador binario que modifica, o asigna
+	la variable, modifica, o asigna, la variable del lado izquierdo del operador con el resultado del valor del lado derecho de la ecuación. A diferencia de la mayoría de los demás operadores de Java, el operador de asignación se evalúa de derecha a izquierda.
+
+
+
 ### Comparando Valores.
 ### Construyendo desiciones con operador Ternario.
 ### Resumen.
