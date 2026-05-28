@@ -1748,6 +1748,10 @@ Entonces,
 	El resultado de la multiplicacion de w * x sera automaticmanete promovido a double para ser divivido por un double
 	y finalmente resultando el resultado en un valor double.
 
+	cuando trabajemos con operadores aritmeticos con java, Ud siempre debera tener cuidado con los tipos de ddatos de variables, intermedios variables y variables resultantes. Ud. debera aplicar el operador de procedencia y parentesis y trabajar fuera de la granja, promoviendo tipos de datos a lo largo del camino. 
+
+	En la siguiente seccion, discutiremos los intrincados de asignar esos valores a variables de un tipo particular.
+
 
 
 
