@@ -1760,7 +1760,13 @@ Entonces,
 
 ###	Assignment Operator
 	Un operador de asignacion es un operador binario que modifica, o asigna
-	la variable, modifica, o asigna, la variable del lado izquierdo del operador con el resultado del valor del lado derecho de la ecuación. A diferencia de la mayoría de los demás operadores de Java, el operador de asignación se evalúa de derecha a izquierda.
+	la variable del lado izquierdo del operador con el resultado del valor del lado derecho de la ecuación. A diferencia de la mayoría de los demás operadores de Java, el operador de asignación se evalúa de derecha a izquierda.
+	El operador de asignación más simple es el operador de asignación =, que ya has visto: `int herd = 1;`
+
+	Esta instrucción asigna a la variable `herd` el valor 1. 
+	
+	Java realiza automáticamente conversiones de tipos de datos más pequeños a más grandes, como viste en la sección anterior sobre operadores aritméticos, pero generará una excepción del compilador si detecta que intentas convertir de tipos de datos más grandes a más pequeños sin realizar una conversión explícita. La Tabla 2.5 muestra el primer operador de asignación que necesitas conocer.
+	
 
 
 
