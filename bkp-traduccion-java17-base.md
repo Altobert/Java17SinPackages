@@ -1765,7 +1765,11 @@ Entonces,
 
 	Esta instrucción asigna a la variable `herd` el valor 1. 
 	
-	Java realiza automáticamente conversiones de tipos de datos más pequeños a más grandes, como viste en la sección anterior sobre operadores aritméticos, pero generará una excepción del compilador si detecta que intentas convertir de tipos de datos más grandes a más pequeños sin realizar una conversión explícita. La Tabla 2.5 muestra el primer operador de asignación que necesitas conocer.
+	Java realiza automáticamente conversiones de tipos de datos más pequeños a más grandes, como viste en la sección anterior sobre operadores aritméticos, pero generará una excepción del compilador si detecta que intentas convertir de tipos de datos más grandes a más pequeños sin realizar una conversión explícita. La Tabla 2.5 muestra el primer operador de asignación que necesitas conocer para el examen.
+
+	Mas tarde presentaremos asignaciones adicionales en esta seccion.
+![operador simple de asignacion](images/asignacion-simple.png)
+
 	
 
 
