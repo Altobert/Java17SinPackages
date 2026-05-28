@@ -1731,7 +1731,22 @@ Entonces,
 	var result = x * y; // float promovido a double, resultado double que es esto.
 
 	```
-	en este ejemplo, el compilador transformara el short hacia int antes de utilizar el operador binario
+	en este ejemplo, el compilador transformara el short hacia int antes de utilizar el operador binario.
+
+	```java
+	short  w = 14;
+	float  x = 13;
+	double y = 30;
+	var z = w * x / y;	
+	```
+
+	En este caso se aplicaran todas las reglas.
+	Al inicio w se promovera a int por que se encuentra en una operacion
+	binaria.
+	Luego, automaticamente sera promovido a float, por que se encuentra en
+	una operacion binaria con un float (x)
+	El resultado de la multiplicacion de w * x sera automaticmanete promovido a double para ser divivido por un double
+	y finalmente resultando el resultado en un valor double.
 
 
 
