@@ -1773,6 +1773,18 @@ Entonces,
 
 ###	Casting values.
 	Parece fácil hasta ahora, ¿verdad? Bueno, no podemos hablar en detalle del operador de asignación hasta que hayamos visto la conversión de tipos. La conversión de tipos es una operación unaria donde un tipo de dato se interpreta explícitamente como otro. Es opcional e innecesaria al convertir a un tipo de dato mayor o más amplio, pero es necesaria al convertir a un tipo de dato menor o más estrecho. Sin la conversión, el compilador generará un error al intentar insertar un tipo de dato mayor dentro de uno menor. La conversión de tipo se realiza colocando el tipo de dato, entre paréntesis, a la izquierda del valor que se desea convertir. A continuación, se muestran algunos ejemplos de conversión:
+
+	```java
+	int fur = (int)5;
+	int hair = (short) 2;
+	String type = (String) "Bird";
+	short tail = (short)(4 + 10);
+	long feathers = 10(long); // DOES NOT COMPILE
+	```
+
+	Los espacios entre la conversión y el valor son opcionales. Como se muestra en el penúltimo ejemplo, es común que el lado derecho también esté entre paréntesis. Dado que la conversión es una operación unaria, solo se aplicaría al 4 si no encerráramos 4 + 10 entre paréntesis. El último ejemplo no los incluye.
+
+
 	
 
 
