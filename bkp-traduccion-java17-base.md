@@ -1798,6 +1798,33 @@ Entonces,
 
 	En este capítulo, la conversión de tipos se centra principalmente en transformar tipos de datos numéricos en otros tipos. Como verá en capítulos posteriores, la conversión también se puede aplicar a objetos y referencias. En esos casos, sin embargo, no se realiza ninguna conversión. En resumen, convertir un valor numérico puede cambiar su tipo de dato, mientras que convertir un objeto solo cambia la referencia al objeto, no el objeto en sí.
 
+	Reviewing Primitive Assignments
+
+```java
+	int fish = 1.0;        // DOES NOT COMPILE
+	short bird = 1921222;  // DOES NOT COMPILE
+	int mammal = 9f;       // DOES NOT COMPILE
+	long reptile = 192_301_398_193_810_323;  // DOES NOT COMPILE
+```
+
+	La primera instrucción no compila porque intentas asignar un valor double (1.0) a un valor entero. Aunque el valor es un entero matemático, al añadir .0, le indicas al compilador que lo trate como un double. La segunda instrucción no compila porque el valor literal 1921222 está fuera del rango de short, y el compilador lo detecta. La tercera instrucción no compila porque la f añadida al final del número le indica al compilador que lo trate como un valor de punto flotante, pero la asignación es a un int. Finalmente, la última instrucción no compila porque Java interpreta el literal como un int y observa que el valor es mayor que el que permite int. El literal necesitaría un sufijo L o l para ser considerado un long.
+
+	Aplicando Casting
+
+	Aplicando la conversión de tipos: Podemos corregir tres de los ejemplos anteriores convirtiendo los resultados a un tipo de dato más pequeño. Recuerda que la conversión de tipos primitivos es necesaria siempre que se pase de un tipo de dato numérico mayor a uno menor, o cuando se convierta un número de punto flotante a un valor entero. int fish = (int)1.0;
+
+	```java	
+		short bird = (short)1921222; // Almacenado como 20678
+		int mammal = (int)9f;
+	```
+
+	¿Qué ocurre si aplicamos la conversión de tipos al último ejemplo? long reptile = (long)192301398193810323; // NO COMPILA
+
+	Esto sigue sin compilar porque el compilador interpreta primero el valor como un entero y está fuera de rango. El siguiente código corrige este problema sin necesidad de conversión de tipos: long reptile = 192301398193810323L;
+
+
+
+
 
 
 
