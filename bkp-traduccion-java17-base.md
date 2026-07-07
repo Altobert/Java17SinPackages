@@ -1818,9 +1818,17 @@ Entonces,
 		int mammal = (int)9f;
 	```
 
-	¿Qué ocurre si aplicamos la conversión de tipos al último ejemplo? long reptile = (long)192301398193810323; // NO COMPILA
+	¿Qué ocurre si aplicamos la conversión de tipos al último ejemplo? 
 
-	Esto sigue sin compilar porque el compilador interpreta primero el valor como un entero y está fuera de rango. El siguiente código corrige este problema sin necesidad de conversión de tipos: long reptile = 192301398193810323L;
+	```java
+		long reptile = (long)192301398193810323; // NO COMPILA
+	```	
+
+	Esto sigue sin compilar porque el compilador interpreta primero el valor como un entero y está fuera de rango. El siguiente código corrige este problema sin necesidad de conversión de tipos: 
+	
+```java
+		long reptile = 192301398193810323L;
+	```
 
 
 
