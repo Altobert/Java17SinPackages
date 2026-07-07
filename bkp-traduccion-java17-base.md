@@ -1829,7 +1829,17 @@ Entonces,
 ```java
 		long reptile = 192301398193810323L;
 	```
+	
+1.108
+	Escenarios del mundo real
+	Desbordamiento y subdesbordamiento
+	Las expresiones del ejemplo anterior ahora compilan, aunque con un coste. El segundo valor, 1.921.222, es demasiado grande para almacenarse como un short, por lo que se produce un desbordamiento numérico y se convierte en 20.678. El desbordamiento se produce cuando un número es tan grande que ya no cabe en el tipo de dato, por lo que el sistema "vuelve al valor negativo más bajo" y cuenta hacia arriba a partir de ahí, de forma similar a como funciona la aritmética modular. También existe un subdesbordamiento análogo, cuando el número es demasiado pequeño para caber en el tipo de dato, como al almacenar -200 en un campo de bytes. Esto está fuera del alcance del examen, pero es algo que se debe tener en cuenta en el propio código. 
+	Por ejemplo, la siguiente instrucción imprime un número negativo:
+```java
+		System.out.print(2147483647+1); // -2147483648
+```
 
+	Dado que 2147483647 es el valor entero máximo, al sumarle cualquier valor estrictamente positivo, el resultado se ajustará al número negativo más pequeño.
 
 
 
